@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Buscador de Wi-Fi</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; background: #f9f9f9; }
+    input { width: 100%; padding: 10px; font-size: 16px; margin-bottom: 20px; }
+    .entry { padding: 15px; background: white; border-radius: 8px; margin-bottom: 10px; box-shadow: 0 0 5px rgba(0,0,0,0.1); }
+    .ssid { font-weight: bold; font-size: 18px; }
+    .password { color: green; font-weight: bold; }
+    .meta { font-size: 14px; color: #555; }
+  </style>
+</head>
+<body>
+  <h2>🔍 Buscador de redes Wi-Fi</h2>
+  <input type="text" id="search" placeholder="Escribe SSID o MAC..." onkeyup="buscar()">
+  <div id="resultados"></div>
+
+  <script>
+    let data = [];
+
+    // Cargar los datos desde data.json
+    fetch('data.json')
+      .then(res => res.json())
+      .then(json => { data = json; buscar(); });
+
+    function buscar() {
+      const q = document.getElementById('search').value.toLowerCase();
+      const resultados = data.filter(e =>
+        e.ssid.toLowerCase().includes(q) ||
+        e.mac.toLowerCase().includes(q)
+      );
+
+      document.getElementById('resultados').innerHTML = resultados.map(e => `
+        <div class="entry">
+          <div class="ssid">📡 SSID: ${e.ssid}</div>
+          <div class="meta">🔗 MAC: ${e.mac} | 🌐 IP: ${e.ip}</div>
+          <div class="password">🔑 Contraseña: ${e.password}</div>
+        </div>
+      `).join('');
+    }
+  </script>
+</body>
+</html>
