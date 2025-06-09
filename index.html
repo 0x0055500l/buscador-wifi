@@ -15,7 +15,7 @@
 </head>
 <body>
   <h2>🔍 Buscador de redes Wi-Fi</h2>
-  <input type="text" id="search" placeholder="Escribe SSID o MAC..." onkeyup="buscar()">
+  <input type="text" id="search" placeholder="Escribe SSID o MAC...">
   <div id="resultados"></div>
 
   <script>
@@ -24,22 +24,44 @@
     // Cargar los datos desde data.json
     fetch('data.json?t=' + Date.now())
       .then(res => res.json())
-      .then(json => { data = json; buscar(); });
+      .then(json => { 
+        data = json; 
+        buscar(); 
+      });
+
+    // Debounce
+    let debounceTimer;
+    document.getElementById('search').addEventListener('input', () => {
+      clearTimeout(debounceTimer);
+      debounceTimer = setTimeout(buscar, 300); // espera 300ms
+    });
 
     function buscar() {
       const q = document.getElementById('search').value.toLowerCase();
+
       const resultados = data.filter(e =>
         e.ssid.toLowerCase().includes(q) ||
         e.mac.toLowerCase().includes(q)
       );
 
-      document.getElementById('resultados').innerHTML = resultados.map(e => `
+      // Limitar la cantidad de resultados visibles (ej.: primeros 100)
+      const maxResults = 100;
+      const limitedResults = resultados.slice(0, maxResults);
+
+      document.getElementById('resultados').innerHTML = limitedResults.map(e => `
         <div class="entry">
           <div class="ssid">📡 SSID: ${e.ssid}</div>
           <div class="meta">🔗 MAC: ${e.mac} | 🌐 IP: ${e.ip}</div>
           <div class="password">🔑 Contraseña: ${e.password}</div>
         </div>
       `).join('');
+
+      // Mostrar un mensaje si hay más resultados no visibles
+      if (resultados.length > maxResults) {
+        document.getElementById('resultados').innerHTML += `
+          <div style="padding:10px; color:#888;">⚠️ Mostrando solo los primeros ${maxResults} de ${resultados.length} resultados.</div>
+        `;
+      }
     }
   </script>
 </body>
