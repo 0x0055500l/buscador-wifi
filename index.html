@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Buscador de Wi-Fi</title>
+  <title>Buscador de Wi-Fi Avanzado</title>
   <style>
     body { font-family: Arial, sans-serif; padding: 20px; background: #f9f9f9; }
     input { width: 100%; padding: 10px; font-size: 16px; margin-bottom: 20px; }
@@ -11,15 +11,21 @@
     .ssid { font-weight: bold; font-size: 18px; }
     .password { color: green; font-weight: bold; }
     .meta { font-size: 14px; color: #555; }
+    .pagination { margin-top: 20px; text-align: center; }
+    .pagination button { padding: 8px 12px; margin: 0 5px; font-size: 16px; cursor: pointer; }
   </style>
 </head>
 <body>
   <h2>🔍 Buscador de redes Wi-Fi</h2>
-  <input type="text" id="search" placeholder="Escribe SSID o MAC...">
+  <input type="text" id="search" placeholder="Escribe SSID, MAC o Contraseña...">
   <div id="resultados"></div>
-
+  <div class="pagination" id="pagination"></div>
+  <h3> -Made by @0x0055500l- </h3>
   <script>
     let data = [];
+    let currentPage = 1;
+    const resultsPerPage = 50; // Puedes cambiar esto a 100, 200, etc.
+    let currentResults = [];
 
     // Cargar los datos desde data.json
     fetch('data.json?t=' + Date.now())
@@ -33,22 +39,30 @@
     let debounceTimer;
     document.getElementById('search').addEventListener('input', () => {
       clearTimeout(debounceTimer);
-      debounceTimer = setTimeout(buscar, 300); // espera 300ms
+      debounceTimer = setTimeout(() => {
+        currentPage = 1; // Reset page on new search
+        buscar();
+      }, 300); // espera 300ms
     });
 
     function buscar() {
       const q = document.getElementById('search').value.toLowerCase();
 
-      const resultados = data.filter(e =>
+      currentResults = data.filter(e =>
         e.ssid.toLowerCase().includes(q) ||
-        e.mac.toLowerCase().includes(q)
+        e.mac.toLowerCase().includes(q) ||
+        e.password.toLowerCase().includes(q)
       );
 
-      // Limitar la cantidad de resultados visibles (ej.: primeros 100)
-      const maxResults = 100;
-      const limitedResults = resultados.slice(0, maxResults);
+      mostrarPagina();
+    }
 
-      document.getElementById('resultados').innerHTML = limitedResults.map(e => `
+    function mostrarPagina() {
+      const startIndex = (currentPage - 1) * resultsPerPage;
+      const endIndex = startIndex + resultsPerPage;
+      const paginatedResults = currentResults.slice(startIndex, endIndex);
+
+      document.getElementById('resultados').innerHTML = paginatedResults.map(e => `
         <div class="entry">
           <div class="ssid">📡 SSID: ${e.ssid}</div>
           <div class="meta">🔗 MAC: ${e.mac} | 🌐 IP: ${e.ip}</div>
@@ -56,11 +70,27 @@
         </div>
       `).join('');
 
-      // Mostrar un mensaje si hay más resultados no visibles
-      if (resultados.length > maxResults) {
-        document.getElementById('resultados').innerHTML += `
-          <div style="padding:10px; color:#888;">⚠️ Mostrando solo los primeros ${maxResults} de ${resultados.length} resultados.</div>
-        `;
+      // Mostrar info de paginación
+      const totalPages = Math.ceil(currentResults.length / resultsPerPage);
+      let paginationHTML = '';
+
+      if (totalPages > 1) {
+        paginationHTML += `<button onclick="cambiarPagina(${currentPage - 1})" ${currentPage === 1 ? 'disabled' : ''}>⏪ Anterior</button>`;
+        paginationHTML += ` Página ${currentPage} de ${totalPages} `;
+        paginationHTML += `<button onclick="cambiarPagina(${currentPage + 1})" ${currentPage === totalPages ? 'disabled' : ''}>Siguiente ⏩</button>`;
+      }
+
+      // Mostrar total de resultados
+      paginationHTML += `<div style="margin-top: 10px; color: #666;">Mostrando ${paginatedResults.length} de ${currentResults.length} resultados encontrados.</div>`;
+
+      document.getElementById('pagination').innerHTML = paginationHTML;
+    }
+
+    function cambiarPagina(nuevaPagina) {
+      const totalPages = Math.ceil(currentResults.length / resultsPerPage);
+      if (nuevaPagina >= 1 && nuevaPagina <= totalPages) {
+        currentPage = nuevaPagina;
+        mostrarPagina();
       }
     }
   </script>
