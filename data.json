@@ -79114,5 +79114,3383 @@
     "mac": "00:6d:61:50:99:e8",
     "ssid": "Familia Diaz Martinez",
     "password": "William2019"
+  },
+  {
+    "ip": "192.168.174.6",
+    "mac": "BC:62:0E:3C:76:64",
+    "ssid": "ULTRANET FAM-RIVERA GARCIA",
+    "password": "riveragarcia19"
+  },
+  {
+    "ip": "192.168.174.28",
+    "mac": "90:03:25:2B:46:D4",
+    "ssid": "ULTRANET FAM - MELENDEZ ALVAREZ",
+    "password": "Zeus2022"
+  },
+  {
+    "ip": "192.168.174.30",
+    "mac": "BC:62:0E:3A:86:10",
+    "ssid": "ULTRANET-- FAMILIA DIAZ",
+    "password": "javimar2019"
+  },
+  {
+    "ip": "192.168.174.36",
+    "mac": "E4:35:C8:19:21:A0",
+    "ssid": "ULTRANET FAM-MURILLO",
+    "password": "SofiaM2021"
+  },
+  {
+    "ip": "192.168.174.37",
+    "mac": "D4:F9:A1:8A:81:E0",
+    "ssid": "ULTRANET ASADOS LA CASA DE JOHN",
+    "password": "18071975"
+  },
+  {
+    "ip": "192.168.174.39",
+    "mac": "D4:F9:A1:8A:B2:44",
+    "ssid": "ULTRANET FAM--ZELAYA ROSALES",
+    "password": "75m14951p7"
+  },
+  {
+    "ip": "192.168.174.43",
+    "mac": "F8:98:B9:65:57:1C",
+    "ssid": "ULTRANET FAM-OSEGUERA",
+    "password": "Amelia.23"
+  },
+  {
+    "ip": "192.168.174.45",
+    "mac": "04:BD:70:A9:6F:0C",
+    "ssid": "ULTRANET FAM-GOMEZ",
+    "password": "LuisRomero181"
+  },
+  {
+    "ip": "192.168.174.49",
+    "mac": "90:03:25:2D:3F:68",
+    "ssid": "ULTRANET PULPERIA VANESSA",
+    "password": "18071991"
+  },
+  {
+    "ip": "192.168.177.6",
+    "mac": "BC:62:0E:3C:76:64",
+    "ssid": "ULTRANET FAM-RIVERA GARCIA",
+    "password": "riveragarcia19"
+  },
+  {
+    "ip": "192.168.177.28",
+    "mac": "90:03:25:2B:46:D4",
+    "ssid": "ULTRANET FAM - MELENDEZ ALVAREZ",
+    "password": "Zeus2022"
+  },
+  {
+    "ip": "192.168.177.30",
+    "mac": "BC:62:0E:3A:86:10",
+    "ssid": "ULTRANET-- FAMILIA DIAZ",
+    "password": "javimar2019"
+  },
+  {
+    "ip": "192.168.177.36",
+    "mac": "E4:35:C8:19:21:A0",
+    "ssid": "ULTRANET FAM-MURILLO",
+    "password": "SofiaM2021"
+  },
+  {
+    "ip": "192.168.177.37",
+    "mac": "D4:F9:A1:8A:81:E0",
+    "ssid": "ULTRANET ASADOS LA CASA DE JOHN",
+    "password": "18071975"
+  },
+  {
+    "ip": "192.168.177.39",
+    "mac": "D4:F9:A1:8A:B2:44",
+    "ssid": "ULTRANET FAM--ZELAYA ROSALES",
+    "password": "75m14951p7"
+  },
+  {
+    "ip": "192.168.177.43",
+    "mac": "F8:98:B9:65:57:1C",
+    "ssid": "ULTRANET FAM-OSEGUERA",
+    "password": "Amelia.23"
+  },
+  {
+    "ip": "192.168.177.45",
+    "mac": "04:BD:70:A9:6F:0C",
+    "ssid": "ULTRANET FAM-GOMEZ",
+    "password": "LuisRomero181"
+  },
+  {
+    "ip": "192.168.177.49",
+    "mac": "90:03:25:2D:3F:68",
+    "ssid": "ULTRANET PULPERIA VANESSA",
+    "password": "18071991"
+  },
+  {
+    "ip": "10.200.3.36",
+    "mac": "C8:3A:35:D9:62:D8",
+    "ssid": "FAMILIA FERRUFINO",
+    "password": "Toby4848"
+  },
+  {
+    "ip": "10.200.3.49",
+    "mac": "C8:A7:76:30:B6:CA",
+    "ssid": "UT FAM AGURCIA",
+    "password": "Isabeldiaz"
+  },
+  {
+    "ip": "10.200.3.70",
+    "mac": "04:25:C5:C4:9E:07",
+    "ssid": "UT FAM FUNEZ",
+    "password": "Lizeth1807"
+  },
+  {
+    "ip": "10.200.3.82",
+    "mac": "A0:08:6F:77:53:C4",
+    "ssid": "UT IKER ALONDRA",
+    "password": "180425qvida"
+  },
+  {
+    "ip": "10.200.3.89",
+    "mac": "C8:8D:83:98:CD:41",
+    "ssid": "UT FAM RIVERA GONZALES",
+    "password": "Isaacrivera2024"
+  },
+  {
+    "ip": "10.200.3.130",
+    "mac": "C8:A7:76:5B:5A:C5",
+    "ssid": "UT FAM PINTO",
+    "password": "Villedapinto"
+  },
+  {
+    "ip": "10.200.3.152",
+    "mac": "C8:A7:76:E5:7B:81",
+    "ssid": "FAMILIA PALACIOS",
+    "password": "Motagua86"
+  },
+  {
+    "ip": "10.200.4.54",
+    "mac": "04:95:E6:03:8F:20",
+    "ssid": "UT FAM DIAZ",
+    "password": "Santiago1645"
+  },
+  {
+    "ip": "10.200.4.56",
+    "mac": "90:9A:4A:6D:B2:CA",
+    "ssid": "FAMILIA TORRES",
+    "password": "19742003"
+  },
+  {
+    "ip": "10.200.4.73",
+    "mac": "50:0F:F5:75:7F:38",
+    "ssid": "FAMILIA ARGUETA",
+    "password": "ultranet3222"
+  },
+  {
+    "ip": "10.200.4.119",
+    "mac": "CC:2D:21:17:C5:D0",
+    "ssid": "UT FAM TURCIOS",
+    "password": "18071959"
+  },
+  {
+    "ip": "10.200.4.144",
+    "mac": "50:0F:F5:3E:B0:D0",
+    "ssid": "UT FAM PAVON GALEAS",
+    "password": "Lizeth1977"
+  },
+  {
+    "ip": "10.200.4.152",
+    "mac": "C8:A7:76:78:38:11",
+    "ssid": "FAMILIA CHIRINOS",
+    "password": "oStinfer2025"
+  },
+  {
+    "ip": "10.200.4.172",
+    "mac": "C8:3A:35:66:D0:F8",
+    "ssid": "FAMILIA RIVERA",
+    "password": "27antonio"
+  },
+  {
+    "ip": "10.200.5.61",
+    "mac": "04:25:C5:6F:ED:57",
+    "ssid": "FAMILIA URBINA NAVARRO",
+    "password": "Emanuel93"
+  },
+  {
+    "ip": "10.200.6.43",
+    "mac": "0C:80:63:6A:FC:0E",
+    "ssid": "GERSON SANCHEZ",
+    "password": "Potrodavid777"
+  },
+  {
+    "ip": "10.200.6.59",
+    "mac": "C8:8D:83:CB:ED:70",
+    "ssid": "UT FAM GOMEZ REYES",
+    "password": "HijosDeDios2023"
+  },
+  {
+    "ip": "10.200.6.60",
+    "mac": "C8:8D:83:B9:C9:0D",
+    "ssid": "UT FAM RUIZ ANDRADES",
+    "password": "genesis2017"
+  },
+  {
+    "ip": "10.200.6.62",
+    "mac": "58:D9:D5:44:70:80",
+    "ssid": "ULTRANET FAM NU\u00d1EZ ZELAYA",
+    "password": "Amilcar032017"
+  },
+  {
+    "ip": "10.200.6.75",
+    "mac": "A0:08:6F:26:68:E5",
+    "ssid": "UT FAM ZELAYA",
+    "password": "Aihnoa2026"
+  },
+  {
+    "ip": "10.200.6.76",
+    "mac": "A0:08:6F:64:C2:81",
+    "ssid": "UT FAM MIRALDA",
+    "password": "MYFAMILYANDILIVEFORJESUS"
+  },
+  {
+    "ip": "10.200.6.77",
+    "mac": "A0:08:6F:66:86:AA",
+    "ssid": "UT FAM ROSALES",
+    "password": "migdaliadine"
+  },
+  {
+    "ip": "10.200.6.84",
+    "mac": "A0:08:6F:F3:81:E5",
+    "ssid": "UT FAM.- NAJERA",
+    "password": "MANUELITO"
+  },
+  {
+    "ip": "10.200.6.86",
+    "mac": "A0:08:6F:41:54:FA",
+    "ssid": "UT FAM ORELLANA",
+    "password": "Dorian39"
+  },
+  {
+    "ip": "10.200.6.91",
+    "mac": "A0:08:6F:A8:CE:B2",
+    "ssid": "HUAWEI-fhfh",
+    "password": "Montoya22"
+  },
+  {
+    "ip": "10.200.6.99",
+    "mac": "A0:08:6F:24:27:61",
+    "ssid": "UT FAM SANTOS TEJEDA",
+    "password": "180719610046"
+  },
+  {
+    "ip": "10.200.6.104",
+    "mac": "A0:08:6F:5A:31:54",
+    "ssid": "UT FAM TEJEDA",
+    "password": "Henry2003"
+  },
+  {
+    "ip": "10.200.6.108",
+    "mac": "A0:08:6F:21:FB:DE",
+    "ssid": "UT FAM REYES AGURCIA",
+    "password": "Mateo1977"
+  },
+  {
+    "ip": "10.200.6.94",
+    "mac": "A0:08:6F:BA:82:D4",
+    "ssid": "UT FAM AMADOR ORTIZ",
+    "password": "17071979"
+  },
+  {
+    "ip": "10.200.6.109",
+    "mac": "A0:08:6F:C1:E8:3C",
+    "ssid": "HUAWEI-9bha",
+    "password": "aakb3hc1"
+  },
+  {
+    "ip": "10.200.6.106",
+    "mac": "A0:08:6F:6A:CA:F8",
+    "ssid": "UT FAM PUERTO",
+    "password": "BRISAAC5"
+  },
+  {
+    "ip": "10.200.6.110",
+    "mac": "A0:08:6F:73:A2:1E",
+    "ssid": "UT FAM REYES",
+    "password": "55Valenthina73"
+  },
+  {
+    "ip": "10.200.7.2",
+    "mac": "A0:08:6F:3A:D6:D5",
+    "ssid": "UT FAM MARTINEZ",
+    "password": "Deysi1961"
+  },
+  {
+    "ip": "10.200.7.5",
+    "mac": "A0:08:6F:99:48:AD",
+    "ssid": "UT FAM TEJEDA",
+    "password": "Diosmirey"
+  },
+  {
+    "ip": "10.200.7.27",
+    "mac": "A0:08:6F:2F:6D:9C",
+    "ssid": "UT FAM SANTOS URBINA",
+    "password": "santosurbina"
+  },
+  {
+    "ip": "10.200.7.39",
+    "mac": "C8:A7:76:0C:1A:0D",
+    "ssid": "UT CARWASH VICTORIA",
+    "password": "Alexandra27"
+  },
+  {
+    "ip": "10.200.7.43",
+    "mac": "A0:08:6F:91:CC:82",
+    "ssid": "UT FAM MTZ",
+    "password": "Cristhopher03"
+  },
+  {
+    "ip": "10.200.7.52",
+    "mac": "A0:08:6F:F5:C8:3D",
+    "ssid": "HUAWEI-9cfa",
+    "password": "abib3fd1"
+  },
+  {
+    "ip": "10.200.7.55",
+    "mac": "A0:08:6F:C1:AF:BC",
+    "ssid": "UT FAM ORELLANA",
+    "password": "Jose2050"
+  },
+  {
+    "ip": "10.200.7.59",
+    "mac": "C8:8D:83:43:C0:74",
+    "ssid": "WirelessNet",
+    "password": "eeeeeeee"
+  },
+  {
+    "ip": "10.200.7.61",
+    "mac": "C8:8D:83:A5:7B:4A",
+    "ssid": "WirelessNet",
+    "password": "eeeeeeee"
+  },
+  {
+    "ip": "10.200.7.63",
+    "mac": "C8:8D:83:65:A3:B1",
+    "ssid": "WirelessNet",
+    "password": "eeeeeeee"
+  },
+  {
+    "ip": "10.200.7.49",
+    "mac": "A0:08:6F:1D:CB:CE",
+    "ssid": "HUAWEI-cdfj",
+    "password": "dcikcfek"
+  },
+  {
+    "ip": "10.200.7.65",
+    "mac": "90:9A:4A:6D:B2:96",
+    "ssid": "UT FAM RODRIGUEZ",
+    "password": "Gumercinda2026"
+  },
+  {
+    "ip": "10.200.7.78",
+    "mac": "04:25:C5:92:7E:1E",
+    "ssid": "ESCUELA REMIGIO DURAN GODOY",
+    "password": "Moncada57"
+  },
+  {
+    "ip": "10.200.10.103",
+    "mac": "C8:A7:76:8A:75:E3",
+    "ssid": "UT FAMILIA MARTINEZ",
+    "password": "cleotilde.1932"
+  },
+  {
+    "ip": "10.200.15.78",
+    "mac": "04:25:C5:B6:6F:BF",
+    "ssid": "UT FAMILIA FUENTES",
+    "password": "Fuerza2000"
+  },
+  {
+    "ip": "10.200.15.192",
+    "mac": "A0:08:6F:F6:C5:A7",
+    "ssid": "UT FAM POSAS GUZMAN",
+    "password": "Abimelec1981"
+  },
+  {
+    "ip": "10.200.17.120",
+    "mac": "C8:A7:76:56:30:42",
+    "ssid": "UT DOCENTES IFJM",
+    "password": "peo25624"
+  },
+  {
+    "ip": "10.200.17.124",
+    "mac": "C8:A7:76:76:27:4D",
+    "ssid": "Hospital",
+    "password": "Administracion2022"
+  },
+  {
+    "ip": "10.200.17.143",
+    "mac": "C8:A7:76:1A:CB:62",
+    "ssid": "UT LOGISTICA Y SUMINISTROS",
+    "password": "HAME1807"
+  },
+  {
+    "ip": "10.200.18.131",
+    "mac": "C8:A7:76:BE:8A:34",
+    "ssid": "UT FAMILIA HERNANDEZ",
+    "password": "Hernandez3225"
+  },
+  {
+    "ip": "10.200.22.75",
+    "mac": "C8:A7:76:73:2E:72",
+    "ssid": "UT MARINA MEZA",
+    "password": "18071986"
+  },
+  {
+    "ip": "10.200.22.119",
+    "mac": "C8:A7:76:23:74:C4",
+    "ssid": "UT FAMILIA SUAZO",
+    "password": "KELVINSUAZO12"
+  },
+  {
+    "ip": "10.200.22.128",
+    "mac": "A0:08:6F:11:D8:DC",
+    "ssid": "UT FAMILIA ESPINOSA",
+    "password": "Fernanda2019"
+  },
+  {
+    "ip": "10.200.22.148",
+    "mac": "C8:A7:76:43:52:65",
+    "ssid": "UT FAM  PORTILLO",
+    "password": "12345678910"
+  },
+  {
+    "ip": "10.200.25.250",
+    "mac": "A0:08:6F:B4:66:A1",
+    "ssid": "UT FAMILIA RIVERA",
+    "password": "01408300"
+  },
+  {
+    "ip": "10.200.30.123",
+    "mac": "C8:A7:76:E7:B3:78",
+    "ssid": "UT FAMILIA MEJIA",
+    "password": "Lesly1807"
+  },
+  {
+    "ip": "10.200.30.149",
+    "mac": "C8:A7:76:56:50:7C",
+    "ssid": "UT FAM MACHIGUA",
+    "password": "canam450"
+  },
+  {
+    "ip": "192.168.174.111",
+    "mac": "c4:70:0b:09:1c:88",
+    "ssid": "UT FAMILIA HERNANDEZ V",
+    "password": "5861899295"
+  },
+  {
+    "ip": "192.168.183.154",
+    "mac": "80:07:1b:45:53:18",
+    "ssid": "ULTRANET CAHEMAJU",
+    "password": "MAJU&ALCA"
+  },
+  {
+    "ip": "192.168.183.226",
+    "mac": "e8:9e:0c:05:24:fc",
+    "ssid": "ULTRANET FAM VALLECILLO",
+    "password": "718394661"
+  },
+  {
+    "ip": "192.168.177.7",
+    "mac": "6c:68:a4:25:eb:c3",
+    "ssid": "ULTRANET ZOHE",
+    "password": "Yobely1982"
+  },
+  {
+    "ip": "192.168.177.11",
+    "mac": "70:b6:4f:98:2b:9d",
+    "ssid": "ULTRANET FAM- CANO",
+    "password": "SANJUDASTADEO"
+  },
+  {
+    "ip": "10.200.2.13",
+    "mac": "e4:84:2b:09:76:58",
+    "ssid": "UT-FAM-ROMERO",
+    "password": "AriDa2021"
+  },
+  {
+    "ip": "10.200.2.24",
+    "mac": "94:02:6b:00:6f:a0",
+    "ssid": "UT FAM SOTO",
+    "password": "Itzel2024Soto"
+  },
+  {
+    "ip": "10.200.2.47",
+    "mac": "80:07:1b:45:54:78",
+    "ssid": "UT FAM CRUZ",
+    "password": "Yorlenycruz12"
+  },
+  {
+    "ip": "10.200.2.63",
+    "mac": "80:07:1b:46:32:c0",
+    "ssid": "Julie21",
+    "password": "Lapachi2025"
+  },
+  {
+    "ip": "10.200.3.2",
+    "mac": "70:b6:4f:9c:0b:15",
+    "ssid": "UT FAMILIA POSANTES",
+    "password": "1807NETTY2025"
+  },
+  {
+    "ip": "10.200.3.21",
+    "mac": "e4:84:2b:09:70:18",
+    "ssid": "UT.FAM.ESCOBAR",
+    "password": "FerrufinoEscobar1977"
+  },
+  {
+    "ip": "10.200.3.23",
+    "mac": "80:07:1b:29:bb:d8",
+    "ssid": "FAMILIA ARMIJO",
+    "password": "1807202500713"
+  },
+  {
+    "ip": "10.200.3.29",
+    "mac": "80:07:1b:29:bf:70",
+    "ssid": "UT FAM DUARTE JUAREZ",
+    "password": "ANTONIOGERARDO2023"
+  },
+  {
+    "ip": "10.200.3.67",
+    "mac": "80:07:1b:d3:0f:10",
+    "ssid": "UT FAMILIA GARCIA",
+    "password": "teamo001"
+  },
+  {
+    "ip": "10.200.3.46",
+    "mac": "80:07:1b:71:92:48",
+    "ssid": "UT FAMILIA FERRUFINO",
+    "password": "BrunoFRubi"
+  },
+  {
+    "ip": "10.200.3.51",
+    "mac": "80:07:1b:71:aa:80",
+    "ssid": "UT FAMILIA RIVERA",
+    "password": "Paguada15"
+  },
+  {
+    "ip": "10.200.3.92",
+    "mac": "80:07:1b:d3:0a:88",
+    "ssid": "UT FAM MUNGUIA",
+    "password": "Virginia2015M"
+  },
+  {
+    "ip": "10.200.3.108",
+    "mac": "80:07:1b:71:83:20",
+    "ssid": "UT FAMILIA NUNEZ PADILLA",
+    "password": "leonidas"
+  },
+  {
+    "ip": "10.200.3.115",
+    "mac": "e4:84:2b:1a:58:74",
+    "ssid": "UT FAM ORTEGA  AGURCIA",
+    "password": "25849137"
+  },
+  {
+    "ip": "10.200.3.109",
+    "mac": "1c:c0:e1:3f:06:60",
+    "ssid": "UT FAM MEJIA VARELA",
+    "password": "Diosesfiel"
+  },
+  {
+    "ip": "10.200.3.96",
+    "mac": "70:b6:4f:84:a3:95",
+    "ssid": "UT FAMILIA  ROMERO",
+    "password": "Ortega1981"
+  },
+  {
+    "ip": "10.200.3.133",
+    "mac": "70:b6:4f:84:b6:0d",
+    "ssid": "UT FAM PADILLA",
+    "password": "Arteaga18071969"
+  },
+  {
+    "ip": "10.200.3.143",
+    "mac": "e4:84:2b:1c:89:e3",
+    "ssid": "UT FAM FLORES",
+    "password": "valeria2016"
+  },
+  {
+    "ip": "10.200.3.211",
+    "mac": "1c:ef:03:4f:d1:fd",
+    "ssid": "UT FAMILIA MONTOYA",
+    "password": "anyifaviola"
+  },
+  {
+    "ip": "10.200.3.137",
+    "mac": "6c:68:a4:7f:e9:69",
+    "ssid": "UT FAM HERNANDEZ FUENTES",
+    "password": "198620052010"
+  },
+  {
+    "ip": "10.200.4.32",
+    "mac": "4c:d7:c8:6c:6f:98 / 4c:d7:c8:6c:6f:9c",
+    "ssid": "UT FAMILIA MARTINEZ / UT FAMILIA MARTINEZ-5G",
+    "password": "Almendarez12"
+  },
+  {
+    "ip": "10.200.3.232",
+    "mac": "1c:ef:03:e2:0a:5b",
+    "ssid": "UT FAMILIA FIGUEROA",
+    "password": "Ninoska0705D"
+  },
+  {
+    "ip": "10.200.4.29",
+    "mac": "70:b6:4f:9c:43:05",
+    "ssid": "UT FAM LOPEZ",
+    "password": "1807195701211"
+  },
+  {
+    "ip": "10.200.4.18",
+    "mac": "e4:84:2b:1a:b0:1f",
+    "ssid": "UT FAM RAMIREZ",
+    "password": "Selvin2020"
+  },
+  {
+    "ip": "10.200.4.38",
+    "mac": "1c:ef:03:e1:ff:8b",
+    "ssid": "UT FAMILIA CRUZ",
+    "password": "22222222"
+  },
+  {
+    "ip": "10.200.4.51",
+    "mac": "e8:9e:0c:05:2c:a4",
+    "ssid": "ULTRANET",
+    "password": "ut311021"
+  },
+  {
+    "ip": "10.200.4.17",
+    "mac": "1c:ef:03:50:30:ed",
+    "ssid": "UT FAM MARTINEZ",
+    "password": "Marvin18"
+  },
+  {
+    "ip": "10.200.4.86",
+    "mac": "80:07:1b:71:ac:48",
+    "ssid": "UT FAMILIA LEMUS",
+    "password": "Nubia76543210"
+  },
+  {
+    "ip": "10.200.4.97",
+    "mac": "94:02:6b:00:6d:98",
+    "ssid": "UT FAM LOPEZ",
+    "password": "Jerusalen45102420"
+  },
+  {
+    "ip": "10.200.4.124",
+    "mac": "80:07:1b:d3:5e:c8",
+    "ssid": "UT FAM VILLALOBOS DIAZ",
+    "password": "julieth19942007"
+  },
+  {
+    "ip": "10.200.4.123",
+    "mac": "e4:84:2b:1b:15:df",
+    "ssid": "UT FAM PADILLA",
+    "password": "s01122018"
+  },
+  {
+    "ip": "10.200.4.125",
+    "mac": "6c:68:a4:80:2a:79",
+    "ssid": "UT FAMILIA CONTRERAS 5G",
+    "password": "Lore1971"
+  },
+  {
+    "ip": "10.200.4.143",
+    "mac": "48:35:2e:25:aa:4e",
+    "ssid": "UT FAM DIAZ CRUZ",
+    "password": "Jackelin1997"
+  },
+  {
+    "ip": "10.200.4.158",
+    "mac": "70:b6:4f:40:f7:b5",
+    "ssid": "UT KIARA GARCIA",
+    "password": "yessica1997"
+  },
+  {
+    "ip": "10.200.4.179",
+    "mac": "70:b6:4f:97:d1:9d",
+    "ssid": "IGLESIA DEL PUEBLO",
+    "password": "504GersonFlores"
+  },
+  {
+    "ip": "10.200.4.233",
+    "mac": "1c:ef:03:e1:d2:2b",
+    "ssid": "UT FAMILIA ORTEZ-5G",
+    "password": "Tropigas2025"
+  },
+  {
+    "ip": "10.200.4.231",
+    "mac": "1c:ef:03:e1:a4:1b",
+    "ssid": "UT FAMILIA ORELLANA NATAREN 5G",
+    "password": "Orellana2004"
+  },
+  {
+    "ip": "10.200.6.42",
+    "mac": "00:6d:61:da:d2:80",
+    "ssid": "UT FAM SALINAS PUERTO",
+    "password": "SalinasLopez23"
+  },
+  {
+    "ip": "10.200.6.70",
+    "mac": "e8:9e:0c:05:18:94",
+    "ssid": "FAMILIA MUNGUIA",
+    "password": "Marina1969"
+  },
+  {
+    "ip": "10.200.6.125",
+    "mac": "80:07:1b:d3:12:68",
+    "ssid": "UT FAM MARTINEZ MEJIA",
+    "password": "Martinez5"
+  },
+  {
+    "ip": "10.200.6.46",
+    "mac": "6c:68:a4:25:fc:b3",
+    "ssid": "UT FAM PUERTO 5G",
+    "password": "2022202314"
+  },
+  {
+    "ip": "10.200.7.15",
+    "mac": "70:b6:4f:84:9d:e5",
+    "ssid": "UT FAM VILLAFRANCA",
+    "password": "Jose2020"
+  },
+  {
+    "ip": "10.200.7.88",
+    "mac": "1c:ef:03:51:94:35",
+    "ssid": "UT FAMILIA MELENDEZ",
+    "password": "Mili2024Mia"
+  },
+  {
+    "ip": "10.200.8.17",
+    "mac": "80:07:1b:d2:c8:88",
+    "ssid": "UT FAMILIA MEJIA",
+    "password": "Maitte2021"
+  },
+  {
+    "ip": "10.200.8.20",
+    "mac": "80:07:1b:d3:01:88",
+    "ssid": "UT FAM TROCHEZ MEJIA",
+    "password": "gael1981"
+  },
+  {
+    "ip": "10.200.7.98",
+    "mac": "70:b6:4f:84:d0:45",
+    "ssid": "UT FAM CRUZ",
+    "password": "DIOSESAMOR"
+  },
+  {
+    "ip": "10.200.9.42",
+    "mac": "1c:c0:e1:3f:3f:34",
+    "ssid": "UT FAM CASTRO",
+    "password": "Dios2025"
+  },
+  {
+    "ip": "10.200.8.33",
+    "mac": "1c:ef:03:50:85:2d",
+    "ssid": "UT RANCHO EL PASO",
+    "password": "Prolacsa3237"
+  },
+  {
+    "ip": "10.200.9.62",
+    "mac": "70:b6:4f:97:8d:1d",
+    "ssid": "UT FAMILIA SANDOVAL",
+    "password": "123456789"
+  },
+  {
+    "ip": "10.200.10.64",
+    "mac": "1c:c0:e1:3d:a4:70",
+    "ssid": "UT FAM ANTUNEZ",
+    "password": "Antunez2716"
+  },
+  {
+    "ip": "10.200.10.76",
+    "mac": "80:07:1b:2a:95:c8",
+    "ssid": "ULTRANET FAM RUIZ",
+    "password": "Father1967"
+  },
+  {
+    "ip": "10.200.10.79",
+    "mac": "94:02:6b:00:84:40",
+    "ssid": "UT.FAM.VASQUEZ",
+    "password": "Maria1932"
+  },
+  {
+    "ip": "10.200.10.58",
+    "mac": "6c:68:a4:26:ae:e3",
+    "ssid": "UT FAMILIA SANCHEZ",
+    "password": "kennercito26"
+  },
+  {
+    "ip": "10.200.10.246",
+    "mac": "1c:ef:03:e1:52:7b",
+    "ssid": "",
+    "password": "Kianoo86"
+  },
+  {
+    "ip": "10.200.11.70",
+    "mac": "e4:84:2b:1e:2f:47",
+    "ssid": "UT FAM CERRATO",
+    "password": "Salome95"
+  },
+  {
+    "ip": "10.200.13.14",
+    "mac": "1c:c0:e1:3f:38:94",
+    "ssid": "UT FAMILIA BANEGAS",
+    "password": "Banegas2020"
+  },
+  {
+    "ip": "10.200.13.57",
+    "mac": "e4:84:2b:1c:c5:7b",
+    "ssid": "UT FAMILIA MENDOZA",
+    "password": "K7M2003J"
+  },
+  {
+    "ip": "10.200.13.20",
+    "mac": "6c:68:a4:25:e1:73",
+    "ssid": "",
+    "password": "MARIO0990"
+  },
+  {
+    "ip": "10.200.14.5",
+    "mac": "c8:63:14:a2:b9:a3",
+    "ssid": "SALA DE BELLEZA PAO",
+    "password": "antonio07"
+  },
+  {
+    "ip": "10.200.14.201",
+    "mac": "4c:d7:c8:86:b8:2a / 4c:d7:c8:86:b8:2e",
+    "ssid": "UT FAM ESPINOZA / UT ESPINOZA 5G",
+    "password": "MARTINESPINOZA"
+  },
+  {
+    "ip": "10.200.14.58",
+    "mac": "80:07:1b:d3:0a:98",
+    "ssid": "UT FAM MARTINEZ",
+    "password": "Cami.molina.1890"
+  },
+  {
+    "ip": "10.200.14.25",
+    "mac": "70:b6:4f:40:14:45",
+    "ssid": "UT FAM DUARTE RUIZ",
+    "password": "022301998"
+  },
+  {
+    "ip": "10.200.14.26",
+    "mac": "70:b6:4f:40:e3:a5",
+    "ssid": "TROCHEZ",
+    "password": "1978Adri"
+  },
+  {
+    "ip": "10.200.14.108",
+    "mac": "1c:c0:e1:3d:aa:f8",
+    "ssid": "UT FAM TINOCO",
+    "password": "Leticia1802"
+  },
+  {
+    "ip": "10.200.14.159",
+    "mac": "c8:63:14:a2:a9:7b",
+    "ssid": "UT FAM MARTINEZ CRUZ",
+    "password": "Luisaantonia13"
+  },
+  {
+    "ip": "10.200.14.249",
+    "mac": "00:6d:61:da:59:10",
+    "ssid": "UT FAM GUZMAN",
+    "password": "pamela78"
+  },
+  {
+    "ip": "10.200.14.28",
+    "mac": "70:b6:4f:84:95:fd",
+    "ssid": "UT FAM RIVERA",
+    "password": "19911013Puerto"
+  },
+  {
+    "ip": "10.200.15.18",
+    "mac": "e4:84:2b:1a:57:fc",
+    "ssid": "UT FAM RAMOS",
+    "password": "Gomez1998"
+  },
+  {
+    "ip": "10.200.15.30",
+    "mac": "70:b6:4f:9c:30:85",
+    "ssid": "UT FAMILIA ANTUNEZ",
+    "password": "19lilian73"
+  },
+  {
+    "ip": "10.200.15.88",
+    "mac": "80:07:1b:71:86:b8",
+    "ssid": "UT FAM GONZALES",
+    "password": "02081967"
+  },
+  {
+    "ip": "10.200.15.106",
+    "mac": "1c:c0:e1:3d:b4:98",
+    "ssid": "UT FAM VALLECILLO",
+    "password": "MILAGROSODIOS"
+  },
+  {
+    "ip": "10.200.15.212",
+    "mac": "e4:84:2b:1c:b0:6b",
+    "ssid": "UT FAM MELENDEZ CRUZ",
+    "password": "melendez2022eitan"
+  },
+  {
+    "ip": "10.200.16.2",
+    "mac": "e4:84:2b:1c:8e:ab",
+    "ssid": "UT FAM PUERTO LOZANO",
+    "password": "fampuerto2022"
+  },
+  {
+    "ip": "10.200.16.3",
+    "mac": "e4:84:2b:1c:59:73",
+    "ssid": "UT FAM SOTO",
+    "password": "DIOSESFIEL"
+  },
+  {
+    "ip": "10.200.16.10",
+    "mac": "1c:ef:03:50:09:25",
+    "ssid": "UT FAM NU\u00c3\u0091EZ",
+    "password": "18071979"
+  },
+  {
+    "ip": "10.200.16.12",
+    "mac": "70:b6:4f:9b:f3:85",
+    "ssid": "UT FAM ZELAYA MARTINEZ",
+    "password": "Michell90"
+  },
+  {
+    "ip": "10.200.16.17",
+    "mac": "70:b6:4f:9b:f1:ad",
+    "ssid": "UT FAM AGUILAR",
+    "password": "0606196000212"
+  },
+  {
+    "ip": "10.200.16.14",
+    "mac": "70:b6:4f:9b:e9:15",
+    "ssid": "VILLALOBOS",
+    "password": "Hernanreyes1520"
+  },
+  {
+    "ip": "10.200.16.18",
+    "mac": "70:b6:4f:9b:f2:fd",
+    "ssid": "UT FAM FUENTES",
+    "password": "Nanatsu1815kirito"
+  },
+  {
+    "ip": "10.200.16.19",
+    "mac": "70:b6:4f:9b:e3:9d",
+    "ssid": "UT FAM PACHECO",
+    "password": "0101199401121"
+  },
+  {
+    "ip": "10.200.16.48",
+    "mac": "1c:c0:e1:3f:3d:9c",
+    "ssid": "UT FAM LOPEZ",
+    "password": "Emeritaagurcia00367"
+  },
+  {
+    "ip": "10.200.16.72",
+    "mac": "4c:d7:c8:86:c1:4a / 4c:d7:c8:86:c1:4e",
+    "ssid": "UT FAM MARTINEZ / UT FAM MARTINEZ",
+    "password": "11agosto1954"
+  },
+  {
+    "ip": "10.200.16.49",
+    "mac": "70:b6:4f:98:1b:c5",
+    "ssid": "UT FAM DURAN",
+    "password": "Zelaya55"
+  },
+  {
+    "ip": "10.200.16.45",
+    "mac": "70:b6:4f:98:39:75",
+    "ssid": "UT FAM SEVILLA",
+    "password": "JCVS1992"
+  },
+  {
+    "ip": "10.200.16.46",
+    "mac": "1c:ef:03:89:a5:51",
+    "ssid": "UT CASTELLANOS",
+    "password": "AOD194100"
+  },
+  {
+    "ip": "10.200.16.56",
+    "mac": "e4:84:2b:1a:4c:8c",
+    "ssid": "UT FAM MARTINEZ ZELAYA",
+    "password": "Alejandro1982"
+  },
+  {
+    "ip": "10.200.16.90",
+    "mac": "94:02:6b:00:83:58",
+    "ssid": "UT FAM RUIZ",
+    "password": "18071960"
+  },
+  {
+    "ip": "10.200.16.52",
+    "mac": "e4:84:2b:1c:d3:2b",
+    "ssid": "UT FAM HERNANDEZ DUARTE",
+    "password": "NINA1934DMH"
+  },
+  {
+    "ip": "10.200.16.53",
+    "mac": "1c:ef:03:50:f6:35",
+    "ssid": "UT BARBER ELVIN",
+    "password": "Diosesfiel"
+  },
+  {
+    "ip": "10.200.16.71",
+    "mac": "1c:ef:03:89:94:a1",
+    "ssid": "",
+    "password": "96758131"
+  },
+  {
+    "ip": "10.200.16.100",
+    "mac": "e4:84:2b:1c:c7:33",
+    "ssid": "UT FAM LOPEZ",
+    "password": "LeitoMartinez"
+  },
+  {
+    "ip": "10.200.17.2",
+    "mac": "1c:ef:03:89:7c:31",
+    "ssid": "",
+    "password": "12171973"
+  },
+  {
+    "ip": "10.200.17.8",
+    "mac": "e4:84:2b:1c:c3:63",
+    "ssid": "UT FAM VEGA MARTINEZ",
+    "password": "Khaledian"
+  },
+  {
+    "ip": "10.200.17.16",
+    "mac": "4c:d7:c8:86:f2:8a / 4c:d7:c8:86:f2:8e",
+    "ssid": "UT FAM DIAZ / UT FAM DIAZ",
+    "password": "Enrique2023"
+  },
+  {
+    "ip": "10.200.17.7",
+    "mac": "1c:ef:03:51:02:7d",
+    "ssid": "UT FAM ROMERO",
+    "password": "Romero2021"
+  },
+  {
+    "ip": "10.200.17.9",
+    "mac": "e4:84:2b:1c:8f:0b",
+    "ssid": "UT FAM MARTINEZ VEGA",
+    "password": "Khaledian"
+  },
+  {
+    "ip": "10.200.17.12",
+    "mac": "1c:ef:03:89:34:c1",
+    "ssid": "UT FAMILIA OCAMPO DIAZ",
+    "password": "3B2A566C9376"
+  },
+  {
+    "ip": "10.200.17.15",
+    "mac": "e4:84:2b:1c:9a:bb",
+    "ssid": "UT FAM ANDINO NUNEZ",
+    "password": "Yhelary@And"
+  },
+  {
+    "ip": "10.200.17.11",
+    "mac": "6c:68:a4:7f:ed:29",
+    "ssid": "",
+    "password": "Kalessi1"
+  },
+  {
+    "ip": "10.200.17.19",
+    "mac": "1c:c0:e1:3d:c9:58",
+    "ssid": "UT FAMILIA PAGUADA",
+    "password": "18071985"
+  },
+  {
+    "ip": "10.200.17.22",
+    "mac": "4c:d7:c8:87:0d:fa / 4c:d7:c8:87:0d:fe",
+    "ssid": "UT FAMILIA CALIX OSORIO / UT FAMILIA CALIX OSORIO",
+    "password": "0208198300146"
+  },
+  {
+    "ip": "10.200.17.24",
+    "mac": "6c:68:a4:e4:d4:18 / 6c:68:a4:e4:d4:1c",
+    "ssid": "UT FAMILIA PERALTA / UT FAMILIA PERALTA",
+    "password": "Laika2025"
+  },
+  {
+    "ip": "10.200.17.20",
+    "mac": "1c:ef:03:51:02:95",
+    "ssid": "UT FAMILIA CARBAJAL",
+    "password": "JairoLidiaEspinoza2021"
+  },
+  {
+    "ip": "10.200.17.21",
+    "mac": "e4:84:2b:1c:c2:2b",
+    "ssid": "UT FAMILIA MARTINEZ",
+    "password": "MMAG181115"
+  },
+  {
+    "ip": "10.200.17.34",
+    "mac": "4c:d7:c8:87:24:da / 4c:d7:c8:87:24:de",
+    "ssid": "UT FAM LOBO / UT FAM LOBO",
+    "password": "TEAMOJESUS"
+  },
+  {
+    "ip": "10.200.17.17",
+    "mac": "1c:ef:03:89:60:d1",
+    "ssid": "UT BARBERIA TURO",
+    "password": "pedimelabien"
+  },
+  {
+    "ip": "10.200.17.27",
+    "mac": "c8:63:14:a2:ad:63",
+    "ssid": "UT FAM MARTINEZ SOLIS",
+    "password": "18071958"
+  },
+  {
+    "ip": "10.200.17.23",
+    "mac": "e4:84:2b:1c:c2:83",
+    "ssid": "UT FAM RAMOS RIVERA",
+    "password": "SOFHIA18"
+  },
+  {
+    "ip": "10.200.17.31",
+    "mac": "1c:ef:03:51:38:85",
+    "ssid": "UT PADILLA ROSALES",
+    "password": "PadillaRosales"
+  },
+  {
+    "ip": "10.200.17.30",
+    "mac": "6c:68:a4:25:cf:43",
+    "ssid": "UT FAM NASSER",
+    "password": "Nasser1503"
+  },
+  {
+    "ip": "10.200.17.32",
+    "mac": "4c:d7:c8:3f:2d:2d",
+    "ssid": "UT FAM CALIX",
+    "password": "Alejandrina65"
+  },
+  {
+    "ip": "10.200.17.35",
+    "mac": "1c:ef:03:51:50:3d",
+    "ssid": "UT FAM MARTINEZ RAMOS",
+    "password": "1582913100"
+  },
+  {
+    "ip": "10.200.17.39",
+    "mac": "1c:ef:03:51:49:8d",
+    "ssid": "UT FAM LOPEZ REYES",
+    "password": "Reyes2023Claudia"
+  },
+  {
+    "ip": "10.200.17.37",
+    "mac": "70:b6:4f:40:a6:75",
+    "ssid": "UT FAM PINTO",
+    "password": "Mishijos"
+  },
+  {
+    "ip": "10.200.17.44",
+    "mac": "1c:ef:03:51:11:45",
+    "ssid": "UT FAM RAMOS",
+    "password": "180719580115424"
+  },
+  {
+    "ip": "10.200.17.42",
+    "mac": "1c:ef:03:51:18:5d",
+    "ssid": "UT FAM RAMOS",
+    "password": "Zimba2023"
+  },
+  {
+    "ip": "10.200.17.45",
+    "mac": "1c:ef:03:51:76:cd",
+    "ssid": "UT FAMILIA CHIRINOS",
+    "password": "chirinos2007"
+  },
+  {
+    "ip": "10.200.17.46",
+    "mac": "1c:ef:03:51:4a:9d",
+    "ssid": "UT REG",
+    "password": "19731971"
+  },
+  {
+    "ip": "10.200.17.56",
+    "mac": "1c:ef:03:e2:28:4b",
+    "ssid": "",
+    "password": "Bautista1984"
+  },
+  {
+    "ip": "10.200.17.55",
+    "mac": "6c:68:a4:26:95:a3",
+    "ssid": "",
+    "password": "Gamez1403"
+  },
+  {
+    "ip": "10.200.17.92",
+    "mac": "80:07:1b:71:4e:78",
+    "ssid": "UT FAM CASTILLO PADILLA",
+    "password": "Diosmeama123"
+  },
+  {
+    "ip": "10.200.17.58",
+    "mac": "6c:68:a4:26:0e:23",
+    "ssid": "",
+    "password": "Hisense2524"
+  },
+  {
+    "ip": "10.200.17.62",
+    "mac": "1c:ef:03:89:8b:b1",
+    "ssid": "UT FAM LAZO",
+    "password": "emily2528"
+  },
+  {
+    "ip": "10.200.17.97",
+    "mac": "70:b6:4f:40:56:d5",
+    "ssid": "UT- BATERIA RAYO",
+    "password": "MeReNa2014"
+  },
+  {
+    "ip": "10.200.17.115",
+    "mac": "1c:ef:03:50:30:35",
+    "ssid": "UT FAM RODR\u00c3\u008dGUEZ RUIZ",
+    "password": "Iris201582"
+  },
+  {
+    "ip": "10.200.17.194",
+    "mac": "e4:84:2b:1d:6d:f7",
+    "ssid": "UT FAM DUARTE MONTOYA",
+    "password": "Erikajassiel39"
+  },
+  {
+    "ip": "10.200.17.231",
+    "mac": "4c:d7:c8:c6:68:80 / 4c:d7:c8:c6:68:85",
+    "ssid": "MARCO POLO / MARCO POLO",
+    "password": "constantino"
+  },
+  {
+    "ip": "10.200.17.227",
+    "mac": "80:07:1b:71:79:38",
+    "ssid": "UT FAM BERTRAN MACHIGUA",
+    "password": "JavitoDP05"
+  },
+  {
+    "ip": "10.200.17.224",
+    "mac": "80:07:1b:71:8c:f0",
+    "ssid": "UT FAM ESCAMILLA ZELAYA",
+    "password": "Nil19893232"
+  },
+  {
+    "ip": "10.200.17.200",
+    "mac": "70:b6:4f:40:bd:cd",
+    "ssid": "UT FAMILIA ZELAYA",
+    "password": "redbull21"
+  },
+  {
+    "ip": "10.200.17.247",
+    "mac": "6c:68:a4:e4:de:78 / 6c:68:a4:e4:de:7c",
+    "ssid": "UT FAMILIA HERN\u00c3\u0081NDEZ / UT FAMILIA HERN\u00c3\u0081NDEZ",
+    "password": "Sofia2024"
+  },
+  {
+    "ip": "10.200.18.5",
+    "mac": "1c:ef:03:51:00:c5",
+    "ssid": "UT FAM ROBELO GALEANO",
+    "password": "dilanyasiel"
+  },
+  {
+    "ip": "10.200.18.8",
+    "mac": "80:07:1b:29:b9:f8",
+    "ssid": "UT FAM MENDOZA CENTENO",
+    "password": "Diosmeama#7"
+  },
+  {
+    "ip": "10.200.18.10",
+    "mac": "e4:84:2b:1d:c5:a7",
+    "ssid": "UT FAM REYES",
+    "password": "@ultra1969"
+  },
+  {
+    "ip": "10.200.18.9",
+    "mac": "e4:84:2b:1d:b9:cf",
+    "ssid": "UT FAM MARTINEZ",
+    "password": "2598151014"
+  },
+  {
+    "ip": "10.200.18.16",
+    "mac": "80:07:1b:71:72:70",
+    "ssid": "UT FAMILIA SAUCEDA",
+    "password": "Zuricata59"
+  },
+  {
+    "ip": "10.200.18.11",
+    "mac": "e4:84:2b:1d:b3:4f",
+    "ssid": "UT FAMILIA SALGADO",
+    "password": "Nazareth"
+  },
+  {
+    "ip": "10.200.18.26",
+    "mac": "6c:68:a4:e4:c4:38 / 6c:68:a4:e4:c4:3c",
+    "ssid": "UT FAM TORRES / UT FAM TORRES",
+    "password": "20180307"
+  },
+  {
+    "ip": "10.200.18.15",
+    "mac": "1c:ef:03:51:84:f5",
+    "ssid": "UT FAM HERNANDEZ MARTINEZ",
+    "password": "Eliaselena2016"
+  },
+  {
+    "ip": "10.200.18.33",
+    "mac": "b4:64:15:19:f1:f4 / b4:64:15:19:f1:f9",
+    "ssid": "UT FAM MARTINEZ / UT FAM MARTINEZ",
+    "password": "Jose2020"
+  },
+  {
+    "ip": "10.200.18.22",
+    "mac": "6c:68:a4:26:c8:03",
+    "ssid": "",
+    "password": "gloria123"
+  },
+  {
+    "ip": "10.200.18.30",
+    "mac": "e8:9e:0c:05:32:84",
+    "ssid": "UT FAM FERNANDEZ",
+    "password": "94071467"
+  },
+  {
+    "ip": "10.200.18.24",
+    "mac": "70:b6:4f:40:ce:9d",
+    "ssid": "UT FAMILIA PONCE",
+    "password": "Famponce25"
+  },
+  {
+    "ip": "10.200.18.46",
+    "mac": "4c:d7:c8:c6:66:b0 / 4c:d7:c8:c6:66:b5",
+    "ssid": "UT FAM CASTRO / UT FAM CASTRO",
+    "password": "Katy1227"
+  },
+  {
+    "ip": "10.200.18.39",
+    "mac": "1c:ef:03:88:ef:51",
+    "ssid": "UT FAMILIA ZELAYA",
+    "password": "AZ164208"
+  },
+  {
+    "ip": "10.200.18.51",
+    "mac": "94:02:6b:00:73:78",
+    "ssid": "UT FAM ANTUNEZ",
+    "password": "Carolina1999"
+  },
+  {
+    "ip": "10.200.18.41",
+    "mac": "1c:ef:03:89:1f:61",
+    "ssid": "FTTH-5G",
+    "password": "Holanda757"
+  },
+  {
+    "ip": "10.200.18.34",
+    "mac": "e4:84:2b:1e:01:af",
+    "ssid": "UT FAM SALGADO",
+    "password": "Michell19"
+  },
+  {
+    "ip": "10.200.18.43",
+    "mac": "1c:ef:03:c6:96:05",
+    "ssid": "",
+    "password": "Inestroza2000"
+  },
+  {
+    "ip": "10.200.18.50",
+    "mac": "70:b6:4f:84:78:0d",
+    "ssid": "UT FAM VEGA PUERTO",
+    "password": "Suyapa1964"
+  },
+  {
+    "ip": "10.200.18.48",
+    "mac": "6c:68:a4:26:77:e3",
+    "ssid": "",
+    "password": "Garena2024"
+  },
+  {
+    "ip": "10.200.18.49",
+    "mac": "1c:ef:03:e1:ee:1b",
+    "ssid": "YOVANY",
+    "password": "Lacontrasena"
+  },
+  {
+    "ip": "10.200.18.52",
+    "mac": "1c:ef:03:e2:2e:cb",
+    "ssid": "MEZA #2",
+    "password": "Kevinjoelponce23"
+  },
+  {
+    "ip": "10.200.18.53",
+    "mac": "1c:ef:03:e1:c9:fb",
+    "ssid": "UT FAMILIA MARTINEZ",
+    "password": "Neimar1979"
+  },
+  {
+    "ip": "10.200.18.54",
+    "mac": "1c:ef:03:e2:46:2b",
+    "ssid": "HERNANDEZ LARA #2",
+    "password": "Hernandez1807"
+  },
+  {
+    "ip": "10.200.18.59",
+    "mac": "e8:9e:0c:05:1f:ac",
+    "ssid": "UT FAMILIA CANO ESCOBAR",
+    "password": "Liammaximiliano"
+  },
+  {
+    "ip": "10.200.18.56",
+    "mac": "1c:ef:03:e1:7e:7b",
+    "ssid": "UT FAM MARTINEZ 5G",
+    "password": "DOLORES1730"
+  },
+  {
+    "ip": "10.200.18.58",
+    "mac": "1c:ef:03:e1:a8:4b",
+    "ssid": "UT FAMILIA MURILLO",
+    "password": "1999334427"
+  },
+  {
+    "ip": "10.200.18.97",
+    "mac": "c4:70:0b:1f:c0:f8",
+    "ssid": "UT FAMILIA PONCE LANZA",
+    "password": "poncesindy2014"
+  },
+  {
+    "ip": "10.200.18.57",
+    "mac": "6c:68:a4:26:d0:23",
+    "ssid": "",
+    "password": "Milagro123"
+  },
+  {
+    "ip": "10.200.18.63",
+    "mac": "6c:68:a4:26:cf:93",
+    "ssid": "",
+    "password": "MezaMenjivar67"
+  },
+  {
+    "ip": "10.200.18.64",
+    "mac": "6c:68:a4:25:b4:63",
+    "ssid": "UT FAMILIA PEREZ-5G",
+    "password": "Anav1986"
+  },
+  {
+    "ip": "10.200.18.94",
+    "mac": "e4:84:2b:1e:00:87",
+    "ssid": "UT FAMILIA ARMIJO",
+    "password": "ISIS1994"
+  },
+  {
+    "ip": "10.200.18.78",
+    "mac": "6c:68:a4:80:23:a9",
+    "ssid": "ULTRANET",
+    "password": "12345678"
+  },
+  {
+    "ip": "10.200.18.102",
+    "mac": "80:07:1b:46:36:e0",
+    "ssid": "UT FAM VELIZ",
+    "password": "Hernandez05012024"
+  },
+  {
+    "ip": "10.200.18.101",
+    "mac": "1c:ef:03:51:80:65",
+    "ssid": "UT FAM MARTINEZ",
+    "password": "Yovany2023"
+  },
+  {
+    "ip": "10.200.18.114",
+    "mac": "4c:d7:c8:c6:79:a0 / 4c:d7:c8:c6:79:a5",
+    "ssid": "VEGA9897 2.4G / VEGA9897 5G",
+    "password": "Vega9478"
+  },
+  {
+    "ip": "10.200.18.103",
+    "mac": "6c:68:a4:26:54:13",
+    "ssid": "",
+    "password": "PalaciosCruz2007"
+  },
+  {
+    "ip": "10.200.18.104",
+    "mac": "1c:ef:03:51:77:15",
+    "ssid": "UT FAM ROBELO MONTOYA",
+    "password": "180719822024"
+  },
+  {
+    "ip": "10.200.18.105",
+    "mac": "e4:84:2b:1c:e1:33",
+    "ssid": "UT FAM VALDEZ CHIRIMOS",
+    "password": "valdez9559"
+  },
+  {
+    "ip": "10.200.18.110",
+    "mac": "70:b6:4f:40:85:bd",
+    "ssid": "UT EILEEN",
+    "password": "Eileen02"
+  },
+  {
+    "ip": "10.200.18.112",
+    "mac": "94:02:6b:00:8b:68",
+    "ssid": "UT JARED GUTIERREZ",
+    "password": "GutierrezMJ110515"
+  },
+  {
+    "ip": "10.200.18.115",
+    "mac": "e4:84:2b:1c:aa:73",
+    "ssid": "UT FAM VIQUEIRA",
+    "password": "Danaviqueira"
+  },
+  {
+    "ip": "10.200.18.118",
+    "mac": "e4:84:2b:1a:60:44",
+    "ssid": "UT FAM GOMEZ MARTINEZ",
+    "password": "margo30849"
+  },
+  {
+    "ip": "10.200.18.111",
+    "mac": "70:b6:4f:9b:e6:cd",
+    "ssid": "UT FAM VALDEZ MART\u00c3\u008dNEZ",
+    "password": "Samir1807"
+  },
+  {
+    "ip": "10.200.18.128",
+    "mac": "4c:d7:c8:87:1d:ba / 4c:d7:c8:87:1d:be",
+    "ssid": "UT FAM CARCAMO  / UT FAM CARCAMO",
+    "password": "Lucila27"
+  },
+  {
+    "ip": "10.200.18.119",
+    "mac": "6c:68:a4:9c:fa:38",
+    "ssid": "",
+    "password": "2015ruben.1994"
+  },
+  {
+    "ip": "10.200.18.124",
+    "mac": "80:07:1b:d3:13:78",
+    "ssid": "UT FAM ANDINO",
+    "password": "2009Antonio2508"
+  },
+  {
+    "ip": "10.200.18.123",
+    "mac": "1c:ef:03:51:6a:f5",
+    "ssid": "UT FAM VALLECIO",
+    "password": "Gissela4"
+  },
+  {
+    "ip": "10.200.18.132",
+    "mac": "1c:c0:e1:3d:c1:60",
+    "ssid": "UT FAMILIA GUIFARRO",
+    "password": "A3NYLL2025"
+  },
+  {
+    "ip": "10.200.18.134",
+    "mac": "c8:63:14:a2:a9:9b",
+    "ssid": "UT FAM SANDOVAL MENOCAL",
+    "password": "Nahomy04"
+  },
+  {
+    "ip": "10.200.18.135",
+    "mac": "e4:84:2b:1a:35:14",
+    "ssid": "UT FAM CARCAMO",
+    "password": "Romero1976"
+  },
+  {
+    "ip": "10.200.18.133",
+    "mac": "70:b6:4f:98:31:85",
+    "ssid": "UT  FAMILIA ROMERO",
+    "password": "yami2025"
+  },
+  {
+    "ip": "10.200.18.129",
+    "mac": "6c:68:a4:26:40:e3",
+    "ssid": "UT SARA CANO",
+    "password": "30032807"
+  },
+  {
+    "ip": "10.200.18.142",
+    "mac": "1c:c0:e1:3f:3b:54",
+    "ssid": "UT FAM FUENTES",
+    "password": "Yolandatiti"
+  },
+  {
+    "ip": "10.200.18.136",
+    "mac": "70:b6:4f:40:3f:25",
+    "ssid": "UT FAM VEGA",
+    "password": "Josuevega"
+  },
+  {
+    "ip": "10.200.18.143",
+    "mac": "1c:c0:e1:3d:ab:50",
+    "ssid": "UT FAM MARTINEZ",
+    "password": "Juarez2727"
+  },
+  {
+    "ip": "10.200.18.137",
+    "mac": "1c:ef:03:c6:26:05",
+    "ssid": "UT FAMILIA ANDINO",
+    "password": "Jose1993"
+  },
+  {
+    "ip": "10.200.18.138",
+    "mac": "e4:84:2b:1b:0a:77",
+    "ssid": "UT FAM PUERTO BANEGAS",
+    "password": "12345678"
+  },
+  {
+    "ip": "10.200.19.13",
+    "mac": "c4:70:0b:8c:25:00",
+    "ssid": "UT FAM OCHOA",
+    "password": "waleska2025"
+  },
+  {
+    "ip": "10.200.19.14",
+    "mac": "1c:c0:e1:3d:cb:58",
+    "ssid": "VALLECILLO",
+    "password": "081019971907"
+  },
+  {
+    "ip": "10.200.19.20",
+    "mac": "1c:c0:e1:3f:32:d4",
+    "ssid": "UT FAM HERNANDEZ",
+    "password": "Apache04"
+  },
+  {
+    "ip": "10.200.19.32",
+    "mac": "1c:ef:03:51:88:65",
+    "ssid": "ULTRANET RUIZ URBINA",
+    "password": "blackeyes2009"
+  },
+  {
+    "ip": "10.200.19.45",
+    "mac": "1c:c0:e1:3d:cd:e0",
+    "ssid": "UT FAM RIVERA ROSALES",
+    "password": "gemelos98"
+  },
+  {
+    "ip": "10.200.19.44",
+    "mac": "70:b6:4f:84:5f:dd",
+    "ssid": "UT FAM.SANCHEZ RUIZ",
+    "password": "deliRu1094"
+  },
+  {
+    "ip": "10.200.19.35",
+    "mac": "6c:68:a4:80:32:29",
+    "ssid": "UT MUNDO AGROPECUARIO",
+    "password": "Alcon123"
+  },
+  {
+    "ip": "10.200.19.120",
+    "mac": "94:02:6b:00:72:e0",
+    "ssid": "UT FAMILIA HERNANDEZ",
+    "password": "08261984"
+  },
+  {
+    "ip": "10.200.19.136",
+    "mac": "94:02:6b:00:80:28",
+    "ssid": "UT FAM RAMOS",
+    "password": "ArquiCecy2023"
+  },
+  {
+    "ip": "10.200.19.43",
+    "mac": "70:b6:4f:84:04:6d",
+    "ssid": "UT AGROPECUARIA POPULAR",
+    "password": "Elgar97816225"
+  },
+  {
+    "ip": "10.200.19.51",
+    "mac": "1c:ef:03:51:94:85",
+    "ssid": "UT FAM RAMIREZ",
+    "password": "Dinora70"
+  },
+  {
+    "ip": "10.200.19.156",
+    "mac": "80:07:1b:71:8e:f0",
+    "ssid": "UT FAMILIA RECARTE",
+    "password": "Ondina196726"
+  },
+  {
+    "ip": "10.200.19.150",
+    "mac": "1c:ef:03:89:60:11",
+    "ssid": "UT FAMILIA LOBO SANTOS-5G",
+    "password": "lobito73"
+  },
+  {
+    "ip": "10.200.19.144",
+    "mac": "1c:ef:03:c5:ef:35",
+    "ssid": "EL BUEN VESTIR 5G",
+    "password": "DAVID123"
+  },
+  {
+    "ip": "10.200.20.173",
+    "mac": "4c:d7:c8:c6:51:60 / 4c:d7:c8:c6:51:65",
+    "ssid": "UT FAM ZELAYA MARTINEZ / UT FAM ZELAYA MARTINEZ",
+    "password": "20202022"
+  },
+  {
+    "ip": "10.200.20.174",
+    "mac": "1c:c0:e1:3f:31:a4",
+    "ssid": "UT FAMILIA FIGUEROA",
+    "password": "0203199700164"
+  },
+  {
+    "ip": "10.200.20.110",
+    "mac": "1c:ef:03:e1:a8:bb",
+    "ssid": "UT ADITA VISAS Y MAS 5G",
+    "password": "DANIEL2015"
+  },
+  {
+    "ip": "10.200.20.188",
+    "mac": "1c:ef:03:e1:69:0b",
+    "ssid": "",
+    "password": "Alejandro08"
+  },
+  {
+    "ip": "10.200.22.154",
+    "mac": "80:07:1b:45:ff:c8",
+    "ssid": "UT FAMILIA ESTRADA",
+    "password": "18071978"
+  },
+  {
+    "ip": "10.200.23.41",
+    "mac": "e4:84:2b:09:71:18",
+    "ssid": "UT- FAMILIA DIAZ",
+    "password": "Diaz4295"
+  },
+  {
+    "ip": "10.200.23.110",
+    "mac": "00:6d:61:da:63:70",
+    "ssid": "R BARBER SHOP",
+    "password": "Emiliano15"
+  },
+  {
+    "ip": "10.200.23.113",
+    "mac": "e8:9e:0c:05:19:fc",
+    "ssid": "UT FAM MENDEZ",
+    "password": "adita98532162"
+  },
+  {
+    "ip": "10.200.23.161",
+    "mac": "94:02:6b:00:9e:40",
+    "ssid": "UT FAM MADRID",
+    "password": "meysi222"
+  },
+  {
+    "ip": "10.200.24.2",
+    "mac": "6c:68:a4:25:c7:43",
+    "ssid": "COMERCIL ELIEZER-5G",
+    "password": "LindayMilagro2024"
+  },
+  {
+    "ip": "10.200.24.8",
+    "mac": "6c:68:a4:26:86:d3",
+    "ssid": "",
+    "password": "YOLITA21"
+  },
+  {
+    "ip": "10.200.24.18",
+    "mac": "6c:68:a4:25:cf:b3",
+    "ssid": "",
+    "password": "Pavon26."
+  },
+  {
+    "ip": "10.200.24.28",
+    "mac": "1c:c0:e1:3f:27:44",
+    "ssid": "UT FAM SUAZO",
+    "password": "Emmanuel2022"
+  },
+  {
+    "ip": "10.200.24.21",
+    "mac": "6c:68:a4:26:1e:33",
+    "ssid": "",
+    "password": "Allison27"
+  },
+  {
+    "ip": "10.200.24.24",
+    "mac": "6c:68:a4:26:55:73",
+    "ssid": "",
+    "password": "Yanuario"
+  },
+  {
+    "ip": "10.200.24.29",
+    "mac": "6c:68:a4:26:53:a3",
+    "ssid": "ESPINOZA",
+    "password": "rosbelperez10"
+  },
+  {
+    "ip": "10.200.24.30",
+    "mac": "6c:68:a4:26:54:53",
+    "ssid": "FAMILIA ESPINOZA VEGA-5G",
+    "password": "Reydereyes1"
+  },
+  {
+    "ip": "10.200.24.40",
+    "mac": "1c:c0:e1:3d:c7:00",
+    "ssid": "UT FAMILIA  MENDOZA PEREIRA",
+    "password": "marciomaria18"
+  },
+  {
+    "ip": "10.200.24.58",
+    "mac": "6c:68:a4:e4:ae:78 / 6c:68:a4:e4:ae:7d",
+    "ssid": "UT FAMILIA GARAY / UT FAMILIA GARAY",
+    "password": "vany1950"
+  },
+  {
+    "ip": "10.200.24.31",
+    "mac": "6c:68:a4:25:cd:e3",
+    "ssid": "UT FAM DUARTE 5G",
+    "password": "yigo1234"
+  },
+  {
+    "ip": "10.200.24.33",
+    "mac": "6c:68:a4:26:1f:03",
+    "ssid": "UT FAM OCAMPO MENDOZA 5G-",
+    "password": "Carlitos2023"
+  },
+  {
+    "ip": "10.200.24.34",
+    "mac": "6c:68:a4:25:b3:b3",
+    "ssid": "UT FAM LAINEZ",
+    "password": "95745149"
+  },
+  {
+    "ip": "10.200.24.39",
+    "mac": "6c:68:a4:26:1b:53",
+    "ssid": "",
+    "password": "Dary2488"
+  },
+  {
+    "ip": "10.200.24.37",
+    "mac": "6c:68:a4:25:bc:33",
+    "ssid": "",
+    "password": "Monchola"
+  },
+  {
+    "ip": "10.200.24.41",
+    "mac": "6c:68:a4:80:3f:99",
+    "ssid": "",
+    "password": "Joshua302008"
+  },
+  {
+    "ip": "10.200.24.105",
+    "mac": "4c:d7:c8:c6:ae:10 / 4c:d7:c8:c6:ae:15",
+    "ssid": "UT FAM MEZA SALGADO / UT FAM MEZA SALGADO",
+    "password": "AmorIncondicional1912"
+  },
+  {
+    "ip": "10.200.24.104",
+    "mac": "4c:d7:c8:c6:a7:00 / 4c:d7:c8:c6:a7:05",
+    "ssid": "ULTRANET FAM SARAVIA / ULTRANET FAM SARAVIA",
+    "password": "merida1988"
+  },
+  {
+    "ip": "10.200.24.128",
+    "mac": "4c:d7:c8:6c:87:f8 / 4c:d7:c8:6c:87:fc",
+    "ssid": "UT FAM MARTINEZ BETANCOURT / UT FAM MARTINEZ BETANCOURT",
+    "password": "JesiaHjeny"
+  },
+  {
+    "ip": "10.200.24.133",
+    "mac": "4c:d7:c8:86:ba:ba / 4c:d7:c8:86:ba:be",
+    "ssid": "UT FAMILIA  BARAHONA / UT FAMILIA  BARAHONA",
+    "password": "Alexandra2019"
+  },
+  {
+    "ip": "10.200.24.94",
+    "mac": "1c:c0:e1:3d:c2:58",
+    "ssid": "UT ALMENDARES",
+    "password": "12345678900"
+  },
+  {
+    "ip": "10.200.24.95",
+    "mac": "6c:68:a4:26:28:33",
+    "ssid": "CUCOS BAR",
+    "password": "eduardo10"
+  },
+  {
+    "ip": "10.200.24.69",
+    "mac": "6c:68:a4:26:e7:a3",
+    "ssid": "",
+    "password": "Andrea13"
+  },
+  {
+    "ip": "10.200.24.125",
+    "mac": "6c:68:a4:26:d2:f3",
+    "ssid": "",
+    "password": "Eliane2000"
+  },
+  {
+    "ip": "10.200.24.157",
+    "mac": "6c:68:a4:26:89:73",
+    "ssid": "UT FAMILIA MURILLO",
+    "password": "97487323"
+  },
+  {
+    "ip": "10.200.24.150",
+    "mac": "6c:68:a4:26:ad:43",
+    "ssid": "",
+    "password": "20001973"
+  },
+  {
+    "ip": "10.200.24.158",
+    "mac": "6c:68:a4:25:e2:f3",
+    "ssid": "UT FAMILIA URBINA MEJIA",
+    "password": "Colibri22"
+  },
+  {
+    "ip": "10.200.24.159",
+    "mac": "6c:68:a4:26:f2:63",
+    "ssid": "UT FAMILIA ORTIZ",
+    "password": "Dalila1991"
+  },
+  {
+    "ip": "10.200.24.161",
+    "mac": "6c:68:a4:26:28:13",
+    "ssid": "FTTH-5G",
+    "password": "187001488"
+  },
+  {
+    "ip": "10.200.24.169",
+    "mac": "4c:d7:c8:6c:62:88 / 4c:d7:c8:6c:62:8c",
+    "ssid": "UT FAMILIA ESPINOZA / UT FAMILIA ESPINOZA",
+    "password": "Marlon1995"
+  },
+  {
+    "ip": "10.200.24.168",
+    "mac": "1c:c0:e1:3f:1a:2c",
+    "ssid": "UT FAMILIA CATALAN MONTUFAR",
+    "password": "1990vallemaria"
+  },
+  {
+    "ip": "10.200.24.165",
+    "mac": "70:b6:4f:40:c7:75",
+    "ssid": "UT FAMILIA RAMOS CRUZ",
+    "password": "13DEseptiembre.2023Leah504"
+  },
+  {
+    "ip": "10.200.24.181",
+    "mac": "4c:d7:c8:6c:6c:38 / 4c:d7:c8:6c:6c:3c",
+    "ssid": "ULTRANET FAM MELENDEZ SOSA / ULTRANET FAM MELENDEZ SOSA",
+    "password": "Melendez1961"
+  },
+  {
+    "ip": "10.200.24.183",
+    "mac": "4c:d7:c8:c6:47:40 / 4c:d7:c8:c6:47:45",
+    "ssid": "ULTRANET BESSYMAR / ULTRANET BESSYMAR",
+    "password": "Sevilla20"
+  },
+  {
+    "ip": "10.200.24.172",
+    "mac": "80:07:1b:d3:0a:20",
+    "ssid": "UT FAM ALEMAN VALLECILLO",
+    "password": "FAALVA2020"
+  },
+  {
+    "ip": "10.200.24.207",
+    "mac": "4c:d7:c8:c6:7d:c0 / 4c:d7:c8:c6:7d:c5",
+    "ssid": "UT FAM MARTINEZ / UT FAM MARTINEZ",
+    "password": "25072003"
+  },
+  {
+    "ip": "10.200.24.211",
+    "mac": "4c:d7:c8:c6:e2:20 / 4c:d7:c8:c6:e2:25",
+    "ssid": "UT FAMILIA LAZO SANDOVAL / UT FAMILIA LAZO SANDOVAL",
+    "password": "02242905"
+  },
+  {
+    "ip": "10.200.24.197",
+    "mac": "6c:68:a4:26:2e:83",
+    "ssid": "UT FAM SUAZO",
+    "password": "A1N2J7M1"
+  },
+  {
+    "ip": "10.200.24.198",
+    "mac": "6c:68:a4:26:fb:73",
+    "ssid": "",
+    "password": "retone2024"
+  },
+  {
+    "ip": "10.200.24.199",
+    "mac": "6c:68:a4:26:25:f3",
+    "ssid": "FTTH-5G",
+    "password": "Joshuarm07"
+  },
+  {
+    "ip": "10.200.24.200",
+    "mac": "6c:68:a4:26:4d:d3",
+    "ssid": "UT CM STORE",
+    "password": "Medina2024"
+  },
+  {
+    "ip": "10.200.24.212",
+    "mac": "1c:c0:e1:3f:3a:a4",
+    "ssid": "UT FAMILIA LOBO",
+    "password": "Gloria1957"
+  },
+  {
+    "ip": "10.200.24.215",
+    "mac": "80:07:1b:45:d4:88",
+    "ssid": "FAM ROSALES MERLO",
+    "password": "Nkmerlo83"
+  },
+  {
+    "ip": "10.200.24.203",
+    "mac": "6c:68:a4:25:d5:83",
+    "ssid": "",
+    "password": "24112023"
+  },
+  {
+    "ip": "10.200.24.208",
+    "mac": "6c:68:a4:26:45:13",
+    "ssid": "",
+    "password": "Polar2024"
+  },
+  {
+    "ip": "10.200.24.230",
+    "mac": "6c:68:a4:e4:8c:48 / 6c:68:a4:e4:8c:4c",
+    "ssid": "ULTRANET CAFETERIA LEDIS / ULTRANET CAFETERIA LEDIS",
+    "password": "ledis1960"
+  },
+  {
+    "ip": "10.200.24.222",
+    "mac": "1c:c0:e1:3f:01:10",
+    "ssid": "UT FAM CARCAMO MARTINEZ",
+    "password": "140396201617"
+  },
+  {
+    "ip": "10.200.24.214",
+    "mac": "6c:68:a4:26:a5:53",
+    "ssid": "UT FAM MONCADA",
+    "password": "isabel1953"
+  },
+  {
+    "ip": "10.200.24.252",
+    "mac": "4c:d7:c8:6c:83:c8 / 4c:d7:c8:6c:83:cc",
+    "ssid": "UT FAMILIA GUIFARRO / UT FAMILIA GUIFARRO",
+    "password": "HONDURAS"
+  },
+  {
+    "ip": "10.200.25.22",
+    "mac": "4c:d7:c8:c6:59:30 / 4c:d7:c8:c6:59:35",
+    "ssid": "UT FAMILIA GARCIA / UT FAMILIA GARCIA",
+    "password": "mihijito2602"
+  },
+  {
+    "ip": "10.200.24.236",
+    "mac": "80:07:1b:29:7d:80",
+    "ssid": "UT- FAMILIA RODRIGUEZ",
+    "password": "02091977"
+  },
+  {
+    "ip": "10.200.24.232",
+    "mac": "e4:84:2b:1d:8c:cf",
+    "ssid": "UT FAMILIA ORELLANA",
+    "password": "nomelase"
+  },
+  {
+    "ip": "10.200.25.29",
+    "mac": "6c:68:a4:e4:8f:48 / 6c:68:a4:e4:8f:4d",
+    "ssid": "UT FAMILIA MARTINEZ / UT FAMILIA MARTINEZ",
+    "password": "zeetl777HN"
+  },
+  {
+    "ip": "10.200.24.233",
+    "mac": "e4:84:2b:1b:3e:df",
+    "ssid": "UT FAMILIA GOMEZ",
+    "password": "Gomez123"
+  },
+  {
+    "ip": "10.200.24.227",
+    "mac": "1c:ef:03:e2:3f:bb",
+    "ssid": "BEVERLY",
+    "password": "1807Beverly"
+  },
+  {
+    "ip": "10.200.24.228",
+    "mac": "1c:ef:03:51:0c:dd",
+    "ssid": "UT FAMILIA COELLO",
+    "password": "HERNANDEZ99"
+  },
+  {
+    "ip": "10.200.25.46",
+    "mac": "4c:d7:c8:c6:68:10 / 4c:d7:c8:c6:68:15",
+    "ssid": "FINO / FINO",
+    "password": "Jaruni0324"
+  },
+  {
+    "ip": "10.200.25.36",
+    "mac": "4c:d7:c8:86:c0:4a / 4c:d7:c8:86:c0:4e",
+    "ssid": "UT FAM JUAREZ / UT FAM JUAREZ",
+    "password": "1807197501143"
+  },
+  {
+    "ip": "10.200.24.225",
+    "mac": "6c:68:a4:26:7f:63",
+    "ssid": "UT FAM NAJERA HERRERA",
+    "password": "AllizSantiago04"
+  },
+  {
+    "ip": "10.200.25.64",
+    "mac": "4c:d7:c8:c6:9a:c0 / 4c:d7:c8:c6:9a:c5",
+    "ssid": "UT FAMILIA SOTO / UT FAMILIA SOTO",
+    "password": "Impactodefe1996"
+  },
+  {
+    "ip": "10.200.25.5",
+    "mac": "6c:68:a4:80:31:89",
+    "ssid": "",
+    "password": "ELSANCHEZ003602002"
+  },
+  {
+    "ip": "10.200.25.44",
+    "mac": "48:35:2e:25:f2:7e",
+    "ssid": "UT FAM QUESADA",
+    "password": "20061969"
+  },
+  {
+    "ip": "10.200.25.87",
+    "mac": "80:07:1b:71:4c:18",
+    "ssid": "UT FAM VASQUEZ",
+    "password": "19721994"
+  },
+  {
+    "ip": "10.200.25.75",
+    "mac": "e4:84:2b:1b:2d:3f",
+    "ssid": "UT FAM FUNEZ",
+    "password": "26102011"
+  },
+  {
+    "ip": "10.200.25.88",
+    "mac": "80:07:1b:71:93:c0",
+    "ssid": "UT FAM HERNANDEZ",
+    "password": "13312828"
+  },
+  {
+    "ip": "10.200.25.92",
+    "mac": "6c:68:a4:25:9e:53",
+    "ssid": "",
+    "password": "Edith12011711"
+  },
+  {
+    "ip": "10.200.25.132",
+    "mac": "1c:ef:03:e1:83:1b",
+    "ssid": "",
+    "password": "amalia1958"
+  },
+  {
+    "ip": "10.200.25.123",
+    "mac": "6c:68:a4:80:20:49",
+    "ssid": "UT FAM ARIAS",
+    "password": "Yoel2024"
+  },
+  {
+    "ip": "10.200.25.120",
+    "mac": "4c:d7:c8:3f:00:dd",
+    "ssid": "ULTRANET FAM PONCE CARCAMO",
+    "password": "Linda180250"
+  },
+  {
+    "ip": "10.200.25.148",
+    "mac": "4c:d7:c8:c6:65:80 / 4c:d7:c8:c6:65:85",
+    "ssid": "UT FAMILIA MUNGUIA / UT FAMILIA MUNGUIA",
+    "password": "Munguia2021"
+  },
+  {
+    "ip": "10.200.25.137",
+    "mac": "70:b6:4f:98:35:d5",
+    "ssid": "FAMILIA PANIAGUA",
+    "password": "Latierracanta1801"
+  },
+  {
+    "ip": "10.200.25.135",
+    "mac": "6c:68:a4:7f:e0:d9",
+    "ssid": "UT- MARIA CRUZ",
+    "password": "92207977"
+  },
+  {
+    "ip": "10.200.25.142",
+    "mac": "6c:68:a4:80:4c:09",
+    "ssid": "UT FAMILIA MEJIA 5G",
+    "password": "196001231"
+  },
+  {
+    "ip": "10.200.25.139",
+    "mac": "1c:ef:03:51:79:ad",
+    "ssid": "Jesus Viene Pronto",
+    "password": "Godblessmyhome"
+  },
+  {
+    "ip": "10.200.25.154",
+    "mac": "1c:c0:e1:3f:38:bc",
+    "ssid": "UT VICA",
+    "password": "08010481"
+  },
+  {
+    "ip": "10.200.25.165",
+    "mac": "4c:d7:c8:6c:7b:e8 / 4c:d7:c8:6c:7b:ec",
+    "ssid": "UT FAMILIA OCAMPO / UT FAMILIA OCAMPO",
+    "password": "sofia2328"
+  },
+  {
+    "ip": "10.200.25.152",
+    "mac": "6c:68:a4:25:9d:43",
+    "ssid": "UT FAM ORTIZ",
+    "password": "Paulinoortiz104"
+  },
+  {
+    "ip": "10.200.25.181",
+    "mac": "4c:d7:c8:c6:78:f0 / 4c:d7:c8:c6:78:f5",
+    "ssid": "UT FAM GARCIA / UT FAM GARCIA",
+    "password": "Jerson1981"
+  },
+  {
+    "ip": "10.200.25.162",
+    "mac": "80:07:1b:71:51:58",
+    "ssid": "HERNANDEZ",
+    "password": "Tatiana1807"
+  },
+  {
+    "ip": "10.200.25.155",
+    "mac": "6c:68:a4:80:4c:29",
+    "ssid": "",
+    "password": "Escamilla22"
+  },
+  {
+    "ip": "10.200.25.158",
+    "mac": "1c:ef:03:e1:db:ab",
+    "ssid": "",
+    "password": "AlmendareZ2023"
+  },
+  {
+    "ip": "10.200.25.168",
+    "mac": "94:02:6b:00:5f:70",
+    "ssid": "UT FAM GOMEZ ORELLANA",
+    "password": "Betsabe22"
+  },
+  {
+    "ip": "10.200.25.169",
+    "mac": "00:6d:61:c0:ae:00",
+    "ssid": "YOAN Y MATEO",
+    "password": "0201199300870"
+  },
+  {
+    "ip": "10.200.25.177",
+    "mac": "94:02:6b:00:6a:20",
+    "ssid": "UT FAM MARTINEZ URBINA",
+    "password": "1172valenmay"
+  },
+  {
+    "ip": "10.200.25.210",
+    "mac": "00:6d:61:da:bf:d8",
+    "ssid": "ULTRANET FAM--MONTANOLA",
+    "password": "Alejandra12"
+  },
+  {
+    "ip": "10.200.25.188",
+    "mac": "6c:68:a4:9d:7a:48",
+    "ssid": "",
+    "password": "26121971"
+  },
+  {
+    "ip": "10.200.25.182",
+    "mac": "6c:68:a4:80:3b:b9",
+    "ssid": "",
+    "password": "katysofia"
+  },
+  {
+    "ip": "10.200.25.233",
+    "mac": "e8:9e:0c:05:23:74",
+    "ssid": "Fam Estrada",
+    "password": "GuiameDios"
+  },
+  {
+    "ip": "10.200.25.217",
+    "mac": "e4:84:2b:1c:df:fb",
+    "ssid": "UT FAM ULLOA NUNEZ",
+    "password": "Ester241988"
+  },
+  {
+    "ip": "10.200.25.215",
+    "mac": "6c:68:a4:26:62:33",
+    "ssid": "",
+    "password": "Heyssel2010"
+  },
+  {
+    "ip": "10.200.25.246",
+    "mac": "4c:d7:c8:c6:6c:40 / 4c:d7:c8:c6:6c:45",
+    "ssid": "familia martinez ocampo / familia martinez ocampo",
+    "password": "Sobrenatural"
+  },
+  {
+    "ip": "10.200.26.25",
+    "mac": "4c:d7:c8:c6:df:70 / 4c:d7:c8:c6:df:75",
+    "ssid": "ULTRANET FAM. OCHOA ACOSTA / ULTRANET FAM. OCHOA ACOSTA",
+    "password": "Sofia2014"
+  },
+  {
+    "ip": "10.200.25.229",
+    "mac": "6c:68:a4:26:9b:e3",
+    "ssid": "",
+    "password": "ZONA20241988"
+  },
+  {
+    "ip": "10.200.25.251",
+    "mac": "80:07:1b:45:e8:b0",
+    "ssid": "UT FAM MURILLO",
+    "password": "Esmilda90"
+  },
+  {
+    "ip": "10.200.26.7",
+    "mac": "80:07:1b:d3:9e:38",
+    "ssid": "UT FAM ROSALES",
+    "password": "18071953"
+  },
+  {
+    "ip": "10.200.26.26",
+    "mac": "e4:84:2b:1a:87:4c",
+    "ssid": "UT ELIA MENDOZA",
+    "password": "4503alacran/"
+  },
+  {
+    "ip": "10.200.26.61",
+    "mac": "4c:d7:c8:6c:5f:88 / 4c:d7:c8:6c:5f:8c",
+    "ssid": "ULTRANET RESPUESTOS GUDIEL  / UT RESPUESTOS GUDIEL",
+    "password": "94675216"
+  },
+  {
+    "ip": "10.200.26.64",
+    "mac": "4c:d7:c8:c6:4f:f0 / 4c:d7:c8:c6:4f:f5",
+    "ssid": "ULTRANET FAM AGUIRIANO / ULTRANET FAM AGUIRIANO",
+    "password": "Aguiriano/1807"
+  },
+  {
+    "ip": "10.200.26.94",
+    "mac": "4c:d7:c8:6c:62:58 / 4c:d7:c8:6c:62:5c",
+    "ssid": "UT FAM LUZ CARDONA / UT FAM LUZ CARDONA",
+    "password": "_Jacob2019"
+  },
+  {
+    "ip": "10.200.26.68",
+    "mac": "00:6d:61:c1:08:c8",
+    "ssid": "UT FAM MELENDEZ",
+    "password": "Allana2024"
+  },
+  {
+    "ip": "10.200.26.105",
+    "mac": "6c:68:a4:e4:9e:b8 / 6c:68:a4:e4:9e:bc",
+    "ssid": "UT SERVIROL 2.4 / UT SERVIROL 5g",
+    "password": "Jhazzel1980"
+  },
+  {
+    "ip": "10.200.26.99",
+    "mac": "c8:63:14:a2:ab:93",
+    "ssid": "UT FAM BANEGAS",
+    "password": "BBB1507J"
+  },
+  {
+    "ip": "10.200.26.101",
+    "mac": "94:02:6b:00:6f:48",
+    "ssid": "UT FAM MARTINEZ",
+    "password": "Laskmica"
+  },
+  {
+    "ip": "10.200.26.86",
+    "mac": "1c:ef:03:88:4f:c1",
+    "ssid": "UT FAM MARTINEZ",
+    "password": "ORELLANA2024"
+  },
+  {
+    "ip": "10.200.26.76",
+    "mac": "e4:84:2b:1c:e7:3b",
+    "ssid": "UT FAMILIA PENA MENDOZA",
+    "password": "Armijo92"
+  },
+  {
+    "ip": "10.200.26.120",
+    "mac": "6c:68:a4:e4:ce:f8 / 6c:68:a4:e4:ce:fc",
+    "ssid": "ULTRANET FAM SOLIS CANO / ULTRANET FAM SOLIS CANO",
+    "password": "Alba00426"
+  },
+  {
+    "ip": "10.200.26.121",
+    "mac": "4c:d7:c8:c6:a7:a0 / 4c:d7:c8:c6:a7:a5",
+    "ssid": "UT FAM MARTINEZ ALEMAN  / UT FAM MARTINEZ ALEMAN",
+    "password": "aleman2020"
+  },
+  {
+    "ip": "10.200.26.81",
+    "mac": "70:b6:4f:84:93:65",
+    "ssid": "FAMILIA GOMEZ LOPEZ",
+    "password": "100Fuegos"
+  },
+  {
+    "ip": "10.200.26.110",
+    "mac": "6c:68:a4:e4:90:28 / 6c:68:a4:e4:90:2c",
+    "ssid": "UT ONDINA / UT ONDINA",
+    "password": "01011944"
+  },
+  {
+    "ip": "10.200.26.137",
+    "mac": "6c:68:a4:e4:d7:f8 / 6c:68:a4:e4:d7:fc",
+    "ssid": "UT FAM RAUDALES MELENDEZ / UT FAM RAUDALES MELENDEZ",
+    "password": "FamMjhz3000"
+  },
+  {
+    "ip": "10.200.26.141",
+    "mac": "6c:68:a4:e4:a7:e8 / 6c:68:a4:e4:a7:ec",
+    "ssid": "UT FAM LOZANO / UT FAM LOZANO 5G",
+    "password": "Hilda1947"
+  },
+  {
+    "ip": "10.200.26.148",
+    "mac": "4c:d7:c8:c6:b2:a0 / 4c:d7:c8:c6:b2:a5",
+    "ssid": "UT AUTO GARAJE 1807 / UT AUTO GARAJE 1807",
+    "password": "Garaje1807"
+  },
+  {
+    "ip": "10.200.26.153",
+    "mac": "4c:d7:c8:6c:67:58 / 4c:d7:c8:6c:67:5c",
+    "ssid": "UT FAMILIA SALAS / UT FAMILIA SALAS",
+    "password": "baltaz4r"
+  },
+  {
+    "ip": "10.200.26.155",
+    "mac": "4c:d7:c8:c6:bc:a0 / 4c:d7:c8:c6:bc:a5",
+    "ssid": "UT ENIL NUNEZ / UT ENIL NUNEZ",
+    "password": "97656323Enil"
+  },
+  {
+    "ip": "10.200.26.180",
+    "mac": "4c:d7:c8:c6:b5:60 / 4c:d7:c8:c6:b5:65",
+    "ssid": "DESPACHO LEGAL M  / DESPACHO LEGAL M",
+    "password": "Martdiaz"
+  },
+  {
+    "ip": "10.200.26.181",
+    "mac": "4c:d7:c8:6c:5c:08 / 4c:d7:c8:6c:5c:0c",
+    "ssid": "ULTRANET FAMILIA GARCIA / ULTRANET FAMILIA GARCIA",
+    "password": "ELIZABETH"
+  },
+  {
+    "ip": "10.200.26.195",
+    "mac": "4c:d7:c8:86:e1:1a / 4c:d7:c8:86:e1:1e",
+    "ssid": "UT FAM GAMONEDA GUZMAN / UT FAM GAMONEDA GUZMAN",
+    "password": "Lavenlostrastes8525"
+  },
+  {
+    "ip": "10.200.26.122",
+    "mac": "c4:70:0b:08:f8:68",
+    "ssid": "UT FAMILIA MARTINEZ",
+    "password": "Martinez1998"
+  },
+  {
+    "ip": "10.200.26.202",
+    "mac": "4c:d7:c8:6c:5d:e8 / 4c:d7:c8:6c:5d:ec",
+    "ssid": "UT FAM ANTUNEZ / UT FAM ANTUNEZ",
+    "password": "Antunez2025"
+  },
+  {
+    "ip": "10.200.26.205",
+    "mac": "4c:d7:c8:6c:85:f8 / 4c:d7:c8:6c:85:fc",
+    "ssid": "UT FAMILIA AYALA / UT FAMILIA AYALA",
+    "password": "OmarAntonio7"
+  },
+  {
+    "ip": "10.200.26.206",
+    "mac": "4c:d7:c8:6c:54:f8 / 4c:d7:c8:6c:54:fd",
+    "ssid": "ULTRANET FAM HERNANDEZ / ULTRANET FAM HERNANDEZ",
+    "password": "Francishnz1807"
+  },
+  {
+    "ip": "10.200.26.164",
+    "mac": "c8:63:14:a2:a7:ab",
+    "ssid": "UT  GORDO",
+    "password": "27072409"
+  },
+  {
+    "ip": "10.200.26.213",
+    "mac": "4c:d7:c8:6c:5e:88 / 4c:d7:c8:6c:5e:8c",
+    "ssid": "VARIEDADES GETZEMANI / VARIEDADES GETZEMANI",
+    "password": "1807200100721"
+  },
+  {
+    "ip": "10.200.26.214",
+    "mac": "4c:d7:c8:6c:78:b8 / 4c:d7:c8:6c:78:bc",
+    "ssid": "UT ONU APARTAMENTO PRINCIPAL / UT ONU APARTAMENTO PRINCIPAL 5G",
+    "password": "Ashlye01"
+  },
+  {
+    "ip": "10.200.26.223",
+    "mac": "4c:d7:c8:6c:8d:48 / 4c:d7:c8:6c:8d:4d",
+    "ssid": "UT MCLEAN / UT MCLEAN 5G",
+    "password": "juanfernando04"
+  },
+  {
+    "ip": "10.200.26.227",
+    "mac": "4c:d7:c8:c6:c2:10 / 4c:d7:c8:c6:c2:15",
+    "ssid": "DIPRONATP EDIFICIO / DIPRONATP EDIFICIO",
+    "password": "Dipronatp2024"
+  },
+  {
+    "ip": "10.200.26.229",
+    "mac": "6c:68:a4:e4:8a:48 / 6c:68:a4:e4:8a:4c",
+    "ssid": "MAKEN / MAKEN",
+    "password": "MAKEN2025"
+  },
+  {
+    "ip": "10.200.26.229",
+    "mac": "6c:68:a4:e4:8a:48 / 6c:68:a4:e4:8a:4c",
+    "ssid": "MAKEN / MAKEN",
+    "password": "MAKEN2025"
+  },
+  {
+    "ip": "10.200.26.232",
+    "mac": "4c:d7:c8:6c:75:98 / 4c:d7:c8:6c:75:9c",
+    "ssid": "UT FARMACIA CARMENS 2 / UT FARMACIA CARMENS 2",
+    "password": "fcarmens2021"
+  },
+  {
+    "ip": "10.200.26.227",
+    "mac": "4c:d7:c8:c6:c2:10 / 4c:d7:c8:c6:c2:15",
+    "ssid": "DIPRONATP EDIFICIO / DIPRONATP EDIFICIO",
+    "password": "Dipronatp2024"
+  },
+  {
+    "ip": "10.200.26.235",
+    "mac": "4c:d7:c8:c6:fa:e0 / 4c:d7:c8:c6:fa:e5",
+    "ssid": "UT FAMILIA URBINA / UT FAMILIA URBINA",
+    "password": "peluso06"
+  },
+  {
+    "ip": "10.200.26.25",
+    "mac": "4c:d7:c8:c6:df:70 / 4c:d7:c8:c6:df:75",
+    "ssid": "ULTRANET FAM. OCHOA ACOSTA / ULTRANET FAM. OCHOA ACOSTA",
+    "password": "Sofia2014"
+  },
+  {
+    "ip": "10.200.26.21",
+    "mac": "4c:d7:c8:86:f3:0a",
+    "ssid": "UT FAMILIA VALERIANO",
+    "password": "Z4y3x2w1"
+  },
+  {
+    "ip": "10.200.26.61",
+    "mac": "4c:d7:c8:6c:5f:88 / 4c:d7:c8:6c:5f:8c",
+    "ssid": "ULTRANET RESPUESTOS GUDIEL  / UT RESPUESTOS GUDIEL",
+    "password": "94675216"
+  },
+  {
+    "ip": "10.200.26.7",
+    "mac": "80:07:1b:d3:9e:38",
+    "ssid": "UT FAM ROSALES",
+    "password": "18071953"
+  },
+  {
+    "ip": "10.200.26.64",
+    "mac": "4c:d7:c8:c6:4f:f0 / 4c:d7:c8:c6:4f:f5",
+    "ssid": "ULTRANET FAM AGUIRIANO / ULTRANET FAM AGUIRIANO",
+    "password": "Aguiriano/1807"
+  },
+  {
+    "ip": "10.200.26.9",
+    "mac": "80:07:1b:71:49:e8",
+    "ssid": "UT FAMILIA ORTIZ",
+    "password": "MIDAKE67"
+  },
+  {
+    "ip": "10.200.26.26",
+    "mac": "e4:84:2b:1a:87:4c",
+    "ssid": "UT ELIA MENDOZA",
+    "password": "4503alacran/"
+  },
+  {
+    "ip": "10.200.26.68",
+    "mac": "00:6d:61:c1:08:c8",
+    "ssid": "UT FAM MELENDEZ",
+    "password": "Allana2024"
+  },
+  {
+    "ip": "10.200.26.94",
+    "mac": "4c:d7:c8:6c:62:58 / 4c:d7:c8:6c:62:5c",
+    "ssid": "UT FAM LUZ CARDONA / UT FAM LUZ CARDONA",
+    "password": "_Jacob2019"
+  },
+  {
+    "ip": "10.200.26.105",
+    "mac": "6c:68:a4:e4:9e:b8 / 6c:68:a4:e4:9e:bc",
+    "ssid": "UT SERVIROL 2.4 / UT SERVIROL 5g",
+    "password": "Jhazzel1980"
+  },
+  {
+    "ip": "10.200.26.76",
+    "mac": "e4:84:2b:1c:e7:3b",
+    "ssid": "UT FAMILIA PENA MENDOZA",
+    "password": "Armijo92"
+  },
+  {
+    "ip": "10.200.26.99",
+    "mac": "c8:63:14:a2:ab:93",
+    "ssid": "UT FAM BANEGAS",
+    "password": "BBB1507J"
+  },
+  {
+    "ip": "10.200.26.110",
+    "mac": "6c:68:a4:e4:90:28 / 6c:68:a4:e4:90:2c",
+    "ssid": "UT ONDINA / UT ONDINA",
+    "password": "01011944"
+  },
+  {
+    "ip": "10.200.26.101",
+    "mac": "94:02:6b:00:6f:48",
+    "ssid": "UT FAM MARTINEZ",
+    "password": "Laskmica"
+  },
+  {
+    "ip": "10.200.26.120",
+    "mac": "6c:68:a4:e4:ce:f8 / 6c:68:a4:e4:ce:fc",
+    "ssid": "ULTRANET FAM SOLIS CANO / ULTRANET FAM SOLIS CANO",
+    "password": "Alba00426"
+  },
+  {
+    "ip": "10.200.26.81",
+    "mac": "70:b6:4f:84:93:65",
+    "ssid": "FAMILIA GOMEZ LOPEZ",
+    "password": "100Fuegos"
+  },
+  {
+    "ip": "10.200.26.86",
+    "mac": "1c:ef:03:88:4f:c1",
+    "ssid": "UT FAM MARTINEZ",
+    "password": "ORELLANA2024"
+  },
+  {
+    "ip": "10.200.26.121",
+    "mac": "4c:d7:c8:c6:a7:a0 / 4c:d7:c8:c6:a7:a5",
+    "ssid": "UT FAM MARTINEZ ALEMAN  / UT FAM MARTINEZ ALEMAN",
+    "password": "aleman2020"
+  },
+  {
+    "ip": "10.200.26.137",
+    "mac": "6c:68:a4:e4:d7:f8 / 6c:68:a4:e4:d7:fc",
+    "ssid": "UT FAM RAUDALES MELENDEZ / UT FAM RAUDALES MELENDEZ",
+    "password": "FamMjhz3000"
+  },
+  {
+    "ip": "10.200.26.141",
+    "mac": "6c:68:a4:e4:a7:e8 / 6c:68:a4:e4:a7:ec",
+    "ssid": "UT FAM LOZANO / UT FAM LOZANO 5G",
+    "password": "Hilda1947"
+  },
+  {
+    "ip": "10.200.26.148",
+    "mac": "4c:d7:c8:c6:b2:a0 / 4c:d7:c8:c6:b2:a5",
+    "ssid": "UT AUTO GARAJE 1807 / UT AUTO GARAJE 1807",
+    "password": "Garaje1807"
+  },
+  {
+    "ip": "10.200.26.153",
+    "mac": "4c:d7:c8:6c:67:58 / 4c:d7:c8:6c:67:5c",
+    "ssid": "UT FAMILIA SALAS / UT FAMILIA SALAS",
+    "password": "baltaz4r"
+  },
+  {
+    "ip": "10.200.26.155",
+    "mac": "4c:d7:c8:c6:bc:a0 / 4c:d7:c8:c6:bc:a5",
+    "ssid": "UT ENIL NUNEZ / UT ENIL NUNEZ",
+    "password": "97656323Enil"
+  },
+  {
+    "ip": "10.200.26.122",
+    "mac": "c4:70:0b:08:f8:68",
+    "ssid": "UT FAMILIA MARTINEZ",
+    "password": "Martinez1998"
+  },
+  {
+    "ip": "10.200.26.181",
+    "mac": "4c:d7:c8:6c:5c:08 / 4c:d7:c8:6c:5c:0c",
+    "ssid": "ULTRANET FAMILIA GARCIA / ULTRANET FAMILIA GARCIA",
+    "password": "ELIZABETH"
+  },
+  {
+    "ip": "10.200.26.180",
+    "mac": "4c:d7:c8:c6:b5:60 / 4c:d7:c8:c6:b5:65",
+    "ssid": "DESPACHO LEGAL M  / DESPACHO LEGAL M",
+    "password": "Martdiaz"
+  },
+  {
+    "ip": "10.200.26.195",
+    "mac": "4c:d7:c8:86:e1:1a / 4c:d7:c8:86:e1:1e",
+    "ssid": "UT FAM GAMONEDA GUZMAN / UT FAM GAMONEDA GUZMAN",
+    "password": "Lavenlostrastes8525"
+  },
+  {
+    "ip": "10.200.26.205",
+    "mac": "4c:d7:c8:6c:85:f8 / 4c:d7:c8:6c:85:fc",
+    "ssid": "UT FAMILIA AYALA / UT FAMILIA AYALA",
+    "password": "OmarAntonio7"
+  },
+  {
+    "ip": "10.200.26.202",
+    "mac": "4c:d7:c8:6c:5d:e8 / 4c:d7:c8:6c:5d:ec",
+    "ssid": "UT FAM ANTUNEZ / UT FAM ANTUNEZ",
+    "password": "Antunez2025"
+  },
+  {
+    "ip": "10.200.26.206",
+    "mac": "4c:d7:c8:6c:54:f8 / 4c:d7:c8:6c:54:fd",
+    "ssid": "ULTRANET FAM HERNANDEZ / ULTRANET FAM HERNANDEZ",
+    "password": "Francishnz1807"
+  },
+  {
+    "ip": "10.200.26.213",
+    "mac": "4c:d7:c8:6c:5e:88 / 4c:d7:c8:6c:5e:8c",
+    "ssid": "VARIEDADES GETZEMANI / VARIEDADES GETZEMANI",
+    "password": "1807200100721"
+  },
+  {
+    "ip": "10.200.26.214",
+    "mac": "4c:d7:c8:6c:78:b8 / 4c:d7:c8:6c:78:bc",
+    "ssid": "UT ONU APARTAMENTO PRINCIPAL / UT ONU APARTAMENTO PRINCIPAL 5G",
+    "password": "Ashlye01"
+  },
+  {
+    "ip": "10.200.26.164",
+    "mac": "c8:63:14:a2:a7:ab",
+    "ssid": "UT  GORDO",
+    "password": "27072409"
+  },
+  {
+    "ip": "10.200.26.223",
+    "mac": "4c:d7:c8:6c:8d:48 / 4c:d7:c8:6c:8d:4d",
+    "ssid": "UT MCLEAN / UT MCLEAN 5G",
+    "password": "juanfernando04"
+  },
+  {
+    "ip": "10.200.26.209",
+    "mac": "1c:c0:e1:3d:b4:68",
+    "ssid": "UT FAMILIA DIAZ",
+    "password": "Figueroa1989"
+  },
+  {
+    "ip": "10.200.26.210",
+    "mac": "70:b6:4f:40:f2:65",
+    "ssid": "UT FAM NUNEZ POSAS",
+    "password": "Victoria1985"
+  },
+  {
+    "ip": "10.200.26.224",
+    "mac": "00:6d:61:c1:00:88",
+    "ssid": "UT FAM MARTINEZ GOMEZ",
+    "password": "aitana1807"
+  },
+  {
+    "ip": "10.200.26.227",
+    "mac": "4c:d7:c8:c6:c2:10 / 4c:d7:c8:c6:c2:15",
+    "ssid": "DIPRONATP EDIFICIO / DIPRONATP EDIFICIO",
+    "password": "Dipronatp2024"
+  },
+  {
+    "ip": "10.200.26.225",
+    "mac": "1c:c0:e1:3f:04:c0",
+    "ssid": "UT GLOW BEAUTY",
+    "password": "Glowbeauty2225"
+  },
+  {
+    "ip": "10.200.26.229",
+    "mac": "6c:68:a4:e4:8a:48 / 6c:68:a4:e4:8a:4c",
+    "ssid": "MAKEN / MAKEN",
+    "password": "MAKEN2025"
+  },
+  {
+    "ip": "10.200.26.232",
+    "mac": "4c:d7:c8:6c:75:98 / 4c:d7:c8:6c:75:9c",
+    "ssid": "UT FARMACIA CARMENS 2 / UT FARMACIA CARMENS 2",
+    "password": "fcarmens2021"
+  },
+  {
+    "ip": "10.200.26.235",
+    "mac": "4c:d7:c8:c6:fa:e0 / 4c:d7:c8:c6:fa:e5",
+    "ssid": "UT FAMILIA URBINA / UT FAMILIA URBINA",
+    "password": "peluso06"
+  },
+  {
+    "ip": "10.200.26.215",
+    "mac": "1c:c0:e1:3f:09:ec",
+    "ssid": "UT FAM CRUZ",
+    "password": "Edgar1807"
+  },
+  {
+    "ip": "10.200.26.238",
+    "mac": "4c:d7:c8:3f:a3:1d",
+    "ssid": "UT FAMILIA CACERES",
+    "password": "Metalica123"
+  },
+  {
+    "ip": "10.200.26.250",
+    "mac": "4c:d7:c8:c6:42:50 / 4c:d7:c8:c6:42:55",
+    "ssid": "TOPITO / TOPITO",
+    "password": "marzuca04"
+  },
+  {
+    "ip": "10.200.26.246",
+    "mac": "4c:d7:c8:3f:00:4d",
+    "ssid": "",
+    "password": "AMOMISHIJOS"
+  },
+  {
+    "ip": "10.200.26.247",
+    "mac": "4c:d7:c8:3f:a3:4d",
+    "ssid": "",
+    "password": "Ramos265"
+  },
+  {
+    "ip": "10.200.26.248",
+    "mac": "4c:d7:c8:3f:80:4d",
+    "ssid": "UT GRUPO PUERTO RAMIREZ 5G",
+    "password": "LASADAS2025"
+  },
+  {
+    "ip": "10.200.27.29",
+    "mac": "c4:70:0b:8b:5f:58",
+    "ssid": "UT FAMILIA CALIX AVILA",
+    "password": "WSC06042015"
+  },
+  {
+    "ip": "10.200.27.40",
+    "mac": "00:6d:61:da:69:80",
+    "ssid": "UT FAM SANCHEZ",
+    "password": "Dereck2025"
+  },
+  {
+    "ip": "10.200.28.5",
+    "mac": "4c:d7:c8:6c:58:78 / 4c:d7:c8:6c:58:7d",
+    "ssid": "UT CERNA / UT CERNA",
+    "password": "Adolfootero01"
+  },
+  {
+    "ip": "10.200.28.6",
+    "mac": "4c:d7:c8:c6:a7:90 / 4c:d7:c8:c6:a7:95",
+    "ssid": "UT FAM RAMSES / UT FAM RAMSES",
+    "password": "Kamilo40"
+  },
+  {
+    "ip": "10.200.28.9",
+    "mac": "6c:68:a4:e4:a9:98 / 6c:68:a4:e4:a9:9d",
+    "ssid": "UT FAMILIA MARTINEZ / UT FAMILIA MARTINEZ",
+    "password": "maritza74"
+  },
+  {
+    "ip": "10.200.28.40",
+    "mac": "4c:d7:c8:c6:77:50 / 4c:d7:c8:c6:77:55",
+    "ssid": "FTTH0-3DC5D0 / FTTH0-3DC5D0",
+    "password": "Olanchito504"
+  },
+  {
+    "ip": "10.200.28.42",
+    "mac": "6c:68:a4:e4:a8:98 / 6c:68:a4:e4:a8:9c",
+    "ssid": "UT LOS DOS SOCIOS / UT LOS DOS SOCIOS",
+    "password": "127420abc@"
+  },
+  {
+    "ip": "10.200.28.43",
+    "mac": "4c:d7:c8:c6:e6:f0",
+    "ssid": "UT FAMILIA YUNEZ",
+    "password": "Lissy2021"
+  },
+  {
+    "ip": "10.200.28.78",
+    "mac": "4c:d7:c8:6c:91:b8 / 4c:d7:c8:6c:91:bd",
+    "ssid": "CHADEL / CHADEL",
+    "password": "Chadel2015"
+  },
+  {
+    "ip": "10.200.28.37",
+    "mac": "e4:84:2b:1c:5f:63",
+    "ssid": "PRODUCCIONES VALERIA",
+    "password": "Yafrava1807"
+  },
+  {
+    "ip": "10.200.28.90",
+    "mac": "4c:d7:c8:6c:60:88",
+    "ssid": "UT RIVERA CUELLAR",
+    "password": "01047725"
+  },
+  {
+    "ip": "10.200.28.107",
+    "mac": "4c:d7:c8:6c:7b:58 / 4c:d7:c8:6c:7b:5c",
+    "ssid": "UT FAMILIA BARDALES / UT FAMILIA BARDALES",
+    "password": "Berelyon23"
+  },
+  {
+    "ip": "10.200.28.109",
+    "mac": "4c:d7:c8:6c:8b:18 / 4c:d7:c8:6c:8b:1c",
+    "ssid": "UT FAM PADILLA MURILLO / UT FAM PADILLA MURILLO",
+    "password": "18071995"
+  },
+  {
+    "ip": "10.200.28.111",
+    "mac": "4c:d7:c8:6c:72:28 / 4c:d7:c8:6c:72:2c",
+    "ssid": "UT FAM HERNANDEZ / UT FAM HERNANDEZ",
+    "password": "05011994"
+  },
+  {
+    "ip": "10.200.28.114",
+    "mac": "4c:d7:c8:6c:68:68 / 4c:d7:c8:6c:68:6c",
+    "ssid": "UT FAM MARTINEZ VALLE / UT FAM MARTINEZ VALLE",
+    "password": "Martinez01"
+  },
+  {
+    "ip": "10.200.28.122",
+    "mac": "4c:d7:c8:c6:f9:f0 / 4c:d7:c8:c6:f9:f5",
+    "ssid": "UT-FAM-MUNGUIA / UT-FAM-MUNGUIA",
+    "password": "familiamunguia1946"
+  },
+  {
+    "ip": "10.200.28.127",
+    "mac": "4c:d7:c8:c6:fb:50 / 4c:d7:c8:c6:fb:55",
+    "ssid": "ULTRANET FAM REYES / ULTRANET FAM REYES",
+    "password": "Reyes2155"
+  },
+  {
+    "ip": "10.200.28.144",
+    "mac": "4c:d7:c8:c6:e2:f0 / 4c:d7:c8:c6:e2:f5",
+    "ssid": "UT FAMILIA CARDONA / UT FAMILIA CARDONA",
+    "password": "DEMS1981"
+  },
+  {
+    "ip": "10.200.28.149",
+    "mac": "4c:d7:c8:c6:dd:60 / 4c:d7:c8:c6:dd:65",
+    "ssid": "UT FAMILIA MEDINA / UT FAMILIA MEDINA",
+    "password": "18078428141"
+  },
+  {
+    "ip": "10.200.28.183",
+    "mac": "4c:d7:c8:c6:83:b0 / 4c:d7:c8:c6:83:b5",
+    "ssid": "ULTRANET DIMA / ULTRANET DIMA",
+    "password": "lulu1959"
+  },
+  {
+    "ip": "10.200.28.192",
+    "mac": "4c:d7:c8:c6:64:60 / 4c:d7:c8:c6:64:65",
+    "ssid": "NORA QUESADA / NORA QUESADA",
+    "password": "Pinky2023"
+  },
+  {
+    "ip": "10.200.28.208",
+    "mac": "4c:d7:c8:c6:7b:50 / 4c:d7:c8:c6:7b:55",
+    "ssid": "UT FAM LOZANO / UT FAM LOZANO",
+    "password": "32172699"
+  },
+  {
+    "ip": "10.200.28.234",
+    "mac": "4c:d7:c8:c6:6a:20 / 4c:d7:c8:c6:6a:25",
+    "ssid": "UT ZONA VERDE / UT ZONA VERDE",
+    "password": "EnzoDenver10"
+  },
+  {
+    "ip": "10.200.30.7",
+    "mac": "6c:68:a4:e4:ba:bc",
+    "ssid": "ULTRANET OLANCHITO",
+    "password": "elite105"
+  },
+  {
+    "ip": "10.200.30.8",
+    "mac": "4c:d7:c8:c6:8a:30 / 4c:d7:c8:c6:8a:35",
+    "ssid": "UT FAM MELENDEZ PONCE / UT FAM MELENDEZ PONCE",
+    "password": "96272795"
+  },
+  {
+    "ip": "10.200.30.17",
+    "mac": "4c:d7:c8:c6:a2:50 / 4c:d7:c8:c6:a2:55",
+    "ssid": "UT FAM EURAQUE / UT FAM EURAQUE",
+    "password": "2108DNS1976"
+  },
+  {
+    "ip": "10.200.30.28",
+    "mac": "b4:64:15:1a:4a:54 / b4:64:15:1a:4a:59",
+    "ssid": "UT FAM NAVARRO / UT FAM NAVARRO",
+    "password": "Navarro08"
+  },
+  {
+    "ip": "10.200.30.29",
+    "mac": "4c:d7:c8:c6:57:d0 / 4c:d7:c8:c6:57:d5",
+    "ssid": "CASITA / CASITA",
+    "password": "casita15"
+  },
+  {
+    "ip": "10.200.30.31",
+    "mac": "4c:d7:c8:c6:b3:10 / 4c:d7:c8:c6:b3:15",
+    "ssid": "FAMILIA NAVARRO / FAMILIA NAVARRO",
+    "password": "Nathaly2426"
+  },
+  {
+    "ip": "10.200.30.32",
+    "mac": "4c:d7:c8:c6:51:00 / 4c:d7:c8:c6:51:05",
+    "ssid": "UT FAMILIA MARTINEZ  / UT FAMILIA MARTINEZ",
+    "password": "ANIFER24"
+  },
+  {
+    "ip": "10.200.30.34",
+    "mac": "4c:d7:c8:c6:f6:b0 / 4c:d7:c8:c6:f6:b5",
+    "ssid": "UT TORITO MARISQUERO 2 / UT TORITO MARISQUERO 2",
+    "password": "Torito2025"
+  },
+  {
+    "ip": "10.200.30.20",
+    "mac": "4c:d7:c8:c6:7a:a0 / 4c:d7:c8:c6:7a:a5",
+    "ssid": "ULTRANET BUFETE GARCIA / ULTRANET BUFETE GARCIA",
+    "password": "fuentes1"
+  },
+  {
+    "ip": "10.200.30.43",
+    "mac": "4c:d7:c8:c6:7e:f0 / 4c:d7:c8:c6:7e:f5",
+    "ssid": "UT FAM LOPEZ MARTINEZ / UT FAM LOPEZ MARTINEZ",
+    "password": "paulette2018"
+  },
+  {
+    "ip": "10.200.30.48",
+    "mac": "4c:d7:c8:c6:69:60 / 4c:d7:c8:c6:69:65",
+    "ssid": "UT FAMILIA GOMEZ / UT FAMILIA GOMEZ",
+    "password": "Carlosypaty2025"
+  },
+  {
+    "ip": "10.200.30.47",
+    "mac": "4c:d7:c8:c6:66:30 / 4c:d7:c8:c6:66:35",
+    "ssid": "UT MT ALCON / UT MT ALCON",
+    "password": "1a1l2e2o"
+  },
+  {
+    "ip": "10.200.30.50",
+    "mac": "4c:d7:c8:c6:de:e0 / 4c:d7:c8:c6:de:e5",
+    "ssid": "UT  STOICO`S / UT  STOICO`S",
+    "password": "STOICOS1807"
+  },
+  {
+    "ip": "10.200.30.52",
+    "mac": "4c:d7:c8:c6:5e:80 / 4c:d7:c8:c6:5e:85",
+    "ssid": "UT FAM HERRERA / UT FAM HERRERA",
+    "password": "Camila2025"
+  },
+  {
+    "ip": "10.200.30.53",
+    "mac": "4c:d7:c8:c6:67:c0 / 4c:d7:c8:c6:67:c5",
+    "ssid": "UT NANOS URBAN / UT NANOS URBAN",
+    "password": "Urban777"
+  },
+  {
+    "ip": "10.200.30.49",
+    "mac": "4c:d7:c8:c6:bd:00 / 4c:d7:c8:c6:bd:05",
+    "ssid": "UT FAM DELARCA / UT FAM DELARCA",
+    "password": "BrayanJavier2024"
+  },
+  {
+    "ip": "10.200.30.65",
+    "mac": "4c:d7:c8:c6:67:00 / 4c:d7:c8:c6:67:05",
+    "ssid": "UT SUPER MERCADO RAMOS / UT SUPER MERCADO RAMOS",
+    "password": "SuperMercadoRamosE"
+  },
+  {
+    "ip": "10.200.30.67",
+    "mac": "4c:d7:c8:c6:b3:a0 / 4c:d7:c8:c6:b3:a5",
+    "ssid": "ULTRANET FAM MEJIA / ULTRANET FAM MEJIA",
+    "password": "Mejia1972"
+  },
+  {
+    "ip": "10.200.30.62",
+    "mac": "c8:63:14:a2:b7:cb",
+    "ssid": "UT FAMILIA PALACIOS",
+    "password": "BayronPalacios"
+  },
+  {
+    "ip": "10.200.30.68",
+    "mac": "6c:68:a4:e4:9a:18 / 6c:68:a4:e4:9a:1c",
+    "ssid": "ULTRANET FAM ARMIJO / ULTRANET FAM ARMIJO",
+    "password": "Rosario1"
+  },
+  {
+    "ip": "10.200.30.76",
+    "mac": "4c:d7:c8:c6:74:c0 / 4c:d7:c8:c6:74:c5",
+    "ssid": "UT REMAAGRO / UT REMAAGRO",
+    "password": "Fernando_1807"
+  },
+  {
+    "ip": "10.200.30.78",
+    "mac": "4c:d7:c8:c6:4d:f0 / 4c:d7:c8:c6:4d:f5",
+    "ssid": "UT POLLOS AL HORNO / UT POLLOS AL HORNO",
+    "password": "Karlaysaida"
+  },
+  {
+    "ip": "10.200.30.66",
+    "mac": "6c:68:a4:26:21:a3",
+    "ssid": "DILUNA VIP BAR Y RESTAURANTE",
+    "password": "19Padre3"
+  },
+  {
+    "ip": "10.200.30.79",
+    "mac": "4c:d7:c8:c6:ab:60 / 4c:d7:c8:c6:ab:65",
+    "ssid": "UT FAM OSORTO / UT FAM OSORTO",
+    "password": "Osorto1807"
+  },
+  {
+    "ip": "10.200.30.69",
+    "mac": "4c:d7:c8:c6:83:c0 / 4c:d7:c8:c6:83:c5",
+    "ssid": "UT FAMILIA ORELLANA / UT FAMILIA ORELLANA",
+    "password": "1807198101898"
+  },
+  {
+    "ip": "10.200.30.84",
+    "mac": "4c:d7:c8:c6:49:40 / 4c:d7:c8:c6:49:45",
+    "ssid": "UT STAR-CELL / UT STAR-CELL",
+    "password": "Honduras8"
+  },
+  {
+    "ip": "10.200.30.80",
+    "mac": "4c:d7:c8:c6:8e:10 / 4c:d7:c8:c6:8e:15",
+    "ssid": "UT FAMILIA CANTILLANO / UT FAMILIA CANTILLANO",
+    "password": "Alejandro2019Mirian1987"
+  },
+  {
+    "ip": "10.200.30.90",
+    "mac": "4c:d7:c8:c6:f7:70 / 4c:d7:c8:c6:f7:75",
+    "ssid": "PULPERIA MONCADA / PELPERIA MONCADA",
+    "password": "19710905"
+  },
+  {
+    "ip": "10.200.30.85",
+    "mac": "4c:d7:c8:c6:58:a0 / 4c:d7:c8:c6:58:a5",
+    "ssid": "UT FAMILIA SEGURA / UT FAMILIA SEGURA",
+    "password": "GED12345"
+  },
+  {
+    "ip": "10.200.30.96",
+    "mac": "4c:d7:c8:c6:83:60 / 4c:d7:c8:c6:83:65",
+    "ssid": "UT FAM MARTINEZ / UT FAM MARTINEZ",
+    "password": "anthomatthe1964"
+  },
+  {
+    "ip": "10.200.30.103",
+    "mac": "4c:d7:c8:c6:9c:10 / 4c:d7:c8:c6:9c:15",
+    "ssid": "DORMITORIO GRUPO 1 / DORMITORIO GRUPO 1",
+    "password": "CRISTO123"
+  },
+  {
+    "ip": "10.200.30.108",
+    "mac": "4c:d7:c8:c6:e0:70 / 4c:d7:c8:c6:e0:75",
+    "ssid": "DORMITORIO FEMENINA / DORMITORIO FEMENINA",
+    "password": "Genesisk132019.."
+  },
+  {
+    "ip": "10.200.30.93",
+    "mac": "1c:ef:03:e2:28:5b",
+    "ssid": "UT BILLARES EL PIBE",
+    "password": "95167588"
+  },
+  {
+    "ip": "10.200.30.106",
+    "mac": "4c:d7:c8:c6:82:00 / 4c:d7:c8:c6:82:05",
+    "ssid": "HERNANDEZ / HERNANDEZ",
+    "password": "Hernandezsantos12"
+  },
+  {
+    "ip": "10.200.30.116",
+    "mac": "4c:d7:c8:c6:93:70 / 4c:d7:c8:c6:93:75",
+    "ssid": "UT FAMILIA FORTIN / UT FAMILIA FORTIN",
+    "password": "Lsfortin27"
+  },
+  {
+    "ip": "10.200.30.121",
+    "mac": "4c:d7:c8:c6:84:50 / 4c:d7:c8:c6:84:55",
+    "ssid": "UT AREA DE SALUD / UT AREA DE SALUD",
+    "password": "Comunitaria82"
+  },
+  {
+    "ip": "10.200.30.122",
+    "mac": "4c:d7:c8:c6:63:e0 / 4c:d7:c8:c6:63:e5",
+    "ssid": "UT FAM POSAS / UT FAM POSAS",
+    "password": "18071969"
+  },
+  {
+    "ip": "10.200.30.110",
+    "mac": "4c:d7:c8:c6:9a:90 / 4c:d7:c8:c6:9a:95",
+    "ssid": "DORMITORIO VARONES / DORMITORIO VARONES",
+    "password": "JESUSMIFIELAMIGO"
+  },
+  {
+    "ip": "10.200.30.136",
+    "mac": "4c:d7:c8:c6:75:50 / 4c:d7:c8:c6:75:55",
+    "ssid": "UT FAM RAMOS MEJIA / UT FAM RAMOS MEJIA",
+    "password": "aercamen"
+  },
+  {
+    "ip": "10.200.30.117",
+    "mac": "4c:d7:c8:c6:da:30 / 4c:d7:c8:c6:da:35",
+    "ssid": "UT DEFENSA PUBLICA / UT DEFENSA PUBLICA",
+    "password": "Majucal1"
+  },
+  {
+    "ip": "10.200.30.151",
+    "mac": "4c:d7:c8:c6:fb:d0 / 4c:d7:c8:c6:fb:d5",
+    "ssid": "UT HERMANITAS SOTO / UT HERMANITAS SOTO",
+    "password": "Domaroso"
+  },
+  {
+    "ip": "10.200.30.152",
+    "mac": "4c:d7:c8:c6:8c:b0 / 4c:d7:c8:c6:8c:b5",
+    "ssid": "Dr COFFEE / Dr COFFEE",
+    "password": "56457328"
+  },
+  {
+    "ip": "10.200.30.153",
+    "mac": "4c:d7:c8:c6:c0:f0 / 4c:d7:c8:c6:c0:f5",
+    "ssid": "UT ERIKA REYES / UT ERIKA REYES",
+    "password": "Oscar9748"
+  },
+  {
+    "ip": "10.200.30.139",
+    "mac": "4c:d7:c8:c6:5e:00 / 4c:d7:c8:c6:5e:05",
+    "ssid": "UT FAMILIA FUNEZ / UT FAMILIA FUNEZ",
+    "password": "22191614"
+  },
+  {
+    "ip": "10.200.30.154",
+    "mac": "4c:d7:c8:c6:7d:20 / 4c:d7:c8:c6:7d:25",
+    "ssid": "UT FAMILIA MARTINEZ / UT FAMILIA MARTINEZ",
+    "password": "LRMJBLT1"
+  },
+  {
+    "ip": "10.200.30.150",
+    "mac": "4c:d7:c8:c6:e8:b0 / 4c:d7:c8:c6:e8:b5",
+    "ssid": "ULTRANET FAM VALLADARES / ULTRANET FAM VALLADARES",
+    "password": "hospital"
+  },
+  {
+    "ip": "10.200.30.160",
+    "mac": "4c:d7:c8:c6:9a:40 / 4c:d7:c8:c6:9a:45",
+    "ssid": "UT FAM VELASQUEZ / UT FAM VELASQUEZ",
+    "password": "Aurora1956"
+  },
+  {
+    "ip": "10.200.30.178",
+    "mac": "4c:d7:c8:3f:d5:9d",
+    "ssid": "ING.TOMAS PONCE",
+    "password": "Marinan123"
+  },
+  {
+    "ip": "10.200.30.189",
+    "mac": "4c:d7:c8:c6:e9:60 / 4c:d7:c8:c6:e9:65",
+    "ssid": "UT BODEGA DE CRISA / UT BODEGA DE CRISA",
+    "password": "Belen2024"
+  },
+  {
+    "ip": "10.200.30.180",
+    "mac": "4c:d7:c8:c6:64:40 / 4c:d7:c8:c6:64:45",
+    "ssid": "VISTA VERDE / VISTA VERDE",
+    "password": "Mariel2016."
+  },
+  {
+    "ip": "10.200.30.193",
+    "mac": "4c:d7:c8:6c:5b:f8 / 4c:d7:c8:6c:5b:fc",
+    "ssid": "UT BARBERIA MICEL / UT BARBERIA MICEL",
+    "password": "Celin141"
+  },
+  {
+    "ip": "10.200.30.198",
+    "mac": "4c:d7:c8:c6:ed:f0 / 4c:d7:c8:c6:ed:f5",
+    "ssid": "ULTRANET FAM RIVAS / ULTRANET FAM RIVAS",
+    "password": "0012512790030D"
+  },
+  {
+    "ip": "10.200.30.214",
+    "mac": "4c:d7:c8:87:18:4a / 4c:d7:c8:87:18:4e",
+    "ssid": "UT FAMILIA NUNEZ / UT FAMILIA NUNEZ",
+    "password": "reyesdias2023"
+  },
+  {
+    "ip": "10.200.30.223",
+    "mac": "b4:64:15:1a:5a:74 / b4:64:15:1a:5a:79",
+    "ssid": "UT FAM MARTINEZ / UT FAM MARTINEZ",
+    "password": "Mirian1970"
+  },
+  {
+    "ip": "10.200.30.225",
+    "mac": "4c:d7:c8:c6:ce:90 / 4c:d7:c8:c6:ce:95",
+    "ssid": "UT FAM. ZEPEDA / UT FAM. ZEPEDA",
+    "password": "Zepeda2009"
+  },
+  {
+    "ip": "10.200.30.229",
+    "mac": "4c:d7:c8:87:15:5a / 4c:d7:c8:87:15:5e",
+    "ssid": "UT FAM VALLE RIVERA / UT FAM VALLE RIVERA",
+    "password": "Valle12025"
+  },
+  {
+    "ip": "10.200.30.231",
+    "mac": "4c:d7:c8:86:b9:5a / 4c:d7:c8:86:b9:5e",
+    "ssid": "HJJSA / HJJSA",
+    "password": "olanchito2469@"
+  },
+  {
+    "ip": "10.200.30.237",
+    "mac": "b4:64:15:19:eb:f4 / b4:64:15:19:eb:f9",
+    "ssid": "UT FAM DELARCA / UT FAM DELARCA",
+    "password": "Reina20054233"
+  },
+  {
+    "ip": "10.200.30.244",
+    "mac": "4c:d7:c8:87:13:da / 4c:d7:c8:87:13:de",
+    "ssid": "AROMAS / AROMAS",
+    "password": "aromas2025"
+  },
+  {
+    "ip": "10.200.30.245",
+    "mac": "b4:64:15:1a:64:24 / b4:64:15:1a:64:29",
+    "ssid": "UT FAM VASQUEZ VERDE / UT FAM VASQUEZ VERDE",
+    "password": "Sdmjv1614"
+  },
+  {
+    "ip": "10.200.30.235",
+    "mac": "4c:d7:c8:86:ec:3a / 4c:d7:c8:86:ec:3e",
+    "ssid": "UT FAMILIA NUNEZ CALIX / UT FAMILIA NUNEZ CALIX",
+    "password": "Andres2012"
+  },
+  {
+    "ip": "10.200.30.247",
+    "mac": "4c:d7:c8:87:22:4a / 4c:d7:c8:87:22:4e",
+    "ssid": "UT FAM MENDEZ  CALIX / UT FAM MENDEZ  CALIX",
+    "password": "CIDC1975"
+  },
+  {
+    "ip": "10.200.30.243",
+    "mac": "6c:68:a4:26:57:b3",
+    "ssid": "llllllllll",
+    "password": "86400lll"
+  },
+  {
+    "ip": "10.200.30.248",
+    "mac": "1c:ef:03:51:70:1d",
+    "ssid": "UT PROF MARIELA",
+    "password": "Oscarito"
+  },
+  {
+    "ip": "10.200.30.251",
+    "mac": "4c:d7:c8:86:bf:fa / 4c:d7:c8:86:bf:fe",
+    "ssid": "UT IPHONE / UT IPHONE",
+    "password": "Anibal2014"
+  },
+  {
+    "ip": "10.200.30.250",
+    "mac": "70:b6:4f:97:fd:ad",
+    "ssid": "JOSE ABRAHAM",
+    "password": "Jose1988"
+  },
+  {
+    "ip": "10.200.30.253",
+    "mac": "1c:c0:e1:3f:2e:ac",
+    "ssid": "UT FAM MEJIA",
+    "password": "daniela2008"
   }
 ]
