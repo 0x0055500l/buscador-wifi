@@ -86529,7 +86529,7 @@
     "ip": "10.171.48.22",
     "mac": "e8:9f:ec:d2:17:0e",
     "ssid": "Familia_Diaz_Ramirez",
-    "password": "\u0000\u0090\u00e2k?<"
+    "password": "\u0090\u00e2k?<"
   },
   {
     "ip": "10.171.48.23",
@@ -129106,5 +129106,1301 @@
     "mac": "48:f8:ff:82:db:2e",
     "ssid": "ENRED",
     "password": "RW5yZWQ0MDE1"
+  },
+  {
+    "ip": "10.171.32.47",
+    "mac": "D4:6E:0E:A0:EC:42",
+    "ssid": "Pulperia_El_Estadio",
+    "password": "Castaneda1865"
+  },
+  {
+    "ip": "10.171.32.64",
+    "mac": "C0:25:E9:DA:06:D2",
+    "ssid": "Dom\u00ednguez",
+    "password": "1604abril"
+  },
+  {
+    "ip": "10.171.32.175",
+    "mac": "D4:6E:0E:F8:54:0C",
+    "ssid": "RESTAURANTE_OASIS_",
+    "password": "Oasis2023"
+  },
+  {
+    "ip": "10.171.45.229",
+    "mac": "D8:07:B6:90:DD:2C",
+    "ssid": "REYNO NATURAL",
+    "password": "Daniel_Flores"
+  },
+  {
+    "ip": "10.171.45.234",
+    "mac": "60:E3:27:BE:50:72",
+    "ssid": "FAM_RIVERA",
+    "password": "Jose2007"
+  },
+  {
+    "ip": "10.171.47.238",
+    "mac": "C0:25:67:26:AB:A0",
+    "ssid": "Falla electrica",
+    "password": "12345678"
+  },
+  {
+    "ip": "10.171.48.36",
+    "mac": "0C:80:63:87:3F:2C",
+    "ssid": "FAMILIA_MENDEZ",
+    "password": "mendez1818"
+  },
+  {
+    "ip": "10.171.54.100",
+    "mac": "C4:71:54:3E:18:A8",
+    "ssid": "Didier Aguilar",
+    "password": "ElsaAguilar1975"
+  },
+  {
+    "ip": "10.171.54.132",
+    "mac": "B0:BE:76:70:DF:72",
+    "ssid": "Familia Galvez",
+    "password": "Haydelin2026"
+  },
+  {
+    "ip": "10.171.54.150",
+    "mac": "C0:25:67:21:D0:20",
+    "ssid": "LA BEBA",
+    "password": "Adonel2004"
+  },
+  {
+    "ip": "10.171.54.150",
+    "mac": "C0:25:67:21:D0:20",
+    "ssid": "LA BEBA",
+    "password": "Adonel2004"
+  },
+  {
+    "ip": "10.171.54.150",
+    "mac": "C0:25:67:21:D0:20",
+    "ssid": "LA BEBA",
+    "password": "Adonel2004"
+  },
+  {
+    "ip": "10.171.58.106",
+    "mac": "0C:80:63:77:8A:34",
+    "ssid": "C.E.B EDUARDO CABALLERO SANCHEZ",
+    "password": "Asdfghj316497!*-*"
+  },
+  {
+    "ip": "10.171.61.91",
+    "mac": "40:3F:8C:91:00:64",
+    "ssid": "Anyeli",
+    "password": "Aurora2020"
+  },
+  {
+    "ip": "10.171.62.138",
+    "mac": "C0:25:E9:D9:B9:60",
+    "ssid": "ABIGAIL_PAVON",
+    "password": "97532145"
+  },
+  {
+    "ip": "10.171.62.158",
+    "mac": "D4:6E:0E:A1:10:18",
+    "ssid": "Familia_Martinez",
+    "password": "95407385"
+  },
+  {
+    "ip": "10.171.62.245",
+    "mac": "C0:25:E9:DA:03:3C",
+    "ssid": "DIAZ_LEVERON",
+    "password": "Lizandro2293"
+  },
+  {
+    "ip": "10.171.67.65",
+    "mac": "B0:BE:76:C0:0F:EE",
+    "ssid": "IGLESIA DE CRISTO ROCA ETERNA",
+    "password": "cristoestavivo2025"
+  },
+  {
+    "ip": "10.171.68.14",
+    "mac": "84:16:F9:C5:15:D8",
+    "ssid": "FAMILY MENDOZA",
+    "password": "MARAYaHERRERA"
+  },
+  {
+    "ip": "10.171.68.22",
+    "mac": "98:DA:C4:9F:70:A8",
+    "ssid": "FAMILIA TOBIAS OCHOA",
+    "password": "Adrian2025"
+  },
+  {
+    "ip": "10.171.68.70",
+    "mac": "0C:80:63:77:14:1E",
+    "ssid": "FAMILIA ALVAREZ",
+    "password": "Katrachos20"
+  },
+  {
+    "ip": "10.171.68.74",
+    "mac": "0C:80:63:77:14:04",
+    "ssid": "Familia Armijo",
+    "password": "angelarmijo"
+  },
+  {
+    "ip": "10.171.68.79",
+    "mac": "84:16:F9:C5:30:90",
+    "ssid": "FAMILIA LOPEZ FUNEZ",
+    "password": "CristoRey"
+  },
+  {
+    "ip": "10.171.68.101",
+    "mac": "D8:07:B6:90:DB:0C",
+    "ssid": "FAMILIA LANZA",
+    "password": "Barcelona10"
+  },
+  {
+    "ip": "10.171.68.132",
+    "mac": "98:DA:C4:9F:71:A2",
+    "ssid": "YAQUI_QUESADA",
+    "password": "Elvin@13"
+  },
+  {
+    "ip": "10.171.68.206",
+    "mac": "1C:3B:F3:0B:29:14",
+    "ssid": "ENRED_FAM_PAVON",
+    "password": "Samantha200406"
+  },
+  {
+    "ip": "10.171.68.217",
+    "mac": "D8:07:B6:90:E4:EE",
+    "ssid": "FAMILIA VALLECILLO",
+    "password": "Reyes1982"
+  },
+  {
+    "ip": "10.171.69.3",
+    "mac": "D8:07:B6:90:D6:34",
+    "ssid": "FAMILIA PERALTA ZELAYA",
+    "password": "0101200501850"
+  },
+  {
+    "ip": "10.171.69.4",
+    "mac": "D8:07:B6:90:E4:9A",
+    "ssid": "FAMILIA MARTINEZ",
+    "password": "sohemartinez"
+  },
+  {
+    "ip": "10.171.69.5",
+    "mac": "D8:07:B6:90:E6:7C",
+    "ssid": "TP-Link_E67C",
+    "password": "Genesis7"
+  },
+  {
+    "ip": "10.171.69.6",
+    "mac": "C0:25:67:0D:88:20",
+    "ssid": "FAM-HERNANDEZ-PUERTO",
+    "password": "MARINA50"
+  },
+  {
+    "ip": "10.171.69.13",
+    "mac": "D8:07:B6:90:D8:DA",
+    "ssid": "ENRED-FAM-MARTINEZ",
+    "password": "1807198401268"
+  },
+  {
+    "ip": "10.171.69.19",
+    "mac": "7C:8B:CA:F2:F0:6C",
+    "ssid": "FAMILIA VEGA PALACIOS",
+    "password": "24092018"
+  },
+  {
+    "ip": "10.171.69.20",
+    "mac": "CC:32:E5:49:84:64",
+    "ssid": "Familia Solis",
+    "password": "Solis777"
+  },
+  {
+    "ip": "10.171.69.26",
+    "mac": "84:16:F9:7F:37:BA",
+    "ssid": "FAMILIA HERNANDEZ",
+    "password": "Benedith.1419."
+  },
+  {
+    "ip": "10.171.69.37",
+    "mac": "D8:07:B6:90:E7:26",
+    "ssid": "DISCOTEC MI RANCHITO",
+    "password": "irma1967"
+  },
+  {
+    "ip": "10.171.69.71",
+    "mac": "98:DA:C4:9F:7C:FA",
+    "ssid": "ENRED_FAM_AVILA",
+    "password": "Cristo2024"
+  },
+  {
+    "ip": "10.171.69.78",
+    "mac": "0C:80:63:0D:EF:2C",
+    "ssid": "FAMILIA COOT PUERTO",
+    "password": "00079COOT"
+  },
+  {
+    "ip": "10.171.69.90",
+    "mac": "68:FF:7B:8C:43:7E",
+    "ssid": "FAMILIA IRIAS",
+    "password": "Copito1998"
+  },
+  {
+    "ip": "10.171.69.93",
+    "mac": "D8:07:B6:90:DD:B2",
+    "ssid": "ENRED FAMILIA LOPEZ",
+    "password": "Diosesbueno"
+  },
+  {
+    "ip": "10.171.69.103",
+    "mac": "C0:25:E9:DA:08:4E",
+    "ssid": "FAMILIA GALEAS",
+    "password": "Coyoles2024"
+  },
+  {
+    "ip": "10.171.69.132",
+    "mac": "C0:25:67:47:71:C8",
+    "ssid": "FAMILIA MACHIGUA",
+    "password": "joseperez1881"
+  },
+  {
+    "ip": "10.171.69.133",
+    "mac": "C0:25:E9:A8:A3:52",
+    "ssid": "ENRED-FAM-TORRES",
+    "password": "Gemelos2010."
+  },
+  {
+    "ip": "10.171.69.137",
+    "mac": "0C:80:63:77:7D:F6",
+    "ssid": "FAMILIA VELEZ",
+    "password": "Reyvaz2719"
+  },
+  {
+    "ip": "10.171.69.141",
+    "mac": "C0:25:E9:4A:99:FA",
+    "ssid": "Conectando...",
+    "password": "895459572018"
+  },
+  {
+    "ip": "10.171.69.142",
+    "mac": "D8:07:B6:90:E5:CE",
+    "ssid": "FAMILIA DURAN",
+    "password": "GERSON1970"
+  },
+  {
+    "ip": "10.171.69.210",
+    "mac": "7C:8B:CA:F2:A4:90",
+    "ssid": "Familia_Sanchez",
+    "password": "Coyoles2025"
+  },
+  {
+    "ip": "10.171.69.212",
+    "mac": "98:DA:C4:9F:5D:92",
+    "ssid": "FAM_ELVIRA",
+    "password": "Elvira1956"
+  },
+  {
+    "ip": "10.171.70.12",
+    "mac": "C4:71:54:2B:17:E6",
+    "ssid": "FAMILIA MARTINEZ",
+    "password": "LaurenDayana2020"
+  },
+  {
+    "ip": "10.171.70.13",
+    "mac": "C0:25:E9:4A:A1:48",
+    "ssid": "PULPERIA DANIELA",
+    "password": "1991DANIEL"
+  },
+  {
+    "ip": "10.171.72.22",
+    "mac": "40:3F:8C:91:0B:E0",
+    "ssid": "ENRED FAM URBINA",
+    "password": "A8051985"
+  },
+  {
+    "ip": "10.171.72.63",
+    "mac": "1C:3B:F3:0B:29:16",
+    "ssid": "ENRED-FAM-DURAN",
+    "password": "Diazduran1961"
+  },
+  {
+    "ip": "10.171.72.64",
+    "mac": "1C:3B:F3:0B:29:0E",
+    "ssid": "ENRED-FAM-BANEGAS",
+    "password": "Denisjosue23"
+  },
+  {
+    "ip": "10.171.72.78",
+    "mac": "C0:C9:E3:7E:80:06",
+    "ssid": "FAM-ESPINOZA",
+    "password": "DHerrera2022"
+  },
+  {
+    "ip": "10.171.72.145",
+    "mac": "D8:07:B6:90:E5:EE",
+    "ssid": "Red_Privada",
+    "password": "Diosesbueno2714"
+  },
+  {
+    "ip": "10.171.72.232",
+    "mac": "C0:C9:E3:7E:7D:8A",
+    "ssid": "FAMILIA_RAUDALES",
+    "password": "15101968Be"
+  },
+  {
+    "ip": "10.171.75.32",
+    "mac": "7C:8B:CA:F2:F2:CC",
+    "ssid": "ENRED-FAM-HERNANDEZ",
+    "password": "1503198000473"
+  },
+  {
+    "ip": "10.171.75.167",
+    "mac": "D8:07:B6:90:E5:EC",
+    "ssid": "ENRED_FAM_CABALLERO",
+    "password": "Caballero541807"
+  },
+  {
+    "ip": "10.171.76.4",
+    "mac": "98:DA:C4:9F:67:E0",
+    "ssid": "ENRED-FAM-CARDONA",
+    "password": "Sofia0422"
+  },
+  {
+    "ip": "10.171.76.42",
+    "mac": "98:DA:C4:9F:65:A2",
+    "ssid": "ESTACION DE SERVISIO LA SABANA",
+    "password": "IOC18072017"
+  },
+  {
+    "ip": "10.171.76.71",
+    "mac": "74:DA:88:23:68:22",
+    "ssid": "FAMILIA FUNEZ.",
+    "password": "20448378"
+  },
+  {
+    "ip": "10.171.76.83",
+    "mac": "C0:25:E9:B4:E1:22",
+    "ssid": "Familia Hernandez",
+    "password": "Sendas7c"
+  },
+  {
+    "ip": "10.171.76.84",
+    "mac": "D8:07:B6:90:E5:50",
+    "ssid": "ENRED-FAM-ISAULA",
+    "password": "9denoviembre"
+  },
+  {
+    "ip": "10.171.76.98",
+    "mac": "1C:3B:F3:0B:20:5E",
+    "ssid": "MUNGUIA",
+    "password": "18071976"
+  },
+  {
+    "ip": "10.171.76.100",
+    "mac": "18:D6:C7:44:53:9E",
+    "ssid": "ENRED FAM MARTINEZ",
+    "password": "Camila25122018"
+  },
+  {
+    "ip": "10.171.76.114",
+    "mac": "74:DA:88:23:63:B4",
+    "ssid": "FAMILIA URBINA",
+    "password": "BARDALESMATEO641"
+  },
+  {
+    "ip": "10.171.76.115",
+    "mac": "74:DA:88:23:6D:CC",
+    "ssid": "FAMILIA ANTUNEZ",
+    "password": "Salmos24:1"
+  },
+  {
+    "ip": "10.171.76.121",
+    "mac": "74:DA:88:23:61:B8",
+    "ssid": "FAMILIA GONZALES ROMERO.",
+    "password": "josue1986"
+  },
+  {
+    "ip": "10.171.76.137",
+    "mac": "D4:6E:0E:A0:F8:C8",
+    "ssid": "FAMILIA BANEGAS",
+    "password": "7/62020Junio."
+  },
+  {
+    "ip": "10.171.76.181",
+    "mac": "0C:80:63:77:1E:0A",
+    "ssid": "ENRED-FAM-VALLECILLO",
+    "password": "19731579"
+  },
+  {
+    "ip": "10.171.76.183",
+    "mac": "74:DA:88:23:63:D8",
+    "ssid": "ENRED-FAM-RIVERA",
+    "password": "Jessica19996"
+  },
+  {
+    "ip": "10.171.76.194",
+    "mac": "74:DA:88:23:6B:36",
+    "ssid": "ENRED_FAM_CASTRO",
+    "password": "Castro1962"
+  },
+  {
+    "ip": "10.171.76.213",
+    "mac": "1C:3B:F3:0B:29:0C",
+    "ssid": "MARLA DIAZ",
+    "password": "88546099"
+  },
+  {
+    "ip": "10.171.76.221",
+    "mac": "40:3F:8C:91:0B:D0",
+    "ssid": "FAMILIA FUNEZ",
+    "password": "Ramelia1927"
+  },
+  {
+    "ip": "10.171.76.225",
+    "mac": "D4:6E:0E:F8:53:E6",
+    "ssid": "familia Bernal Duarte",
+    "password": "Velareyes6"
+  },
+  {
+    "ip": "10.171.76.226",
+    "mac": "0C:80:63:77:B6:E2",
+    "ssid": "ENRED-FAM-VARGAS",
+    "password": "cardona1807"
+  },
+  {
+    "ip": "10.171.77.19",
+    "mac": "74:DA:88:23:68:A0",
+    "ssid": "INTERMAESTROS2",
+    "password": "EDUCATE12"
+  },
+  {
+    "ip": "10.171.77.81",
+    "mac": "C4:71:54:2B:28:16",
+    "ssid": "FAMILIA-GUZMAN-FIGUEROA",
+    "password": "Marla12111973"
+  },
+  {
+    "ip": "10.171.77.95",
+    "mac": "C4:71:54:2B:22:C0",
+    "ssid": "FAMILIA PALMA",
+    "password": "01022006"
+  },
+  {
+    "ip": "10.171.77.125",
+    "mac": "74:DA:88:23:66:F8",
+    "ssid": "ENRED FAM SOSA",
+    "password": "Victoria2715"
+  },
+  {
+    "ip": "10.171.77.197",
+    "mac": "C0:25:E9:B4:E0:BE",
+    "ssid": "FAMILIA REYES",
+    "password": "Reymart16"
+  },
+  {
+    "ip": "10.171.77.200",
+    "mac": "C4:71:54:3E:65:66",
+    "ssid": "FAMILIA MARTINEZ",
+    "password": "09082325"
+  },
+  {
+    "ip": "10.171.77.220",
+    "mac": "C4:71:54:2B:0A:1A",
+    "ssid": "ENRED-FAM-ORELLANA",
+    "password": "yaestarde1982"
+  },
+  {
+    "ip": "10.171.78.11",
+    "mac": "C4:71:54:3E:45:0A",
+    "ssid": "ENRED-VERDURAS-VINDEL",
+    "password": "Vindel1807"
+  },
+  {
+    "ip": "10.171.78.38",
+    "mac": "74:DA:88:23:60:20",
+    "ssid": "FAMILIA MARTINEZ",
+    "password": "JESUS2024"
+  },
+  {
+    "ip": "10.171.78.75",
+    "mac": "98:DA:C4:9F:59:34",
+    "ssid": "ENRED FAM CRUZ RIVERA",
+    "password": "Juancruz"
+  },
+  {
+    "ip": "10.171.78.168",
+    "mac": "B0:BE:76:C0:12:22",
+    "ssid": "FAMILIA-ALVARADO",
+    "password": "94189704"
+  },
+  {
+    "ip": "10.171.79.38",
+    "mac": "C8:3A:35:64:0E:C8",
+    "ssid": "FAMILIA RODRIGUEZ",
+    "password": "Petruquio44"
+  },
+  {
+    "ip": "10.171.79.60",
+    "mac": "D8:07:B6:90:CA:3E",
+    "ssid": "FAM-MARTINEZ-VEGA",
+    "password": "Victor19"
+  },
+  {
+    "ip": "10.171.79.64",
+    "mac": "84:16:F9:60:EE:A8",
+    "ssid": "FAM-LACAYO-PUERTO",
+    "password": "cielo2013"
+  },
+  {
+    "ip": "10.171.79.67",
+    "mac": "98:DA:C4:9F:55:58",
+    "ssid": "FAM_RODRIGUEZ",
+    "password": "Maoly_1908"
+  },
+  {
+    "ip": "10.171.79.77",
+    "mac": "50:D4:F7:BE:11:0C",
+    "ssid": "ENRED-FAM-MEJIA",
+    "password": "18071979"
+  },
+  {
+    "ip": "10.171.79.86",
+    "mac": "0C:80:63:77:B5:40",
+    "ssid": "FAMILIA MARTINEZ",
+    "password": "Nassir2525"
+  },
+  {
+    "ip": "10.171.79.125",
+    "mac": "50:D4:F7:BE:18:74",
+    "ssid": "FAMILIA RIVERA",
+    "password": "Cami72909297"
+  },
+  {
+    "ip": "10.171.79.141",
+    "mac": "D4:6E:0E:F8:56:4C",
+    "ssid": "FAM-SUAZO-MEJIA",
+    "password": "MARCELASUAZO"
+  },
+  {
+    "ip": "10.171.79.157",
+    "mac": "68:FF:7B:8C:43:B0",
+    "ssid": "ENRED-FAM-URBINA",
+    "password": "19681969"
+  },
+  {
+    "ip": "10.171.81.6",
+    "mac": "40:3F:8C:90:F1:FA",
+    "ssid": "ENRED-FAM-REYES",
+    "password": "Rigoreyes"
+  },
+  {
+    "ip": "10.171.81.198",
+    "mac": "14:CC:20:53:4C:72",
+    "ssid": "FALLA GENERADOR OLANCHITO",
+    "password": "2022ENRED2022"
+  },
+  {
+    "ip": "10.171.86.22",
+    "mac": "84:16:F9:7C:2F:0A",
+    "ssid": "FAMILIA POSADAS",
+    "password": "Chinchia0416"
+  },
+  {
+    "ip": "10.171.89.12",
+    "mac": "98:DA:C4:9F:69:0E",
+    "ssid": "ENRED-FAM-DELARCA",
+    "password": "tilapia1951"
+  },
+  {
+    "ip": "10.171.89.16",
+    "mac": "D8:07:B6:90:E7:2E",
+    "ssid": "HOGAR-EN-VICTORIA",
+    "password": "Deus2023"
+  },
+  {
+    "ip": "10.171.89.86",
+    "mac": "C0:C9:E3:7E:7C:54",
+    "ssid": "ENRED-FAM-JUARES",
+    "password": "14221980"
+  },
+  {
+    "ip": "10.171.89.171",
+    "mac": "40:3F:8C:90:F2:6C",
+    "ssid": "FAM-SORTO-BONILLA",
+    "password": "RUNGUI2013"
+  },
+  {
+    "ip": "10.171.89.227",
+    "mac": "1C:3B:F3:0B:28:A4",
+    "ssid": "Familia_Diaz",
+    "password": "18072000"
+  },
+  {
+    "ip": "10.171.89.229",
+    "mac": "C0:25:67:43:27:E0",
+    "ssid": "RODEO-SAGO",
+    "password": "SAGO20241"
+  },
+  {
+    "ip": "10.171.89.234",
+    "mac": "40:3F:8C:90:F4:CE",
+    "ssid": "ENRED_FAM_SANCHEZ",
+    "password": "Michelle2011"
+  },
+  {
+    "ip": "10.171.91.99",
+    "mac": "84:16:F9:7F:35:56",
+    "ssid": "ENRED-FAM-CRUZ",
+    "password": "Johan01romeroCruz"
+  },
+  {
+    "ip": "10.171.91.207",
+    "mac": "D8:07:B6:90:D6:5E",
+    "ssid": "FAM-M-Y-S",
+    "password": "24466248#"
+  },
+  {
+    "ip": "10.171.94.73",
+    "mac": "50:D4:F7:BE:19:5C",
+    "ssid": "ENRED HERMANOS PERALTA",
+    "password": "alejandranicoll"
+  },
+  {
+    "ip": "10.171.95.126",
+    "mac": "B0:BE:76:71:16:26",
+    "ssid": "LOCKY",
+    "password": "luna0219"
+  },
+  {
+    "ip": "10.171.95.166",
+    "mac": "0C:80:63:0D:DD:C0",
+    "ssid": "Familia Vasquez Ramos",
+    "password": "195719769613"
+  },
+  {
+    "ip": "10.171.95.199",
+    "mac": "98:DA:C4:9F:77:1C",
+    "ssid": "FAMILIA ORTIZ",
+    "password": "Iselaortiz2011"
+  },
+  {
+    "ip": "10.171.95.209",
+    "mac": "D8:07:B6:90:E3:1E",
+    "ssid": "Familia_Isaula",
+    "password": "16092201"
+  },
+  {
+    "ip": "10.171.156.33",
+    "mac": "84:16:F9:60:EC:A0",
+    "ssid": "JOSUE",
+    "password": "Josue2022"
+  },
+  {
+    "ip": "10.171.156.89",
+    "mac": "D4:6E:0E:F8:3A:B0",
+    "ssid": "Familia Claros",
+    "password": "delcid1515"
+  },
+  {
+    "ip": "10.171.156.122",
+    "mac": "B0:BE:76:C0:11:D4",
+    "ssid": "FAMILIA HERNANDEZ",
+    "password": "kiany2021"
+  },
+  {
+    "ip": "10.171.158.148",
+    "mac": "B0:BE:76:C0:10:78",
+    "ssid": "RIVERA",
+    "password": "Riverafer2019"
+  },
+  {
+    "ip": "10.171.192.70",
+    "mac": "74:DA:88:23:61:46",
+    "ssid": "Familia-Garrido",
+    "password": "GuerreroGarrido1983"
+  },
+  {
+    "ip": "10.171.193.42",
+    "mac": "C0:25:E9:B4:F0:3E",
+    "ssid": "DAVID MARTINEZ",
+    "password": "emadani2"
+  },
+  {
+    "ip": "10.171.202.18",
+    "mac": "0C:80:63:FB:96:A0",
+    "ssid": "Cabrera Carias",
+    "password": "Ivanyosmar"
+  },
+  {
+    "ip": "10.171.209.8",
+    "mac": "F4:F2:6D:E1:F3:2C",
+    "ssid": "_HUGO_",
+    "password": "armando92"
+  },
+  {
+    "ip": "10.171.214.192",
+    "mac": "D4:6E:0E:A1:2A:36",
+    "ssid": "Familia Mejia",
+    "password": "mirian18"
+  },
+  {
+    "ip": "10.171.229.18",
+    "mac": "D8:07:B6:90:E7:4E",
+    "ssid": "Familia_Castillo",
+    "password": "Castillo"
+  },
+  {
+    "ip": "10.171.229.125",
+    "mac": "50:D4:F7:D9:48:D2",
+    "ssid": "DANIEL GARCIA",
+    "password": "Toyota85"
+  },
+  {
+    "ip": "10.171.229.174",
+    "mac": "50:D4:F7:D9:52:B8",
+    "ssid": "FAMILIA-ALEMAN",
+    "password": "parlante1"
+  },
+  {
+    "ip": "10.171.229.196",
+    "mac": "7C:8B:CA:F2:9B:36",
+    "ssid": "Lacteos Moya",
+    "password": "aleroalaia"
+  },
+  {
+    "ip": "10.171.229.211",
+    "mac": "C0:C9:E3:7E:7A:6A",
+    "ssid": "PINTURAS AUTOMOTRIS AMERICANAS",
+    "password": "johan1991"
+  },
+  {
+    "ip": "10.171.231.57",
+    "mac": "C4:71:54:2B:5D:5A",
+    "ssid": "FAMILIA RODRIGUEZ",
+    "password": "0208198900104"
+  },
+  {
+    "ip": "10.171.231.109",
+    "mac": "C0:25:67:47:3C:48",
+    "ssid": "Familia Hernandez Escoto",
+    "password": "Hernandez2021"
+  },
+  {
+    "ip": "10.171.231.117",
+    "mac": "7C:8B:CA:F2:8F:64",
+    "ssid": "Camila Carcamo",
+    "password": "020819861"
+  },
+  {
+    "ip": "10.171.231.139",
+    "mac": "50:D4:F7:BE:17:32",
+    "ssid": "H_NAVAS.",
+    "password": "DAIHN1981"
+  },
+  {
+    "ip": "10.171.231.175",
+    "mac": "40:3F:8C:91:09:54",
+    "ssid": "Rivera-Lopez",
+    "password": "0202198200288"
+  },
+  {
+    "ip": "10.171.231.199",
+    "mac": "50:D4:F7:D9:50:A6",
+    "ssid": "Repetidor",
+    "password": "NicolasBardales19"
+  },
+  {
+    "ip": "10.171.231.201",
+    "mac": "60:E3:27:94:08:52",
+    "ssid": "BUFETE JURIDICO RODRIGUEZ",
+    "password": "carlosmanuel091015"
+  },
+  {
+    "ip": "10.171.231.211",
+    "mac": "0C:80:63:9B:FE:FA",
+    "ssid": "PLAZA CENTRO",
+    "password": "Roberto9866"
+  },
+  {
+    "ip": "10.171.233.68",
+    "mac": "74:DA:88:23:68:88",
+    "ssid": "LEMUS-SERRANO",
+    "password": "Diosesamor"
+  },
+  {
+    "ip": "10.171.235.12",
+    "mac": "D8:07:B6:90:CB:44",
+    "ssid": "EVANISTERIA_JEFERSON",
+    "password": "28galindo2003"
+  },
+  {
+    "ip": "10.171.236.18",
+    "mac": "7C:8B:CA:F2:DD:0E",
+    "ssid": "ZUNIGA",
+    "password": "01051970"
+  },
+  {
+    "ip": "10.171.236.19",
+    "mac": "0C:80:63:6B:4D:A4",
+    "ssid": "RUBEN FLORES",
+    "password": "LUZ12345RAMOS"
+  },
+  {
+    "ip": "10.171.236.41",
+    "mac": "C4:71:54:2B:29:B6",
+    "ssid": "RODRIGO",
+    "password": "26abril1918"
+  },
+  {
+    "ip": "10.171.236.44",
+    "mac": "0C:80:63:87:C0:56",
+    "ssid": "FUENTES/ANDRADE",
+    "password": "evaruthoseas1"
+  },
+  {
+    "ip": "10.171.236.72",
+    "mac": "7C:8B:CA:F2:AD:88",
+    "ssid": "FAMILIA CASTRO CASTRO",
+    "password": "SINAI2024"
+  },
+  {
+    "ip": "10.171.236.80",
+    "mac": "EC:08:6B:BF:2E:44",
+    "ssid": "FAMILIA  COREA",
+    "password": "Corea9131"
+  },
+  {
+    "ip": "10.171.236.82",
+    "mac": "C4:E9:84:EF:15:44",
+    "ssid": "FAMILIA ULLOA",
+    "password": "mateoamador"
+  },
+  {
+    "ip": "10.171.236.84",
+    "mac": "C4:71:54:3E:2C:6E",
+    "ssid": "FAMILIA PINEDA",
+    "password": "260704MAM"
+  },
+  {
+    "ip": "10.171.236.90",
+    "mac": "D8:07:B6:90:D2:A2",
+    "ssid": "FAMILIA FERNANDEZ",
+    "password": "donissfr"
+  },
+  {
+    "ip": "10.171.236.103",
+    "mac": "C8:3A:35:03:77:30",
+    "ssid": "Marlen Zelaya",
+    "password": "yeyni2511"
+  },
+  {
+    "ip": "10.171.236.105",
+    "mac": "7C:8B:CA:F2:CC:6C",
+    "ssid": "Familia Diaz",
+    "password": "MARTAINES"
+  },
+  {
+    "ip": "10.171.236.108",
+    "mac": "C0:25:67:47:7E:F8",
+    "ssid": "FAMILIA WILLIANS",
+    "password": "Abidanwilliams2022"
+  },
+  {
+    "ip": "10.171.236.133",
+    "mac": "84:16:F9:7C:2F:06",
+    "ssid": "INDY.",
+    "password": "32255189"
+  },
+  {
+    "ip": "10.171.236.139",
+    "mac": "B0:BE:76:70:FF:3E",
+    "ssid": "Familia Diaz",
+    "password": "19541608"
+  },
+  {
+    "ip": "10.171.236.144",
+    "mac": "0C:80:63:27:48:D0",
+    "ssid": "KENIA ROMERO",
+    "password": "Otonielsoti"
+  },
+  {
+    "ip": "10.171.236.210",
+    "mac": "C0:25:67:50:FB:40",
+    "ssid": "FAMILIA ALONZO",
+    "password": "20002011"
+  },
+  {
+    "ip": "10.171.236.211",
+    "mac": "C4:71:54:3E:3B:9E",
+    "ssid": "FATIMA TE AM\u00d3.",
+    "password": "Covi1923"
+  },
+  {
+    "ip": "10.171.237.12",
+    "mac": "7C:8B:CA:F2:91:12",
+    "ssid": "FAMILIA_PARAJON",
+    "password": "ELIZACH2"
+  },
+  {
+    "ip": "10.171.237.71",
+    "mac": "40:3F:8C:91:0C:2C",
+    "ssid": "Marthita",
+    "password": "Marthita2024"
+  },
+  {
+    "ip": "10.171.237.77",
+    "mac": "C0:25:67:0F:98:60",
+    "ssid": "SANCHEZ BARBER SHOP",
+    "password": "Delmer13"
+  },
+  {
+    "ip": "10.171.237.98",
+    "mac": "0C:80:63:6B:0E:EA",
+    "ssid": "Fam. Munguia",
+    "password": "Countryapple@12345678910"
+  },
+  {
+    "ip": "10.171.237.101",
+    "mac": "D8:07:B6:90:D7:34",
+    "ssid": "GAMEZ_HERNANDEZ",
+    "password": "B94A96A17A20"
+  },
+  {
+    "ip": "10.171.237.102",
+    "mac": "0C:80:63:B5:D3:2E",
+    "ssid": "Liam andrade",
+    "password": "RosalesRosales12"
+  },
+  {
+    "ip": "10.171.237.109",
+    "mac": "D4:6E:0E:A0:E9:B0",
+    "ssid": "Fam.  Casco.",
+    "password": "Noviembre2023"
+  },
+  {
+    "ip": "10.171.237.138",
+    "mac": "C0:25:E9:4A:74:20",
+    "ssid": "FAMILIA_FLORES",
+    "password": "Sebastian21"
+  },
+  {
+    "ip": "10.171.237.142",
+    "mac": "C0:25:67:48:7E:70",
+    "ssid": "ELENA CASCO",
+    "password": "Rolando.."
+  },
+  {
+    "ip": "10.171.237.200",
+    "mac": "D4:6E:0E:A0:F7:DC",
+    "ssid": "JUANA RAUDALES",
+    "password": "12271963"
+  },
+  {
+    "ip": "10.171.237.216",
+    "mac": "C0:25:67:43:27:D8",
+    "ssid": "FAM. HENR\u00cdQUEZ.",
+    "password": "Honduras"
+  },
+  {
+    "ip": "10.171.237.220",
+    "mac": "C4:71:54:3E:27:C4",
+    "ssid": "FAMILIA HERNADEZ",
+    "password": "marcela123"
+  },
+  {
+    "ip": "10.171.238.15",
+    "mac": "AC:84:C6:D3:0B:86",
+    "ssid": "TITO'S PIZZA ??",
+    "password": "Dara2328"
+  },
+  {
+    "ip": "10.171.238.17",
+    "mac": "D4:6E:0E:A1:14:38",
+    "ssid": "Familia Andrade.",
+    "password": "Samantha7"
+  },
+  {
+    "ip": "10.171.238.20",
+    "mac": "C0:25:E9:4A:73:3E",
+    "ssid": "Familia Herrera.",
+    "password": "Candida-Herrra"
+  },
+  {
+    "ip": "10.171.238.71",
+    "mac": "98:DA:C4:9F:7C:EE",
+    "ssid": "CERNA",
+    "password": "Jeyden2020"
+  },
+  {
+    "ip": "10.171.238.73",
+    "mac": "0C:80:63:87:C5:40",
+    "ssid": "TALLER DE MOTOS.",
+    "password": "Dceda3547c"
+  },
+  {
+    "ip": "10.171.238.77",
+    "mac": "D4:6E:0E:A0:EE:9C",
+    "ssid": "FAMILIA EUCEDA",
+    "password": "17031971"
+  },
+  {
+    "ip": "10.171.238.79",
+    "mac": "B0:BE:76:71:34:0E",
+    "ssid": "al_final_del_arcoiris",
+    "password": "rayandoelsol"
+  },
+  {
+    "ip": "10.171.238.82",
+    "mac": "C0:25:67:48:A8:30",
+    "ssid": "WIFI",
+    "password": "Ejosue2214"
+  },
+  {
+    "ip": "10.171.238.83",
+    "mac": "C0:25:E9:4A:81:DE",
+    "ssid": "Elizabeth.",
+    "password": "97115478"
+  },
+  {
+    "ip": "10.171.238.136",
+    "mac": "0C:80:63:9B:FD:FE",
+    "ssid": "VICTORIA",
+    "password": "19352024"
+  },
+  {
+    "ip": "10.171.238.140",
+    "mac": "B0:BE:76:C0:0C:0A",
+    "ssid": "Zuniga-Lobo",
+    "password": "Lobo13zuniga"
+  },
+  {
+    "ip": "10.171.238.146",
+    "mac": "C4:71:54:2B:12:98",
+    "ssid": "Familia Ramos",
+    "password": "Malaplaga1998"
+  },
+  {
+    "ip": "10.171.238.152",
+    "mac": "C0:C9:E3:7E:7A:16",
+    "ssid": "ORTEGA_RODRIGUEZ",
+    "password": "JoseAgustinJosue"
+  },
+  {
+    "ip": "10.171.238.211",
+    "mac": "0C:80:63:0E:1D:22",
+    "ssid": "FAMILIA-RAMOS",
+    "password": "Marzo.2024"
+  },
+  {
+    "ip": "10.171.238.212",
+    "mac": "C4:71:54:3E:2E:8A",
+    "ssid": "SANTIAGO CASTRO",
+    "password": "comoqtal92"
+  },
+  {
+    "ip": "10.171.238.213",
+    "mac": "C0:C9:E3:7E:82:22",
+    "ssid": "FAMILIA LEIVA",
+    "password": "Karolina2024"
+  },
+  {
+    "ip": "10.171.238.214",
+    "mac": "C0:25:E9:DA:35:F6",
+    "ssid": "Familia Bonilla.",
+    "password": "Paredes1988"
+  },
+  {
+    "ip": "10.171.238.215",
+    "mac": "40:3F:8C:90:FE:9E",
+    "ssid": "Familia Reyes",
+    "password": "EvertoReyes"
+  },
+  {
+    "ip": "10.171.238.219",
+    "mac": "60:E3:27:BE:53:72",
+    "ssid": "Familia-Almendarez",
+    "password": "Leoo2025"
+  },
+  {
+    "ip": "10.171.238.221",
+    "mac": "84:16:F9:60:EF:4E",
+    "ssid": "HERNANDEZ",
+    "password": "Andresehacegamer"
+  },
+  {
+    "ip": "10.171.239.13",
+    "mac": "68:FF:7B:8C:11:52",
+    "ssid": "FAMILIA RIVAS CASTILLO",
+    "password": "castillorivas26"
+  },
+  {
+    "ip": "10.171.239.14",
+    "mac": "18:D6:C7:44:55:2E",
+    "ssid": "BREADCO",
+    "password": "Tutancamon.2696."
+  },
+  {
+    "ip": "10.171.239.18",
+    "mac": "C0:25:E9:4A:78:E0",
+    "ssid": "FAMILIA SARMIENTO",
+    "password": "30dejunio2025"
+  },
+  {
+    "ip": "10.171.239.27",
+    "mac": "C4:71:54:2B:72:CC",
+    "ssid": "Orellana Mec\u00e9n",
+    "password": "20132013"
+  },
+  {
+    "ip": "10.171.239.33",
+    "mac": "98:DA:C4:9F:5A:16",
+    "ssid": "CACERES",
+    "password": "2004200450"
+  },
+  {
+    "ip": "10.171.240.173",
+    "mac": "B0:BE:76:C0:62:A2",
+    "ssid": "FAM_MEJIA",
+    "password": "mejia19952020"
+  },
+  {
+    "ip": "10.171.240.237",
+    "mac": "D4:6E:0E:F8:4A:28",
+    "ssid": "ZUNIGA",
+    "password": "20111993"
+  },
+  {
+    "ip": "10.171.242.118",
+    "mac": "74:DA:88:23:65:8A",
+    "ssid": "Familia Padilla",
+    "password": "99628885a"
+  },
+  {
+    "ip": "10.171.242.149",
+    "mac": "98:DA:C4:9F:77:16",
+    "ssid": "Fam. Zelaya Diaz",
+    "password": "FraLi198828"
+  },
+  {
+    "ip": "10.171.242.164",
+    "mac": "98:DA:C4:9F:60:62",
+    "ssid": "Innovacielo",
+    "password": "innova23"
+  },
+  {
+    "ip": "10.171.242.189",
+    "mac": "D8:07:B6:90:E0:6A",
+    "ssid": "COMPUTACION",
+    "password": "gobulls2022"
+  },
+  {
+    "ip": "10.171.242.221",
+    "mac": "EC:08:6B:3A:89:60",
+    "ssid": "DIOS ES AMOR",
+    "password": "RicMat1923"
+  },
+  {
+    "ip": "10.171.243.204",
+    "mac": "B0:BE:76:70:E0:18",
+    "ssid": "FAMILIA_ESTRADA2",
+    "password": "jucecani2025"
+  },
+  {
+    "ip": "10.171.243.236",
+    "mac": "B0:BE:76:71:2A:80",
+    "ssid": "GREENSHOP",
+    "password": "Psyco2004"
+  },
+  {
+    "ip": "10.171.244.129",
+    "mac": "50:D4:F7:BE:18:32",
+    "ssid": "Familia Ayala",
+    "password": "AYALA1997"
+  },
+  {
+    "ip": "10.171.244.141",
+    "mac": "B0:BE:76:C0:0D:00",
+    "ssid": "AUTOSERVICIOS EL REY",
+    "password": "02091986"
+  },
+  {
+    "ip": "10.171.244.188",
+    "mac": "30:B5:C2:A2:5A:0A",
+    "ssid": "GAMERO2",
+    "password": "Gamero8530"
+  },
+  {
+    "ip": "10.171.245.201",
+    "mac": "98:DA:C4:9F:4D:7E",
+    "ssid": "RON_BAR",
+    "password": "RONBAR2024"
+  },
+  {
+    "ip": "10.171.248.11",
+    "mac": "B0:BE:76:C0:35:9C",
+    "ssid": "Famil_Hermandez_Ramos",
+    "password": "Ubenni2017"
+  },
+  {
+    "ip": "10.171.248.88",
+    "mac": "C0:25:67:48:64:B8",
+    "ssid": "Fam. Saavedra",
+    "password": "Dios1973"
+  },
+  {
+    "ip": "10.171.249.136",
+    "mac": "C0:25:E9:4A:A1:84",
+    "ssid": "Familia_Reyes_Avila",
+    "password": "Forever2023"
+  },
+  {
+    "ip": "10.171.250.76",
+    "mac": "C0:25:E9:DA:37:5C",
+    "ssid": "Familia_Amaya",
+    "password": "1976soriano"
+  },
+  {
+    "ip": "10.171.250.236",
+    "mac": "74:DA:88:23:5F:CC",
+    "ssid": "Gabino Rapalo",
+    "password": "0205101992"
+  },
+  {
+    "ip": "10.171.251.223",
+    "mac": "F4:F2:6D:CB:8C:50",
+    "ssid": "Autopartes_Omar",
+    "password": "Leticia15"
+  },
+  {
+    "ip": "10.171.251.225",
+    "mac": "50:D4:F7:BE:1D:7E",
+    "ssid": "Geidy Mendez",
+    "password": "corazon1010"
+  },
+  {
+    "ip": "10.171.252.86",
+    "mac": "B0:BE:76:71:02:50",
+    "ssid": "Motores Mangueras y Mas",
+    "password": "motoresybombas2023"
+  },
+  {
+    "ip": "10.171.252.98",
+    "mac": "50:D4:F7:BE:19:22",
+    "ssid": "Familia Rodriguez",
+    "password": "Valeria2024"
+  },
+  {
+    "ip": "10.171.252.170",
+    "mac": "C0:25:67:23:00:DC",
+    "ssid": "SUPER FARMACIA MI PREFERIDA.",
+    "password": "jose111170"
+  },
+  {
+    "ip": "10.171.255.94",
+    "mac": "A4:2B:B0:A2:FB:2C",
+    "ssid": "Padilla",
+    "password": "97995530"
+  },
+  {
+    "ip": "10.171.255.109",
+    "mac": "C0:25:E9:4A:77:00",
+    "ssid": "Familia Hahinsmar",
+    "password": "19812024"
   }
 ]
