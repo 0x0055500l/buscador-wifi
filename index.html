@@ -58,9 +58,14 @@
     }
 
     function isBase64(str) {
+      // Valida estructura base64 (múltiplos de 4, caracteres válidos, etc.)
+      if (!str || str.length % 4 !== 0 || /[^A-Za-z0-9+/=]/.test(str)) return false;
+    
       try {
-        return btoa(atob(str)) === str;
-      } catch (err) {
+        const decoded = atob(str);
+        // Verifica que el texto tenga solo caracteres imprimibles (ASCII)
+        return /^[\x20-\x7E]+$/.test(decoded);
+      } catch (e) {
         return false;
       }
     }
@@ -69,7 +74,7 @@
       try {
         return atob(str);
       } catch {
-        return str;
+        return str; // Si falla, retorna el original
       }
     }
 
