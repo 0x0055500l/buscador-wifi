@@ -57,18 +57,38 @@
       mostrarPagina();
     }
 
+    function isBase64(str) {
+      try {
+        return btoa(atob(str)) === str;
+      } catch (err) {
+        return false;
+      }
+    }
+    
+    function decodeBase64(str) {
+      try {
+        return atob(str);
+      } catch {
+        return str;
+      }
+    }
+
     function mostrarPagina() {
       const startIndex = (currentPage - 1) * resultsPerPage;
       const endIndex = startIndex + resultsPerPage;
       const paginatedResults = currentResults.slice(startIndex, endIndex);
 
-      document.getElementById('resultados').innerHTML = paginatedResults.map(e => `
-        <div class="entry">
-          <div class="ssid">📡 SSID: ${e.ssid}</div>
-          <div class="meta">🔗 MAC: ${e.mac} | 🌐 IP: ${e.ip}</div>
-          <div class="password">🔑 Contraseña: ${e.password}</div>
-        </div>
-      `).join('');
+      document.getElementById('resultados').innerHTML = paginatedResults.map(e => {
+        const decodedPassword = isBase64(e.password) ? decodeBase64(e.password) : e.password;
+    
+        return `
+          <div class="entry">
+            <div class="ssid">📡 SSID: ${e.ssid}</div>
+            <div class="meta">🔗 MAC: ${e.mac} | 🌐 IP: ${e.ip}</div>
+            <div class="password">🔑 Contraseña: ${decodedPassword}</div>
+          </div>
+        `;
+      }).join('');
 
       // Mostrar info de paginación
       const totalPages = Math.ceil(currentResults.length / resultsPerPage);
