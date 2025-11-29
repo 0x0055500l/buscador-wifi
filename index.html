@@ -1,123 +1,373 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Buscador de Wi-Fi Avanzado</title>
+  <title>Buscador de Wi-Fi Avanzado + Admin</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
   <style>
-    body { font-family: Arial, sans-serif; padding: 20px; background: #f9f9f9; }
-    input { width: 100%; padding: 10px; font-size: 16px; margin-bottom: 20px; }
-    .entry { padding: 15px; background: white; border-radius: 8px; margin-bottom: 10px; box-shadow: 0 0 5px rgba(0,0,0,0.1); }
-    .ssid { font-weight: bold; font-size: 18px; }
-    .password { color: green; font-weight: bold; }
-    .meta { font-size: 14px; color: #555; }
-    .pagination { margin-top: 20px; text-align: center; }
-    .pagination button { padding: 8px 12px; margin: 0 5px; font-size: 16px; cursor: pointer; }
+    body { background-color: #f3f4f6; }
+    .loader { border-top-color: #3498db; -webkit-animation: spinner 1.5s linear infinite; animation: spinner 1.5s linear infinite; }
+    @keyframes spinner { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
   </style>
 </head>
-<body>
-  <h2>🔍 Buscador de redes Wi-Fi</h2>
-  <input type="text" id="search" placeholder="Escribe SSID, MAC o Contraseña...">
-  <div id="resultados"></div>
-  <div class="pagination" id="pagination"></div>
-  <h3> -Made by @0x0055500l- </h3>
-  <script>
-    let data = [];
-    let currentPage = 1;
-    const resultsPerPage = 50; // Puedes cambiar esto a 100, 200, etc.
+<body class="text-gray-800">
+
+  <!-- Barra de Navegación -->
+  <nav class="bg-blue-600 text-white p-4 shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-bold"><i class="fas fa-wifi mr-2"></i>Wi-Fi Finder</h1>
+      <div>
+        <button id="btnLogin" class="bg-blue-700 hover:bg-blue-800 px-3 py-1 rounded text-sm transition">
+          <i class="fas fa-lock"></i> Acceso Admin
+        </button>
+        <div id="adminPanel" class="hidden flex gap-2">
+          <span id="userEmail" class="text-sm self-center opacity-80 hidden md:block"></span>
+          <button id="btnAdd" class="bg-green-500 hover:bg-green-600 px-3 py-1 rounded text-sm font-bold shadow transition">
+            <i class="fas fa-plus-circle"></i> Nueva WiFi
+          </button>
+          <button id="btnLogout" class="bg-red-500 hover:bg-red-600 px-3 py-1 rounded text-sm transition">
+            <i class="fas fa-sign-out-alt"></i> Salir
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mx-auto p-4 max-w-4xl">
+    
+    <!-- Buscador -->
+    <div class="bg-white p-6 rounded-lg shadow-md mb-6 mt-4">
+      <h2 class="text-2xl font-bold mb-4 text-gray-700 text-center">🔍 Buscar Redes</h2>
+      <div class="relative">
+        <input type="text" id="search" 
+          class="w-full p-4 pl-12 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none text-lg shadow-sm" 
+          placeholder="Escribe SSID, MAC, IP o Contraseña...">
+        <i class="fas fa-search absolute left-4 top-5 text-gray-400"></i>
+      </div>
+    </div>
+
+    <!-- Indicador de Carga -->
+    <div id="loading" class="text-center py-4 hidden">
+      <div class="loader ease-linear rounded-full border-4 border-t-4 border-gray-200 h-8 w-8 mb-4 mx-auto"></div>
+      <p class="text-gray-500">Cargando base de datos unificada...</p>
+    </div>
+
+    <!-- Resultados -->
+    <div id="resultados" class="space-y-4"></div>
+    
+    <!-- Paginación -->
+    <div class="pagination mt-8 flex justify-center items-center gap-4" id="pagination"></div>
+    
+    <footer class="text-center mt-10 text-gray-400 text-sm">
+      <p>- Made by @0x0055500l -</p>
+      <p class="text-xs mt-1">Datos combinados de JSON local + Nube segura</p>
+    </footer>
+  </div>
+
+  <!-- MODAL: Login -->
+  <div id="modalLogin" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50">
+    <div class="bg-white p-6 rounded-lg shadow-xl w-full max-w-sm relative">
+      <button class="closeModal absolute top-2 right-3 text-gray-500 hover:text-gray-800 text-xl">&times;</button>
+      <h3 class="text-xl font-bold mb-4 text-blue-600">Acceso Administrativo</h3>
+      <form id="formLogin" class="space-y-4">
+        <input type="email" id="email" placeholder="Correo admin" class="w-full p-2 border rounded" required>
+        <input type="password" id="password" placeholder="Contraseña" class="w-full p-2 border rounded" required>
+        <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 font-bold">Entrar</button>
+        <p id="loginError" class="text-red-500 text-sm text-center hidden"></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- MODAL: Agregar WiFi -->
+  <div id="modalAdd" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50">
+    <div class="bg-white p-6 rounded-lg shadow-xl w-full max-w-md relative">
+      <button class="closeModal absolute top-2 right-3 text-gray-500 hover:text-gray-800 text-xl">&times;</button>
+      <h3 class="text-xl font-bold mb-4 text-green-600">Agregar Nuevo Punto de Acceso</h3>
+      <form id="formAdd" class="space-y-3">
+        <div>
+          <label class="block text-xs font-bold text-gray-600 uppercase">SSID (Nombre WiFi)</label>
+          <input type="text" id="newSsid" class="w-full p-2 border rounded focus:border-green-500 outline-none" required>
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-gray-600 uppercase">Contraseña</label>
+          <input type="text" id="newPass" class="w-full p-2 border rounded focus:border-green-500 outline-none" required>
+        </div>
+        <div class="flex gap-2">
+          <div class="w-1/2">
+            <label class="block text-xs font-bold text-gray-600 uppercase">MAC (Opcional)</label>
+            <input type="text" id="newMac" placeholder="00:00:00:00:00:00" class="w-full p-2 border rounded focus:border-green-500 outline-none">
+          </div>
+          <div class="w-1/2">
+            <label class="block text-xs font-bold text-gray-600 uppercase">IP (Opcional)</label>
+            <input type="text" id="newIp" placeholder="192.168.1.1" class="w-full p-2 border rounded focus:border-green-500 outline-none">
+          </div>
+        </div>
+        <button type="submit" class="w-full bg-green-500 text-white py-2 rounded hover:bg-green-600 font-bold mt-2">Guardar en la Nube</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Lógica Principal -->
+  <script type="module">
+    // --------------------------------------------------------
+    // 1. CONFIGURACIÓN DE FIREBASE (Corregida)
+    // --------------------------------------------------------
+    // Usamos la versión 11.6.1 que es estable y compatible
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-analytics.js";
+    import { getFirestore, collection, getDocs, addDoc, orderBy, query } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+    import { getAuth, signInWithEmailAndPassword, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyBrZU37-D2NQ3fh5bha4wuUfT2Kdw9BFQo",
+      authDomain: "buscadorwifi.firebaseapp.com",
+      projectId: "buscadorwifi",
+      storageBucket: "buscadorwifi.firebasestorage.app",
+      messagingSenderId: "679454105542",
+      appId: "1:679454105542:web:01d405fa2b1fe8c5071cc7",
+      measurementId: "G-LR08V49XVV"
+    };
+
+    // Inicializar Firebase UNA SOLA VEZ (Aquí estaba el error)
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    const db = getFirestore(app);
+    const auth = getAuth(app);
+
+    // --------------------------------------------------------
+    // 2. LÓGICA DE DATOS (JSON + FIRESTORE)
+    // --------------------------------------------------------
+    let allData = [];
     let currentResults = [];
+    let currentPage = 1;
+    const resultsPerPage = 50;
 
-    // Cargar los datos desde data.json
-    fetch('data.json?t=' + Date.now())
-      .then(res => res.json())
-      .then(json => { 
-        data = json; 
+    // Elementos DOM
+    const btnLogin = document.getElementById('btnLogin');
+    const btnLogout = document.getElementById('btnLogout');
+    const btnAdd = document.getElementById('btnAdd');
+    const adminPanel = document.getElementById('adminPanel');
+    const modalLogin = document.getElementById('modalLogin');
+    const modalAdd = document.getElementById('modalAdd');
+    const formLogin = document.getElementById('formLogin');
+    const formAdd = document.getElementById('formAdd');
+    const loadingDiv = document.getElementById('loading');
+    const searchInput = document.getElementById('search');
+
+    // Carga inicial
+    cargarDatos();
+
+    async function cargarDatos() {
+      loadingDiv.classList.remove('hidden');
+      allData = [];
+
+      try {
+        // A. Cargar JSON local (Si falla, no bloquea el resto)
+        try {
+            const resJson = await fetch('data.json?t=' + Date.now());
+            if(resJson.ok) {
+            const jsonData = await resJson.json();
+            allData = [...jsonData];
+            }
+        } catch(e) {
+            console.log("No se pudo cargar data.json local, usando solo nube.");
+        }
+        
+        // B. Cargar datos de la Nube (Firestore)
+        if (db) {
+          try {
+            const q = query(collection(db, "wifis"), orderBy("ssid")); 
+            const querySnapshot = await getDocs(q);
+            const firestoreData = querySnapshot.docs.map(doc => doc.data());
+            // Fusionar (Nuevos de la nube primero)
+            allData = [...firestoreData, ...allData]; 
+          } catch (error) {
+            console.warn("No se pudieron cargar datos de Firestore", error);
+          }
+        }
+      } catch (e) {
+        console.error("Error general cargando datos", e);
+      } finally {
+        loadingDiv.classList.add('hidden');
         buscar(); 
-      });
+      }
+    }
 
-    // Debounce
+    // --------------------------------------------------------
+    // 3. BUSCADOR Y PAGINACIÓN
+    // --------------------------------------------------------
     let debounceTimer;
-    document.getElementById('search').addEventListener('input', () => {
+    searchInput.addEventListener('input', () => {
       clearTimeout(debounceTimer);
       debounceTimer = setTimeout(() => {
-        currentPage = 1; // Reset page on new search
+        currentPage = 1;
         buscar();
-      }, 300); // espera 300ms
+      }, 300);
     });
 
     function buscar() {
-      const q = document.getElementById('search').value.toLowerCase();
-
-      currentResults = data.filter(e =>
-        e.ssid.toLowerCase().includes(q) ||
-        e.mac.toLowerCase().includes(q) ||
-        e.password.toLowerCase().includes(q)
+      const q = searchInput.value.toLowerCase();
+      currentResults = allData.filter(e =>
+        (e.ssid && e.ssid.toLowerCase().includes(q)) ||
+        (e.mac && e.mac.toLowerCase().includes(q)) ||
+        (e.password && String(e.password).toLowerCase().includes(q)) ||
+        (e.ip && e.ip.toLowerCase().includes(q))
       );
-
       mostrarPagina();
     }
 
     function isBase64(str) {
-      // Valida estructura base64 (múltiplos de 4, caracteres válidos, etc.)
-      if (!str || str.length % 4 !== 0 || /[^A-Za-z0-9+/=]/.test(str)) return false;
-    
-      try {
-        const decoded = atob(str);
-        // Verifica que el texto tenga solo caracteres imprimibles (ASCII)
-        return /^[\x20-\x7E]+$/.test(decoded);
-      } catch (e) {
-        return false;
-      }
-    }
-    
-    function decodeBase64(str) {
-      try {
-        return atob(str);
-      } catch {
-        return str; // Si falla, retorna el original
-      }
+      if (!str || typeof str !== 'string' || str.length % 4 !== 0 || /[^A-Za-z0-9+/=]/.test(str)) return false;
+      try { return /^[\x20-\x7E]+$/.test(atob(str)); } catch { return false; }
     }
 
     function mostrarPagina() {
       const startIndex = (currentPage - 1) * resultsPerPage;
-      const endIndex = startIndex + resultsPerPage;
-      const paginatedResults = currentResults.slice(startIndex, endIndex);
+      const paginatedResults = currentResults.slice(startIndex, startIndex + resultsPerPage);
+      const contenedor = document.getElementById('resultados');
 
-      document.getElementById('resultados').innerHTML = paginatedResults.map(e => {
-        const decodedPassword = isBase64(e.password) ? decodeBase64(e.password) : e.password;
-    
+      if (paginatedResults.length === 0) {
+        contenedor.innerHTML = '<div class="text-center text-gray-500 p-4">No se encontraron resultados.</div>';
+        document.getElementById('pagination').innerHTML = '';
+        return;
+      }
+
+      contenedor.innerHTML = paginatedResults.map(e => {
+        let passShow = e.password || "Sin password";
+        if (isBase64(passShow)) try { passShow = atob(passShow); } catch {}
+
         return `
-          <div class="entry">
-            <div class="ssid">📡 SSID: ${e.ssid}</div>
-            <div class="meta">🔗 MAC: ${e.mac} | 🌐 IP: ${e.ip}</div>
-            <div class="password">🔑 Contraseña: ${decodedPassword}</div>
+          <div class="bg-white p-4 rounded-lg shadow-sm border-l-4 border-blue-500 hover:shadow-md transition">
+            <div class="flex justify-between items-start">
+              <div class="font-bold text-lg text-gray-800 break-all">${e.ssid || 'Desconocido'}</div>
+              <div class="text-xs font-mono bg-gray-100 px-2 py-1 rounded text-gray-600">${e.ip || 'N/A'}</div>
+            </div>
+            <div class="mt-2 text-sm text-gray-600">
+              <span class="font-mono mr-3"><i class="fas fa-network-wired text-gray-400"></i> ${e.mac || '??:??:??:??:??:??'}</span>
+            </div>
+            <div class="mt-2 pt-2 border-t border-gray-100 text-green-700 font-bold font-mono break-all">
+              <i class="fas fa-key text-green-500 mr-1"></i> ${passShow}
+            </div>
           </div>
         `;
       }).join('');
 
-      // Mostrar info de paginación
-      const totalPages = Math.ceil(currentResults.length / resultsPerPage);
-      let paginationHTML = '';
+      renderPagination();
+    }
 
+    function renderPagination() {
+      const totalPages = Math.ceil(currentResults.length / resultsPerPage);
+      const pagDiv = document.getElementById('pagination');
+      
+      let html = '';
       if (totalPages > 1) {
-        paginationHTML += `<button onclick="cambiarPagina(${currentPage - 1})" ${currentPage === 1 ? 'disabled' : ''}>⏪ Anterior</button>`;
-        paginationHTML += ` Página ${currentPage} de ${totalPages} `;
-        paginationHTML += `<button onclick="cambiarPagina(${currentPage + 1})" ${currentPage === totalPages ? 'disabled' : ''}>Siguiente ⏩</button>`;
+        html += `<button onclick="window.cambiarPagina(${currentPage - 1})" class="px-4 py-2 bg-white border rounded hover:bg-gray-100 disabled:opacity-50" ${currentPage === 1 ? 'disabled' : ''}>« Anterior</button>`;
+        html += `<span class="text-gray-600 font-bold">Página ${currentPage} de ${totalPages}</span>`;
+        html += `<button onclick="window.cambiarPagina(${currentPage + 1})" class="px-4 py-2 bg-white border rounded hover:bg-gray-100 disabled:opacity-50" ${currentPage === totalPages ? 'disabled' : ''}>Siguiente »</button>`;
       }
-
-      // Mostrar total de resultados
-      paginationHTML += `<div style="margin-top: 10px; color: #666;">Mostrando ${paginatedResults.length} de ${currentResults.length} resultados encontrados.</div>`;
-
-      document.getElementById('pagination').innerHTML = paginationHTML;
+      pagDiv.innerHTML = html;
     }
 
-    function cambiarPagina(nuevaPagina) {
-      const totalPages = Math.ceil(currentResults.length / resultsPerPage);
-      if (nuevaPagina >= 1 && nuevaPagina <= totalPages) {
-        currentPage = nuevaPagina;
-        mostrarPagina();
+    window.cambiarPagina = (pag) => {
+      currentPage = pag;
+      mostrarPagina();
+    };
+
+    // --------------------------------------------------------
+    // 4. LÓGICA DE LOGIN Y ADMIN
+    // --------------------------------------------------------
+    
+    // UI Helpers
+    btnLogin.onclick = () => modalLogin.classList.remove('hidden');
+    btnAdd.onclick = () => modalAdd.classList.remove('hidden');
+    
+    document.querySelectorAll('.closeModal').forEach(btn => {
+      btn.onclick = () => {
+        modalLogin.classList.add('hidden');
+        modalAdd.classList.add('hidden');
+      };
+    });
+
+    // Login
+    formLogin.onsubmit = async (e) => {
+      e.preventDefault();
+      const email = document.getElementById('email').value;
+      const pass = document.getElementById('password').value;
+      const errorMsg = document.getElementById('loginError');
+      
+      try {
+        await signInWithEmailAndPassword(auth, email, pass);
+        modalLogin.classList.add('hidden');
+        formLogin.reset();
+        errorMsg.classList.add('hidden');
+      } catch (error) {
+        errorMsg.textContent = "Error: " + error.message;
+        errorMsg.classList.remove('hidden');
       }
-    }
+    };
+
+    // Logout
+    btnLogout.onclick = () => signOut(auth);
+
+    // Auth State Monitor
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        btnLogin.classList.add('hidden');
+        adminPanel.classList.remove('hidden');
+        adminPanel.classList.add('flex');
+        document.getElementById('userEmail').textContent = user.email;
+      } else {
+        btnLogin.classList.remove('hidden');
+        adminPanel.classList.add('hidden');
+        adminPanel.classList.remove('flex');
+      }
+    });
+
+    // Guardar Nueva WiFi
+    formAdd.onsubmit = async (e) => {
+      e.preventDefault();
+      
+      if (!auth.currentUser) {
+        alert("Debes estar logueado.");
+        return;
+      }
+
+      const newEntry = {
+        ssid: document.getElementById('newSsid').value,
+        password: document.getElementById('newPass').value,
+        mac: document.getElementById('newMac').value || "00:00:00:00:00:00",
+        ip: document.getElementById('newIp').value || "0.0.0.0",
+        addedBy: auth.currentUser.email,
+        timestamp: new Date()
+      };
+
+      try {
+        const btnSubmit = formAdd.querySelector('button');
+        const oldText = btnSubmit.innerText;
+        btnSubmit.innerText = "Guardando...";
+        btnSubmit.disabled = true;
+
+        await addDoc(collection(db, "wifis"), newEntry);
+        
+        alert("¡Guardado correctamente!");
+        modalAdd.classList.add('hidden');
+        formAdd.reset();
+        
+        cargarDatos();
+        
+        btnSubmit.innerText = oldText;
+        btnSubmit.disabled = false;
+      } catch (error) {
+        console.error("Error guardando", error);
+        alert("Error al guardar: " + error.message);
+      }
+    };
+
   </script>
 </body>
 </html>
