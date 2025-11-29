@@ -4,34 +4,60 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Buscador de Wi-Fi Avanzado + Admin</title>
+  
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Configuración de Tailwind para Modo Oscuro Manual -->
+  <script>
+    tailwind.config = {
+      darkMode: 'class', // Importante: permite controlar el modo oscuro con una clase CSS
+    }
+  </script>
+
+  <!-- Script para aplicar el tema ANTES de que cargue el cuerpo (Evita flash blanco) -->
+  <script>
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+  </script>
+
   <!-- Iconos -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   
   <style>
-    body { background-color: #f3f4f6; }
     .loader { border-top-color: #3498db; -webkit-animation: spinner 1.5s linear infinite; animation: spinner 1.5s linear infinite; }
     @keyframes spinner { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
   </style>
 </head>
-<body class="text-gray-800">
+<body class="bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
 
   <!-- Barra de Navegación -->
-  <nav class="bg-blue-600 text-white p-4 shadow-md">
+  <nav class="bg-blue-600 dark:bg-blue-900 text-white p-4 shadow-md transition-colors duration-300">
     <div class="container mx-auto flex justify-between items-center">
       <h1 class="text-xl font-bold"><i class="fas fa-wifi mr-2"></i>Wi-Fi Finder</h1>
-      <div>
-        <button id="btnLogin" class="bg-blue-700 hover:bg-blue-800 px-3 py-1 rounded text-sm transition">
-          <i class="fas fa-lock"></i> Acceso Admin
+      
+      <div class="flex items-center gap-3">
+        <!-- Botón Modo Oscuro -->
+        <button id="btnTheme" class="bg-blue-700 dark:bg-blue-800 hover:bg-blue-800 p-2 rounded-full w-10 h-10 flex items-center justify-center transition focus:outline-none shadow-lg">
+            <i id="themeIcon" class="fas fa-moon"></i>
         </button>
+
+        <div class="h-6 w-px bg-blue-400 mx-1"></div>
+
+        <button id="btnLogin" class="bg-blue-700 hover:bg-blue-800 px-3 py-1 rounded text-sm transition">
+          <i class="fas fa-lock"></i> Admin
+        </button>
+
         <div id="adminPanel" class="hidden flex gap-2">
           <span id="userEmail" class="text-sm self-center opacity-80 hidden md:block"></span>
           <button id="btnAdd" class="bg-green-500 hover:bg-green-600 px-3 py-1 rounded text-sm font-bold shadow transition">
-            <i class="fas fa-plus-circle"></i> Nueva WiFi
+            <i class="fas fa-plus-circle"></i> <span class="hidden sm:inline">Nueva</span>
           </button>
           <button id="btnLogout" class="bg-red-500 hover:bg-red-600 px-3 py-1 rounded text-sm transition">
-            <i class="fas fa-sign-out-alt"></i> Salir
+            <i class="fas fa-sign-out-alt"></i>
           </button>
         </div>
       </div>
@@ -41,20 +67,20 @@
   <div class="container mx-auto p-4 max-w-4xl">
     
     <!-- Buscador -->
-    <div class="bg-white p-6 rounded-lg shadow-md mb-6 mt-4">
-      <h2 class="text-2xl font-bold mb-4 text-gray-700 text-center">🔍 Buscar Redes</h2>
+    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md mb-6 mt-4 transition-colors duration-300">
+      <h2 class="text-2xl font-bold mb-4 text-gray-700 dark:text-gray-200 text-center">🔍 Buscar Redes</h2>
       <div class="relative">
         <input type="text" id="search" 
-          class="w-full p-4 pl-12 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none text-lg shadow-sm" 
+          class="w-full p-4 pl-12 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none text-lg shadow-sm bg-white dark:bg-gray-700 dark:text-white transition-colors duration-300" 
           placeholder="Escribe SSID, MAC, IP o Contraseña...">
-        <i class="fas fa-search absolute left-4 top-5 text-gray-400"></i>
+        <i class="fas fa-search absolute left-4 top-5 text-gray-400 dark:text-gray-300"></i>
       </div>
     </div>
 
     <!-- Indicador de Carga -->
     <div id="loading" class="text-center py-4 hidden">
       <div class="loader ease-linear rounded-full border-4 border-t-4 border-gray-200 h-8 w-8 mb-4 mx-auto"></div>
-      <p class="text-gray-500">Cargando base de datos unificada...</p>
+      <p class="text-gray-500 dark:text-gray-400">Cargando base de datos unificada...</p>
     </div>
 
     <!-- Resultados -->
@@ -63,20 +89,20 @@
     <!-- Paginación -->
     <div class="pagination mt-8 flex justify-center items-center gap-4" id="pagination"></div>
     
-    <footer class="text-center mt-10 text-gray-400 text-sm">
+    <footer class="text-center mt-10 text-gray-400 text-sm pb-8">
       <p>- Made by @0x0055500l -</p>
       <p class="text-xs mt-1">Datos combinados de JSON local + Nube segura</p>
     </footer>
   </div>
 
   <!-- MODAL: Login -->
-  <div id="modalLogin" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50">
-    <div class="bg-white p-6 rounded-lg shadow-xl w-full max-w-sm relative">
-      <button class="closeModal absolute top-2 right-3 text-gray-500 hover:text-gray-800 text-xl">&times;</button>
-      <h3 class="text-xl font-bold mb-4 text-blue-600">Acceso Administrativo</h3>
+  <div id="modalLogin" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50 backdrop-blur-sm">
+    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-xl w-full max-w-sm relative transition-colors duration-300">
+      <button class="closeModal absolute top-2 right-3 text-gray-500 hover:text-gray-800 dark:hover:text-white text-xl">&times;</button>
+      <h3 class="text-xl font-bold mb-4 text-blue-600 dark:text-blue-400">Acceso Administrativo</h3>
       <form id="formLogin" class="space-y-4">
-        <input type="email" id="email" placeholder="Correo admin" class="w-full p-2 border rounded" required>
-        <input type="password" id="password" placeholder="Contraseña" class="w-full p-2 border rounded" required>
+        <input type="email" id="email" placeholder="Correo admin" class="w-full p-2 border rounded dark:bg-gray-700 dark:border-gray-600 dark:text-white" required>
+        <input type="password" id="password" placeholder="Contraseña" class="w-full p-2 border rounded dark:bg-gray-700 dark:border-gray-600 dark:text-white" required>
         <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 font-bold">Entrar</button>
         <p id="loginError" class="text-red-500 text-sm text-center hidden"></p>
       </form>
@@ -84,27 +110,27 @@
   </div>
 
   <!-- MODAL: Agregar WiFi -->
-  <div id="modalAdd" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50">
-    <div class="bg-white p-6 rounded-lg shadow-xl w-full max-w-md relative">
-      <button class="closeModal absolute top-2 right-3 text-gray-500 hover:text-gray-800 text-xl">&times;</button>
-      <h3 class="text-xl font-bold mb-4 text-green-600">Agregar Nuevo Punto de Acceso</h3>
+  <div id="modalAdd" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50 backdrop-blur-sm">
+    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-xl w-full max-w-md relative transition-colors duration-300">
+      <button class="closeModal absolute top-2 right-3 text-gray-500 hover:text-gray-800 dark:hover:text-white text-xl">&times;</button>
+      <h3 class="text-xl font-bold mb-4 text-green-600 dark:text-green-400">Agregar Nuevo Punto de Acceso</h3>
       <form id="formAdd" class="space-y-3">
         <div>
-          <label class="block text-xs font-bold text-gray-600 uppercase">SSID (Nombre WiFi)</label>
-          <input type="text" id="newSsid" class="w-full p-2 border rounded focus:border-green-500 outline-none" required>
+          <label class="block text-xs font-bold text-gray-600 dark:text-gray-300 uppercase">SSID (Nombre WiFi)</label>
+          <input type="text" id="newSsid" class="w-full p-2 border rounded focus:border-green-500 outline-none dark:bg-gray-700 dark:border-gray-600 dark:text-white" required>
         </div>
         <div>
-          <label class="block text-xs font-bold text-gray-600 uppercase">Contraseña</label>
-          <input type="text" id="newPass" class="w-full p-2 border rounded focus:border-green-500 outline-none" required>
+          <label class="block text-xs font-bold text-gray-600 dark:text-gray-300 uppercase">Contraseña</label>
+          <input type="text" id="newPass" class="w-full p-2 border rounded focus:border-green-500 outline-none dark:bg-gray-700 dark:border-gray-600 dark:text-white" required>
         </div>
         <div class="flex gap-2">
           <div class="w-1/2">
-            <label class="block text-xs font-bold text-gray-600 uppercase">MAC (Opcional)</label>
-            <input type="text" id="newMac" placeholder="00:00:00:00:00:00" class="w-full p-2 border rounded focus:border-green-500 outline-none">
+            <label class="block text-xs font-bold text-gray-600 dark:text-gray-300 uppercase">MAC (Opcional)</label>
+            <input type="text" id="newMac" placeholder="00:00:00:00:00:00" class="w-full p-2 border rounded focus:border-green-500 outline-none dark:bg-gray-700 dark:border-gray-600 dark:text-white">
           </div>
           <div class="w-1/2">
-            <label class="block text-xs font-bold text-gray-600 uppercase">IP (Opcional)</label>
-            <input type="text" id="newIp" placeholder="192.168.1.1" class="w-full p-2 border rounded focus:border-green-500 outline-none">
+            <label class="block text-xs font-bold text-gray-600 dark:text-gray-300 uppercase">IP (Opcional)</label>
+            <input type="text" id="newIp" placeholder="192.168.1.1" class="w-full p-2 border rounded focus:border-green-500 outline-none dark:bg-gray-700 dark:border-gray-600 dark:text-white">
           </div>
         </div>
         <button type="submit" class="w-full bg-green-500 text-white py-2 rounded hover:bg-green-600 font-bold mt-2">Guardar en la Nube</button>
@@ -115,14 +141,14 @@
   <!-- Lógica Principal -->
   <script type="module">
     // --------------------------------------------------------
-    // 1. CONFIGURACIÓN DE FIREBASE (Corregida)
+    // 1. CONFIGURACIÓN DE FIREBASE
     // --------------------------------------------------------
-    // Usamos la versión 11.6.1 que es estable y compatible
     import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
     import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-analytics.js";
     import { getFirestore, collection, getDocs, addDoc, orderBy, query } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
     import { getAuth, signInWithEmailAndPassword, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
 
+    // --- CONFIG---
     const firebaseConfig = {
       apiKey: "AIzaSyBrZU37-D2NQ3fh5bha4wuUfT2Kdw9BFQo",
       authDomain: "buscadorwifi.firebaseapp.com",
@@ -133,21 +159,50 @@
       measurementId: "G-LR08V49XVV"
     };
 
-    // Inicializar Firebase UNA SOLA VEZ (Aquí estaba el error)
+    // Inicializar Firebase
     const app = initializeApp(firebaseConfig);
     const analytics = getAnalytics(app);
     const db = getFirestore(app);
     const auth = getAuth(app);
 
     // --------------------------------------------------------
-    // 2. LÓGICA DE DATOS (JSON + FIRESTORE)
+    // 2. LÓGICA DE MODO OSCURO (UI)
+    // --------------------------------------------------------
+    const btnTheme = document.getElementById('btnTheme');
+    const themeIcon = document.getElementById('themeIcon');
+
+    // Función para actualizar el icono
+    function updateIcon() {
+        if (document.documentElement.classList.contains('dark')) {
+            themeIcon.classList.remove('fa-moon');
+            themeIcon.classList.add('fa-sun');
+        } else {
+            themeIcon.classList.remove('fa-sun');
+            themeIcon.classList.add('fa-moon');
+        }
+    }
+    updateIcon(); // Al cargar
+
+    // Toggle
+    btnTheme.onclick = () => {
+        if (document.documentElement.classList.contains('dark')) {
+            document.documentElement.classList.remove('dark');
+            localStorage.theme = 'light';
+        } else {
+            document.documentElement.classList.add('dark');
+            localStorage.theme = 'dark';
+        }
+        updateIcon();
+    };
+
+    // --------------------------------------------------------
+    // 3. LÓGICA DE DATOS
     // --------------------------------------------------------
     let allData = [];
     let currentResults = [];
     let currentPage = 1;
     const resultsPerPage = 50;
 
-    // Elementos DOM
     const btnLogin = document.getElementById('btnLogin');
     const btnLogout = document.getElementById('btnLogout');
     const btnAdd = document.getElementById('btnAdd');
@@ -159,7 +214,6 @@
     const loadingDiv = document.getElementById('loading');
     const searchInput = document.getElementById('search');
 
-    // Carga inicial
     cargarDatos();
 
     async function cargarDatos() {
@@ -167,40 +221,29 @@
       allData = [];
 
       try {
-        // A. Cargar JSON local (Si falla, no bloquea el resto)
         try {
             const resJson = await fetch('data.json?t=' + Date.now());
             if(resJson.ok) {
-            const jsonData = await resJson.json();
-            allData = [...jsonData];
+                const jsonData = await resJson.json();
+                allData = [...jsonData];
             }
-        } catch(e) {
-            console.log("No se pudo cargar data.json local, usando solo nube.");
-        }
+        } catch(e) { console.log("JSON local no disponible o error al parsear."); }
         
-        // B. Cargar datos de la Nube (Firestore)
         if (db) {
           try {
             const q = query(collection(db, "wifis"), orderBy("ssid")); 
             const querySnapshot = await getDocs(q);
             const firestoreData = querySnapshot.docs.map(doc => doc.data());
-            // Fusionar (Nuevos de la nube primero)
             allData = [...firestoreData, ...allData]; 
-          } catch (error) {
-            console.warn("No se pudieron cargar datos de Firestore", error);
-          }
+          } catch (error) { console.warn("Firestore error", error); }
         }
-      } catch (e) {
-        console.error("Error general cargando datos", e);
-      } finally {
+      } catch (e) { console.error("Error global", e); } 
+      finally {
         loadingDiv.classList.add('hidden');
         buscar(); 
       }
     }
 
-    // --------------------------------------------------------
-    // 3. BUSCADOR Y PAGINACIÓN
-    // --------------------------------------------------------
     let debounceTimer;
     searchInput.addEventListener('input', () => {
       clearTimeout(debounceTimer);
@@ -232,7 +275,7 @@
       const contenedor = document.getElementById('resultados');
 
       if (paginatedResults.length === 0) {
-        contenedor.innerHTML = '<div class="text-center text-gray-500 p-4">No se encontraron resultados.</div>';
+        contenedor.innerHTML = '<div class="text-center text-gray-500 dark:text-gray-400 p-4">No se encontraron resultados.</div>';
         document.getElementById('pagination').innerHTML = '';
         return;
       }
@@ -242,16 +285,16 @@
         if (isBase64(passShow)) try { passShow = atob(passShow); } catch {}
 
         return `
-          <div class="bg-white p-4 rounded-lg shadow-sm border-l-4 border-blue-500 hover:shadow-md transition">
+          <div class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-sm border-l-4 border-blue-500 hover:shadow-md transition-colors duration-300">
             <div class="flex justify-between items-start">
-              <div class="font-bold text-lg text-gray-800 break-all">${e.ssid || 'Desconocido'}</div>
-              <div class="text-xs font-mono bg-gray-100 px-2 py-1 rounded text-gray-600">${e.ip || 'N/A'}</div>
+              <div class="font-bold text-lg text-gray-800 dark:text-white break-all">${e.ssid || 'Desconocido'}</div>
+              <div class="text-xs font-mono bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded text-gray-600 dark:text-gray-300">${e.ip || 'N/A'}</div>
             </div>
-            <div class="mt-2 text-sm text-gray-600">
-              <span class="font-mono mr-3"><i class="fas fa-network-wired text-gray-400"></i> ${e.mac || '??:??:??:??:??:??'}</span>
+            <div class="mt-2 text-sm text-gray-600 dark:text-gray-400">
+              <span class="font-mono mr-3"><i class="fas fa-network-wired text-gray-400 dark:text-gray-500"></i> ${e.mac || '??:??:??:??:??:??'}</span>
             </div>
-            <div class="mt-2 pt-2 border-t border-gray-100 text-green-700 font-bold font-mono break-all">
-              <i class="fas fa-key text-green-500 mr-1"></i> ${passShow}
+            <div class="mt-2 pt-2 border-t border-gray-100 dark:border-gray-700 text-green-700 dark:text-green-400 font-bold font-mono break-all">
+              <i class="fas fa-key text-green-500 dark:text-green-400 mr-1"></i> ${passShow}
             </div>
           </div>
         `;
@@ -266,9 +309,9 @@
       
       let html = '';
       if (totalPages > 1) {
-        html += `<button onclick="window.cambiarPagina(${currentPage - 1})" class="px-4 py-2 bg-white border rounded hover:bg-gray-100 disabled:opacity-50" ${currentPage === 1 ? 'disabled' : ''}>« Anterior</button>`;
-        html += `<span class="text-gray-600 font-bold">Página ${currentPage} de ${totalPages}</span>`;
-        html += `<button onclick="window.cambiarPagina(${currentPage + 1})" class="px-4 py-2 bg-white border rounded hover:bg-gray-100 disabled:opacity-50" ${currentPage === totalPages ? 'disabled' : ''}>Siguiente »</button>`;
+        html += `<button onclick="window.cambiarPagina(${currentPage - 1})" class="px-4 py-2 bg-white dark:bg-gray-700 dark:text-white border dark:border-gray-600 rounded hover:bg-gray-100 dark:hover:bg-gray-600 disabled:opacity-50" ${currentPage === 1 ? 'disabled' : ''}>« Anterior</button>`;
+        html += `<span class="text-gray-600 dark:text-gray-300 font-bold">Página ${currentPage} de ${totalPages}</span>`;
+        html += `<button onclick="window.cambiarPagina(${currentPage + 1})" class="px-4 py-2 bg-white dark:bg-gray-700 dark:text-white border dark:border-gray-600 rounded hover:bg-gray-100 dark:hover:bg-gray-600 disabled:opacity-50" ${currentPage === totalPages ? 'disabled' : ''}>Siguiente »</button>`;
       }
       pagDiv.innerHTML = html;
     }
@@ -282,7 +325,6 @@
     // 4. LÓGICA DE LOGIN Y ADMIN
     // --------------------------------------------------------
     
-    // UI Helpers
     btnLogin.onclick = () => modalLogin.classList.remove('hidden');
     btnAdd.onclick = () => modalAdd.classList.remove('hidden');
     
@@ -293,7 +335,6 @@
       };
     });
 
-    // Login
     formLogin.onsubmit = async (e) => {
       e.preventDefault();
       const email = document.getElementById('email').value;
@@ -311,10 +352,8 @@
       }
     };
 
-    // Logout
     btnLogout.onclick = () => signOut(auth);
 
-    // Auth State Monitor
     onAuthStateChanged(auth, (user) => {
       if (user) {
         btnLogin.classList.add('hidden');
@@ -328,7 +367,6 @@
       }
     });
 
-    // Guardar Nueva WiFi
     formAdd.onsubmit = async (e) => {
       e.preventDefault();
       
