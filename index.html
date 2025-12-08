@@ -3,19 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Buscador de Wi-Fi Avanzado + Admin</title>
+  <title>Buscador Wi-Fi Admin Pro</title>
   
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   
-  <!-- Configuración de Tailwind para Modo Oscuro Manual -->
+  <!-- Configuración de Tailwind para Modo Oscuro -->
   <script>
-    tailwind.config = {
-      darkMode: 'class', // Importante: permite controlar el modo oscuro con una clase CSS
-    }
+    tailwind.config = { darkMode: 'class' }
   </script>
 
-  <!-- Script para aplicar el tema ANTES de que cargue el cuerpo (Evita flash blanco) -->
+  <!-- Script Anti-Flash (Modo Oscuro) -->
   <script>
     if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
       document.documentElement.classList.add('dark')
@@ -35,28 +33,31 @@
 <body class="bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
 
   <!-- Barra de Navegación -->
-  <nav class="bg-blue-600 dark:bg-blue-900 text-white p-4 shadow-md transition-colors duration-300">
+  <nav class="bg-blue-600 dark:bg-blue-900 text-white p-4 shadow-md transition-colors duration-300 sticky top-0 z-40">
     <div class="container mx-auto flex justify-between items-center">
-      <h1 class="text-xl font-bold"><i class="fas fa-wifi mr-2"></i>Wi-Fi Finder</h1>
+      <h1 class="text-xl font-bold flex items-center gap-2">
+        <i class="fas fa-wifi"></i> 
+        <span class="hidden sm:inline">Wi-Fi Finder</span>
+      </h1>
       
       <div class="flex items-center gap-3">
         <!-- Botón Modo Oscuro -->
-        <button id="btnTheme" class="bg-blue-700 dark:bg-blue-800 hover:bg-blue-800 p-2 rounded-full w-10 h-10 flex items-center justify-center transition focus:outline-none shadow-lg">
+        <button id="btnTheme" class="bg-blue-700 dark:bg-blue-800 hover:bg-blue-800 p-2 rounded-full w-10 h-10 flex items-center justify-center transition focus:outline-none shadow-lg border border-transparent dark:border-blue-700">
             <i id="themeIcon" class="fas fa-moon"></i>
         </button>
 
         <div class="h-6 w-px bg-blue-400 mx-1"></div>
 
-        <button id="btnLogin" class="bg-blue-700 hover:bg-blue-800 px-3 py-1 rounded text-sm transition">
-          <i class="fas fa-lock"></i> Admin
+        <button id="btnLogin" class="bg-blue-700 hover:bg-blue-800 px-3 py-1 rounded text-sm transition font-medium shadow-sm">
+          <i class="fas fa-lock mr-1"></i> Admin
         </button>
 
-        <div id="adminPanel" class="hidden flex gap-2">
-          <span id="userEmail" class="text-sm self-center opacity-80 hidden md:block"></span>
-          <button id="btnAdd" class="bg-green-500 hover:bg-green-600 px-3 py-1 rounded text-sm font-bold shadow transition">
+        <div id="adminPanel" class="hidden flex gap-2 items-center">
+          <span id="userEmail" class="text-xs bg-blue-800 px-2 py-1 rounded hidden lg:block opacity-90"></span>
+          <button id="btnAdd" class="bg-green-500 hover:bg-green-600 text-white px-3 py-1 rounded text-sm font-bold shadow transition flex items-center gap-1">
             <i class="fas fa-plus-circle"></i> <span class="hidden sm:inline">Nueva</span>
           </button>
-          <button id="btnLogout" class="bg-red-500 hover:bg-red-600 px-3 py-1 rounded text-sm transition">
+          <button id="btnLogout" class="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded text-sm transition shadow">
             <i class="fas fa-sign-out-alt"></i>
           </button>
         </div>
@@ -67,73 +68,113 @@
   <div class="container mx-auto p-4 max-w-4xl">
     
     <!-- Buscador -->
-    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md mb-6 mt-4 transition-colors duration-300">
+    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md mb-6 mt-4 transition-colors duration-300 border border-gray-200 dark:border-gray-700">
       <h2 class="text-2xl font-bold mb-4 text-gray-700 dark:text-gray-200 text-center">🔍 Buscar Redes</h2>
-      <div class="relative">
+      <div class="relative group">
         <input type="text" id="search" 
-          class="w-full p-4 pl-12 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none text-lg shadow-sm bg-white dark:bg-gray-700 dark:text-white transition-colors duration-300" 
+          class="w-full p-4 pl-12 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none text-lg shadow-sm bg-gray-50 dark:bg-gray-700 dark:text-white transition-all duration-300 group-hover:shadow-md" 
           placeholder="Escribe SSID, MAC, IP o Contraseña...">
-        <i class="fas fa-search absolute left-4 top-5 text-gray-400 dark:text-gray-300"></i>
+        <i class="fas fa-search absolute left-4 top-5 text-gray-400 dark:text-gray-400 group-hover:text-blue-500 transition-colors"></i>
       </div>
     </div>
 
     <!-- Indicador de Carga -->
-    <div id="loading" class="text-center py-4 hidden">
-      <div class="loader ease-linear rounded-full border-4 border-t-4 border-gray-200 h-8 w-8 mb-4 mx-auto"></div>
-      <p class="text-gray-500 dark:text-gray-400">Cargando base de datos unificada...</p>
+    <div id="loading" class="text-center py-8 hidden">
+      <div class="loader ease-linear rounded-full border-4 border-t-4 border-gray-200 h-10 w-10 mb-4 mx-auto"></div>
+      <p class="text-gray-500 dark:text-gray-400 animate-pulse">Sincronizando base de datos...</p>
     </div>
 
     <!-- Resultados -->
-    <div id="resultados" class="space-y-4"></div>
+    <div id="resultados" class="grid gap-4 sm:grid-cols-1"></div>
     
     <!-- Paginación -->
-    <div class="pagination mt-8 flex justify-center items-center gap-4" id="pagination"></div>
+    <div class="pagination mt-8 flex justify-center items-center gap-4 pb-10" id="pagination"></div>
     
-    <footer class="text-center mt-10 text-gray-400 text-sm pb-8">
-      <p>- Made by @0x0055500l -</p>
-      <p class="text-xs mt-1">Datos combinados de JSON local + Nube segura</p>
-    </footer>
   </div>
 
   <!-- MODAL: Login -->
-  <div id="modalLogin" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50 backdrop-blur-sm">
-    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-xl w-full max-w-sm relative transition-colors duration-300">
-      <button class="closeModal absolute top-2 right-3 text-gray-500 hover:text-gray-800 dark:hover:text-white text-xl">&times;</button>
-      <h3 class="text-xl font-bold mb-4 text-blue-600 dark:text-blue-400">Acceso Administrativo</h3>
+  <div id="modalLogin" class="fixed inset-0 bg-black bg-opacity-60 hidden flex items-center justify-center z-50 backdrop-blur-sm transition-opacity">
+    <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-2xl w-full max-w-sm relative transform transition-all scale-100 border dark:border-gray-700">
+      <button class="closeModal absolute top-4 right-4 text-gray-400 hover:text-gray-800 dark:hover:text-white text-2xl transition">&times;</button>
+      <div class="text-center mb-6">
+        <div class="bg-blue-100 dark:bg-blue-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-blue-600 dark:text-blue-300 text-2xl">
+          <i class="fas fa-user-shield"></i>
+        </div>
+        <h3 class="text-xl font-bold text-gray-800 dark:text-white">Acceso Administrativo</h3>
+      </div>
       <form id="formLogin" class="space-y-4">
-        <input type="email" id="email" placeholder="Correo admin" class="w-full p-2 border rounded dark:bg-gray-700 dark:border-gray-600 dark:text-white" required>
-        <input type="password" id="password" placeholder="Contraseña" class="w-full p-2 border rounded dark:bg-gray-700 dark:border-gray-600 dark:text-white" required>
-        <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 font-bold">Entrar</button>
-        <p id="loginError" class="text-red-500 text-sm text-center hidden"></p>
+        <input type="email" id="email" placeholder="admin@correo.com" class="w-full p-3 border rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white focus:ring-2 focus:ring-blue-500 outline-none" required>
+        <input type="password" id="password" placeholder="••••••••" class="w-full p-3 border rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white focus:ring-2 focus:ring-blue-500 outline-none" required>
+        <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 font-bold shadow-lg transform active:scale-95 transition">Entrar</button>
+        <p id="loginError" class="text-red-500 text-sm text-center hidden bg-red-100 dark:bg-red-900/30 p-2 rounded"></p>
       </form>
     </div>
   </div>
 
   <!-- MODAL: Agregar WiFi -->
-  <div id="modalAdd" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50 backdrop-blur-sm">
-    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-xl w-full max-w-md relative transition-colors duration-300">
-      <button class="closeModal absolute top-2 right-3 text-gray-500 hover:text-gray-800 dark:hover:text-white text-xl">&times;</button>
-      <h3 class="text-xl font-bold mb-4 text-green-600 dark:text-green-400">Agregar Nuevo Punto de Acceso</h3>
-      <form id="formAdd" class="space-y-3">
+  <div id="modalAdd" class="fixed inset-0 bg-black bg-opacity-60 hidden flex items-center justify-center z-50 backdrop-blur-sm">
+    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-2xl w-full max-w-md relative border dark:border-gray-700">
+      <button class="closeModal absolute top-3 right-4 text-gray-400 hover:text-gray-800 dark:hover:text-white text-2xl">&times;</button>
+      <h3 class="text-xl font-bold mb-6 text-green-600 dark:text-green-400 flex items-center gap-2">
+        <i class="fas fa-plus-circle"></i> Agregar WiFi
+      </h3>
+      <form id="formAdd" class="space-y-4">
         <div>
-          <label class="block text-xs font-bold text-gray-600 dark:text-gray-300 uppercase">SSID (Nombre WiFi)</label>
-          <input type="text" id="newSsid" class="w-full p-2 border rounded focus:border-green-500 outline-none dark:bg-gray-700 dark:border-gray-600 dark:text-white" required>
+          <label class="block text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-1">SSID</label>
+          <input type="text" id="newSsid" class="w-full p-2 border rounded dark:bg-gray-700 dark:border-gray-600 dark:text-white focus:border-green-500 outline-none" required>
         </div>
         <div>
-          <label class="block text-xs font-bold text-gray-600 dark:text-gray-300 uppercase">Contraseña</label>
-          <input type="text" id="newPass" class="w-full p-2 border rounded focus:border-green-500 outline-none dark:bg-gray-700 dark:border-gray-600 dark:text-white" required>
+          <label class="block text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-1">Contraseña</label>
+          <input type="text" id="newPass" class="w-full p-2 border rounded dark:bg-gray-700 dark:border-gray-600 dark:text-white focus:border-green-500 outline-none" required>
         </div>
-        <div class="flex gap-2">
-          <div class="w-1/2">
-            <label class="block text-xs font-bold text-gray-600 dark:text-gray-300 uppercase">MAC (Opcional)</label>
-            <input type="text" id="newMac" placeholder="00:00:00:00:00:00" class="w-full p-2 border rounded focus:border-green-500 outline-none dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-1">MAC</label>
+            <input type="text" id="newMac" placeholder="00:00..." class="w-full p-2 border rounded dark:bg-gray-700 dark:border-gray-600 dark:text-white focus:border-green-500 outline-none">
           </div>
-          <div class="w-1/2">
-            <label class="block text-xs font-bold text-gray-600 dark:text-gray-300 uppercase">IP (Opcional)</label>
-            <input type="text" id="newIp" placeholder="192.168.1.1" class="w-full p-2 border rounded focus:border-green-500 outline-none dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+          <div>
+            <label class="block text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-1">IP</label>
+            <input type="text" id="newIp" placeholder="192..." class="w-full p-2 border rounded dark:bg-gray-700 dark:border-gray-600 dark:text-white focus:border-green-500 outline-none">
           </div>
         </div>
-        <button type="submit" class="w-full bg-green-500 text-white py-2 rounded hover:bg-green-600 font-bold mt-2">Guardar en la Nube</button>
+        <button type="submit" class="w-full bg-green-500 text-white py-3 rounded-lg hover:bg-green-600 font-bold shadow mt-2 transition">Guardar</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- MODAL: Editar WiFi (NUEVO) -->
+  <div id="modalEdit" class="fixed inset-0 bg-black bg-opacity-60 hidden flex items-center justify-center z-50 backdrop-blur-sm">
+    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-2xl w-full max-w-md relative border dark:border-gray-700 border-orange-500 border-t-4">
+      <button class="closeModal absolute top-3 right-4 text-gray-400 hover:text-gray-800 dark:hover:text-white text-2xl">&times;</button>
+      <h3 class="text-xl font-bold mb-6 text-orange-500 flex items-center gap-2">
+        <i class="fas fa-edit"></i> Editar WiFi
+      </h3>
+      <form id="formEdit" class="space-y-4">
+        <input type="hidden" id="editId"> <!-- ID oculto de Firestore -->
+        <div>
+          <label class="block text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-1">SSID</label>
+          <input type="text" id="editSsid" class="w-full p-2 border rounded dark:bg-gray-700 dark:border-gray-600 dark:text-white focus:border-orange-500 outline-none" required>
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-1">Contraseña</label>
+          <input type="text" id="editPass" class="w-full p-2 border rounded dark:bg-gray-700 dark:border-gray-600 dark:text-white focus:border-orange-500 outline-none" required>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-1">MAC</label>
+            <input type="text" id="editMac" class="w-full p-2 border rounded dark:bg-gray-700 dark:border-gray-600 dark:text-white focus:border-orange-500 outline-none">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-1">IP</label>
+            <input type="text" id="editIp" class="w-full p-2 border rounded dark:bg-gray-700 dark:border-gray-600 dark:text-white focus:border-orange-500 outline-none">
+          </div>
+        </div>
+        <div class="flex gap-2 mt-4">
+            <button type="submit" class="flex-1 bg-orange-500 text-white py-2 rounded hover:bg-orange-600 font-bold shadow transition">Actualizar</button>
+            <button type="button" id="btnDelete" class="w-12 bg-red-100 text-red-600 hover:bg-red-200 rounded flex items-center justify-center transition" title="Borrar WiFi">
+                <i class="fas fa-trash"></i>
+            </button>
+        </div>
       </form>
     </div>
   </div>
@@ -141,14 +182,13 @@
   <!-- Lógica Principal -->
   <script type="module">
     // --------------------------------------------------------
-    // 1. CONFIGURACIÓN DE FIREBASE
+    // 1. CONFIGURACIÓN FIREBASE
     // --------------------------------------------------------
     import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-analytics.js";
-    import { getFirestore, collection, getDocs, addDoc, orderBy, query } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+    import { getFirestore, collection, getDocs, addDoc, doc, updateDoc, deleteDoc, orderBy, query } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
     import { getAuth, signInWithEmailAndPassword, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
 
-    // --- CONFIG---
+    // --- TU CONFIGURACIÓN ---
     const firebaseConfig = {
       apiKey: "AIzaSyBrZU37-D2NQ3fh5bha4wuUfT2Kdw9BFQo",
       authDomain: "buscadorwifi.firebaseapp.com",
@@ -159,102 +199,81 @@
       measurementId: "G-LR08V49XVV"
     };
 
-    // Inicializar Firebase
     const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
     const db = getFirestore(app);
     const auth = getAuth(app);
 
     // --------------------------------------------------------
-    // 2. LÓGICA DE MODO OSCURO (UI)
-    // --------------------------------------------------------
-    const btnTheme = document.getElementById('btnTheme');
-    const themeIcon = document.getElementById('themeIcon');
-
-    // Función para actualizar el icono
-    function updateIcon() {
-        if (document.documentElement.classList.contains('dark')) {
-            themeIcon.classList.remove('fa-moon');
-            themeIcon.classList.add('fa-sun');
-        } else {
-            themeIcon.classList.remove('fa-sun');
-            themeIcon.classList.add('fa-moon');
-        }
-    }
-    updateIcon(); // Al cargar
-
-    // Toggle
-    btnTheme.onclick = () => {
-        if (document.documentElement.classList.contains('dark')) {
-            document.documentElement.classList.remove('dark');
-            localStorage.theme = 'light';
-        } else {
-            document.documentElement.classList.add('dark');
-            localStorage.theme = 'dark';
-        }
-        updateIcon();
-    };
-
-    // --------------------------------------------------------
-    // 3. LÓGICA DE DATOS
+    // 2. ESTADO Y VARIABLES
     // --------------------------------------------------------
     let allData = [];
     let currentResults = [];
     let currentPage = 1;
     const resultsPerPage = 50;
+    let currentUser = null; // Guardar usuario globalmente para renderizado
 
-    const btnLogin = document.getElementById('btnLogin');
-    const btnLogout = document.getElementById('btnLogout');
-    const btnAdd = document.getElementById('btnAdd');
-    const adminPanel = document.getElementById('adminPanel');
-    const modalLogin = document.getElementById('modalLogin');
-    const modalAdd = document.getElementById('modalAdd');
-    const formLogin = document.getElementById('formLogin');
-    const formAdd = document.getElementById('formAdd');
-    const loadingDiv = document.getElementById('loading');
-    const searchInput = document.getElementById('search');
+    // DOM Elements
+    const els = {
+      modalLogin: document.getElementById('modalLogin'),
+      modalAdd: document.getElementById('modalAdd'),
+      modalEdit: document.getElementById('modalEdit'),
+      search: document.getElementById('search'),
+      results: document.getElementById('resultados'),
+      loading: document.getElementById('loading'),
+      pagination: document.getElementById('pagination')
+    };
 
+    // --------------------------------------------------------
+    // 3. CARGA DE DATOS
+    // --------------------------------------------------------
     cargarDatos();
 
     async function cargarDatos() {
-      loadingDiv.classList.remove('hidden');
+      els.loading.classList.remove('hidden');
       allData = [];
 
       try {
+        // A. JSON Local (Sin ID = No editable)
         try {
-            const resJson = await fetch('data.json?t=' + Date.now());
-            if(resJson.ok) {
-                const jsonData = await resJson.json();
-                allData = [...jsonData];
+            const res = await fetch('data.json?t=' + Date.now());
+            if(res.ok) {
+                const json = await res.json();
+                // Marcamos origen 'local' explícitamente
+                const jsonWithMeta = json.map(item => ({ ...item, source: 'json', id: null }));
+                allData = [...jsonWithMeta];
             }
-        } catch(e) { console.log("JSON local no disponible o error al parsear."); }
+        } catch(e) { console.log("JSON offline"); }
         
+        // B. Firestore (Con ID = Editable)
         if (db) {
           try {
             const q = query(collection(db, "wifis"), orderBy("ssid")); 
-            const querySnapshot = await getDocs(q);
-            const firestoreData = querySnapshot.docs.map(doc => doc.data());
-            allData = [...firestoreData, ...allData]; 
-          } catch (error) { console.warn("Firestore error", error); }
+            const snap = await getDocs(q);
+            const fireData = snap.docs.map(d => ({ 
+                id: d.id, 
+                source: 'cloud',
+                ...d.data() 
+            }));
+            allData = [...fireData, ...allData]; // Nube primero
+          } catch (e) { console.warn("Firestore error", e); }
         }
-      } catch (e) { console.error("Error global", e); } 
-      finally {
-        loadingDiv.classList.add('hidden');
+      } finally {
+        els.loading.classList.add('hidden');
         buscar(); 
       }
     }
 
-    let debounceTimer;
-    searchInput.addEventListener('input', () => {
-      clearTimeout(debounceTimer);
-      debounceTimer = setTimeout(() => {
-        currentPage = 1;
-        buscar();
-      }, 300);
+    // --------------------------------------------------------
+    // 4. BUSCADOR Y RENDERIZADO
+    // --------------------------------------------------------
+    let debounce;
+    els.search.addEventListener('input', () => {
+      clearTimeout(debounce);
+      debounce = setTimeout(() => { currentPage = 1; buscar(); }, 300);
     });
 
     function buscar() {
-      const q = searchInput.value.toLowerCase();
+      const q = els.search.value.toLowerCase();
       currentResults = allData.filter(e =>
         (e.ssid && e.ssid.toLowerCase().includes(q)) ||
         (e.mac && e.mac.toLowerCase().includes(q)) ||
@@ -270,31 +289,69 @@
     }
 
     function mostrarPagina() {
-      const startIndex = (currentPage - 1) * resultsPerPage;
-      const paginatedResults = currentResults.slice(startIndex, startIndex + resultsPerPage);
-      const contenedor = document.getElementById('resultados');
+      const start = (currentPage - 1) * resultsPerPage;
+      const pageData = currentResults.slice(start, start + resultsPerPage);
 
-      if (paginatedResults.length === 0) {
-        contenedor.innerHTML = '<div class="text-center text-gray-500 dark:text-gray-400 p-4">No se encontraron resultados.</div>';
-        document.getElementById('pagination').innerHTML = '';
+      if (pageData.length === 0) {
+        els.results.innerHTML = '<div class="text-center text-gray-500 dark:text-gray-400 p-8 bg-white dark:bg-gray-800 rounded-lg shadow">No se encontraron resultados.</div>';
+        els.pagination.innerHTML = '';
         return;
       }
 
-      contenedor.innerHTML = paginatedResults.map(e => {
+      els.results.innerHTML = pageData.map((e, index) => {
         let passShow = e.password || "Sin password";
         if (isBase64(passShow)) try { passShow = atob(passShow); } catch {}
 
+        // Determinar si es editable
+        const isEditable = currentUser && e.source === 'cloud';
+        const globalIndex = start + index; // Índice real en currentResults (no usado para ID, pero útil)
+        
+        // Botón de acción: Edit (si es cloud) o Candado (si es json)
+        let actionBtn = '';
+        if (currentUser) {
+            if(isEditable) {
+                // Serializamos el objeto para pasarlo a la función (manera simple)
+                // Ojo: comillas simples en onclick pueden romper JSON, usamos encodeURIComponent
+                const dataStr = encodeURIComponent(JSON.stringify(e));
+                actionBtn = `
+                    <button onclick="window.abrirEditar('${dataStr}')" class="text-orange-500 hover:text-orange-600 dark:text-orange-400 p-2 transition" title="Editar">
+                        <i class="fas fa-edit"></i>
+                    </button>
+                `;
+            } else {
+                actionBtn = `
+                    <span class="text-gray-300 dark:text-gray-600 p-2 cursor-not-allowed" title="Archivo estático (No editable)">
+                        <i class="fas fa-lock"></i>
+                    </span>
+                `;
+            }
+        }
+
         return `
-          <div class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-sm border-l-4 border-blue-500 hover:shadow-md transition-colors duration-300">
+          <div class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-sm border-l-4 ${e.source === 'cloud' ? 'border-green-500' : 'border-blue-500'} hover:shadow-md transition-all duration-300 relative group">
+            
             <div class="flex justify-between items-start">
-              <div class="font-bold text-lg text-gray-800 dark:text-white break-all">${e.ssid || 'Desconocido'}</div>
-              <div class="text-xs font-mono bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded text-gray-600 dark:text-gray-300">${e.ip || 'N/A'}</div>
+                <div class="flex-1 min-w-0 pr-2">
+                    <div class="font-bold text-lg text-gray-800 dark:text-white truncate flex items-center gap-2">
+                        ${e.ssid || 'Desconocido'}
+                        ${e.source === 'cloud' ? '<i class="fas fa-cloud text-xs text-green-500" title="Guardado en Nube"></i>' : ''}
+                    </div>
+                    <div class="text-xs font-mono bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded text-gray-600 dark:text-gray-300 inline-block mt-1">
+                        ${e.ip || 'N/A'}
+                    </div>
+                </div>
+                <!-- Botones Admin -->
+                <div>${actionBtn}</div>
             </div>
-            <div class="mt-2 text-sm text-gray-600 dark:text-gray-400">
-              <span class="font-mono mr-3"><i class="fas fa-network-wired text-gray-400 dark:text-gray-500"></i> ${e.mac || '??:??:??:??:??:??'}</span>
+
+            <div class="mt-3 text-sm text-gray-600 dark:text-gray-400 flex items-center gap-2">
+               <i class="fas fa-network-wired text-gray-400"></i>
+               <span class="font-mono select-all">${e.mac || '??:??:??:??:??:??'}</span>
             </div>
-            <div class="mt-2 pt-2 border-t border-gray-100 dark:border-gray-700 text-green-700 dark:text-green-400 font-bold font-mono break-all">
-              <i class="fas fa-key text-green-500 dark:text-green-400 mr-1"></i> ${passShow}
+
+            <div class="mt-3 pt-3 border-t border-gray-100 dark:border-gray-700 text-green-700 dark:text-green-400 font-bold font-mono break-all flex items-center gap-2">
+              <i class="fas fa-key text-green-500 dark:text-green-400"></i> 
+              <span class="select-all">${passShow}</span>
             </div>
           </div>
         `;
@@ -305,105 +362,171 @@
 
     function renderPagination() {
       const totalPages = Math.ceil(currentResults.length / resultsPerPage);
-      const pagDiv = document.getElementById('pagination');
       
-      let html = '';
-      if (totalPages > 1) {
-        html += `<button onclick="window.cambiarPagina(${currentPage - 1})" class="px-4 py-2 bg-white dark:bg-gray-700 dark:text-white border dark:border-gray-600 rounded hover:bg-gray-100 dark:hover:bg-gray-600 disabled:opacity-50" ${currentPage === 1 ? 'disabled' : ''}>« Anterior</button>`;
-        html += `<span class="text-gray-600 dark:text-gray-300 font-bold">Página ${currentPage} de ${totalPages}</span>`;
-        html += `<button onclick="window.cambiarPagina(${currentPage + 1})" class="px-4 py-2 bg-white dark:bg-gray-700 dark:text-white border dark:border-gray-600 rounded hover:bg-gray-100 dark:hover:bg-gray-600 disabled:opacity-50" ${currentPage === totalPages ? 'disabled' : ''}>Siguiente »</button>`;
+      if (totalPages <= 1) {
+        els.pagination.innerHTML = '';
+        return;
       }
-      pagDiv.innerHTML = html;
+      
+      let html = `
+        <button onclick="window.cambiarPagina(${currentPage - 1})" class="px-4 py-2 bg-white dark:bg-gray-700 dark:text-white border dark:border-gray-600 rounded hover:bg-gray-100 dark:hover:bg-gray-600 disabled:opacity-50 disabled:cursor-not-allowed transition" ${currentPage === 1 ? 'disabled' : ''}>«</button>
+        <span class="text-gray-600 dark:text-gray-300 font-bold px-2">${currentPage} / ${totalPages}</span>
+        <button onclick="window.cambiarPagina(${currentPage + 1})" class="px-4 py-2 bg-white dark:bg-gray-700 dark:text-white border dark:border-gray-600 rounded hover:bg-gray-100 dark:hover:bg-gray-600 disabled:opacity-50 disabled:cursor-not-allowed transition" ${currentPage === totalPages ? 'disabled' : ''}>»</button>
+      `;
+      els.pagination.innerHTML = html;
     }
 
-    window.cambiarPagina = (pag) => {
-      currentPage = pag;
-      mostrarPagina();
+    // Funciones globales para HTML
+    window.cambiarPagina = (pag) => { currentPage = pag; mostrarPagina(); };
+    
+    window.abrirEditar = (dataEncoded) => {
+        const item = JSON.parse(decodeURIComponent(dataEncoded));
+        
+        // Rellenar formulario
+        document.getElementById('editId').value = item.id;
+        document.getElementById('editSsid').value = item.ssid || '';
+        document.getElementById('editPass').value = item.password || '';
+        document.getElementById('editMac').value = item.mac || '';
+        document.getElementById('editIp').value = item.ip || '';
+        
+        els.modalEdit.classList.remove('hidden');
     };
 
     // --------------------------------------------------------
-    // 4. LÓGICA DE LOGIN Y ADMIN
+    // 5. EVENTOS Y AUTH
     // --------------------------------------------------------
     
-    btnLogin.onclick = () => modalLogin.classList.remove('hidden');
-    btnAdd.onclick = () => modalAdd.classList.remove('hidden');
+    // UI Toggles
+    const toggleModal = (modal, show) => show ? modal.classList.remove('hidden') : modal.classList.add('hidden');
+    
+    document.getElementById('btnLogin').onclick = () => toggleModal(els.modalLogin, true);
+    document.getElementById('btnAdd').onclick = () => toggleModal(els.modalAdd, true);
     
     document.querySelectorAll('.closeModal').forEach(btn => {
-      btn.onclick = () => {
-        modalLogin.classList.add('hidden');
-        modalAdd.classList.add('hidden');
-      };
+        btn.onclick = () => {
+            els.modalLogin.classList.add('hidden');
+            els.modalAdd.classList.add('hidden');
+            els.modalEdit.classList.add('hidden');
+        };
     });
 
-    formLogin.onsubmit = async (e) => {
-      e.preventDefault();
-      const email = document.getElementById('email').value;
-      const pass = document.getElementById('password').value;
-      const errorMsg = document.getElementById('loginError');
-      
-      try {
-        await signInWithEmailAndPassword(auth, email, pass);
-        modalLogin.classList.add('hidden');
-        formLogin.reset();
-        errorMsg.classList.add('hidden');
-      } catch (error) {
-        errorMsg.textContent = "Error: " + error.message;
-        errorMsg.classList.remove('hidden');
-      }
+    // Theme Logic
+    const btnTheme = document.getElementById('btnTheme');
+    const updateThemeIcon = () => document.getElementById('themeIcon').className = document.documentElement.classList.contains('dark') ? 'fas fa-sun' : 'fas fa-moon';
+    
+    btnTheme.onclick = () => {
+        document.documentElement.classList.toggle('dark');
+        localStorage.theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
+        updateThemeIcon();
     };
+    updateThemeIcon();
 
-    btnLogout.onclick = () => signOut(auth);
-
+    // AUTH State
     onAuthStateChanged(auth, (user) => {
+      currentUser = user; // Actualizar estado global
+      const adminPanel = document.getElementById('adminPanel');
+      const btnLogin = document.getElementById('btnLogin');
+      
       if (user) {
         btnLogin.classList.add('hidden');
         adminPanel.classList.remove('hidden');
-        adminPanel.classList.add('flex');
         document.getElementById('userEmail').textContent = user.email;
       } else {
         btnLogin.classList.remove('hidden');
         adminPanel.classList.add('hidden');
-        adminPanel.classList.remove('flex');
       }
+      mostrarPagina(); // Re-renderizar para mostrar/ocultar botones de edición
     });
 
-    formAdd.onsubmit = async (e) => {
+    // Login Submit
+    document.getElementById('formLogin').onsubmit = async (e) => {
       e.preventDefault();
-      
-      if (!auth.currentUser) {
-        alert("Debes estar logueado.");
-        return;
+      const err = document.getElementById('loginError');
+      try {
+        await signInWithEmailAndPassword(auth, document.getElementById('email').value, document.getElementById('password').value);
+        toggleModal(els.modalLogin, false);
+        e.target.reset();
+        err.classList.add('hidden');
+      } catch (error) {
+        err.textContent = "Error: " + error.message;
+        err.classList.remove('hidden');
       }
+    };
+    document.getElementById('btnLogout').onclick = () => signOut(auth);
 
-      const newEntry = {
-        ssid: document.getElementById('newSsid').value,
-        password: document.getElementById('newPass').value,
-        mac: document.getElementById('newMac').value || "00:00:00:00:00:00",
-        ip: document.getElementById('newIp').value || "0.0.0.0",
-        addedBy: auth.currentUser.email,
-        timestamp: new Date()
-      };
+    // ADD WiFi
+    document.getElementById('formAdd').onsubmit = async (e) => {
+      e.preventDefault();
+      if (!auth.currentUser) return;
+
+      const btn = e.target.querySelector('button');
+      const oldText = btn.innerText;
+      btn.innerText = "Guardando...";
+      btn.disabled = true;
 
       try {
-        const btnSubmit = formAdd.querySelector('button');
-        const oldText = btnSubmit.innerText;
-        btnSubmit.innerText = "Guardando...";
-        btnSubmit.disabled = true;
-
-        await addDoc(collection(db, "wifis"), newEntry);
-        
-        alert("¡Guardado correctamente!");
-        modalAdd.classList.add('hidden');
-        formAdd.reset();
-        
+        await addDoc(collection(db, "wifis"), {
+            ssid: document.getElementById('newSsid').value,
+            password: document.getElementById('newPass').value,
+            mac: document.getElementById('newMac').value,
+            ip: document.getElementById('newIp').value,
+            addedBy: auth.currentUser.email,
+            timestamp: new Date()
+        });
+        toggleModal(els.modalAdd, false);
+        e.target.reset();
         cargarDatos();
+        alert("¡Guardado!");
+      } catch (err) { alert(err.message); }
+      finally { btn.innerText = oldText; btn.disabled = false; }
+    };
+
+    // EDIT WiFi (UPDATE)
+    document.getElementById('formEdit').onsubmit = async (e) => {
+        e.preventDefault();
+        const id = document.getElementById('editId').value;
+        if(!id) return;
+
+        const btn = e.target.querySelector('button[type="submit"]');
+        const oldText = btn.innerText;
+        btn.innerText = "Actualizando...";
+        btn.disabled = true;
+
+        try {
+            const docRef = doc(db, "wifis", id);
+            await updateDoc(docRef, {
+                ssid: document.getElementById('editSsid').value,
+                password: document.getElementById('editPass').value,
+                mac: document.getElementById('editMac').value,
+                ip: document.getElementById('editIp').value,
+                lastEdited: new Date(),
+                editedBy: auth.currentUser.email
+            });
+            toggleModal(els.modalEdit, false);
+            cargarDatos(); // Recargar para ver cambios
+        } catch(err) {
+            console.error(err);
+            alert("Error al actualizar: " + err.message);
+        } finally {
+            btn.innerText = oldText;
+            btn.disabled = false;
+        }
+    };
+
+    // DELETE WiFi
+    document.getElementById('btnDelete').onclick = async () => {
+        const id = document.getElementById('editId').value;
+        if(!id) return;
         
-        btnSubmit.innerText = oldText;
-        btnSubmit.disabled = false;
-      } catch (error) {
-        console.error("Error guardando", error);
-        alert("Error al guardar: " + error.message);
-      }
+        if(confirm("¿Estás seguro de BORRAR esta red de la nube? No se puede deshacer.")) {
+            try {
+                await deleteDoc(doc(db, "wifis", id));
+                toggleModal(els.modalEdit, false);
+                cargarDatos();
+            } catch(err) {
+                alert("Error al borrar: " + err.message);
+            }
+        }
     };
 
   </script>
